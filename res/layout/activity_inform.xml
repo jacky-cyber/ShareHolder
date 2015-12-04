@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_announcement"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+         <RelativeLayout android:id="@+id/iv_inform_return"
+             android:layout_width="55dp"
+             android:layout_height="48dp">
+        <ImageView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/ico_fanhui" />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/tv_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/announcement_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+
+        <ImageView
+            android:id="@+id/iv_inform_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_fabu" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_inform_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_announcement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/inform_none_top"
+        android:text="@string/userjoin_none_inform"
+        android:textColor="#666666"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_inform_none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_wutongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wutongzhi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="暂无任何通知"
+            android:textColor="#787878"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

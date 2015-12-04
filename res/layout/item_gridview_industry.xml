@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_industry_name"
+        android:layout_width="@dimen/gridview_item_height"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="所有行业"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/gridview_item_color"
+        android:background="@drawable/btn_industry_style"
+        />
+
+</LinearLayout>

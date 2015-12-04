@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="286dp"
+    android:layout_height="165dp"
+    android:background="@drawable/bg_alert_dialog_style"
+    android:orientation="vertical" >
+     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="26dp"
+        android:text="请选择支付方式"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/rl_pay_online"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="18dp"
+		android:layout_marginRight="18dp"
+	   >
+	   
+	     <TextView
+	         android:id="@+id/tv_pay_online"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="6dp"
+	         android:text="在线支付"
+	         android:textSize="15sp"
+	         android:textColor="#333333"
+	         />
+	     
+	     <ImageView 
+	         android:id="@+id/iv_gou_pay_online"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_alignBottom="@+id/tv_pay_online"
+	         android:src="@drawable/btn_gou"
+	         />
+	
+	</RelativeLayout>
+	 
+    <ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="18dp"
+		android:layout_marginRight="18dp"
+		android:src="#999999"
+	         />
+    
+    <RelativeLayout 
+        android:id="@+id/rl_pay_offline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="18dp"
+		android:layout_marginRight="18dp"
+		android:layout_marginTop="10dp"
+	   >
+	   
+	     <TextView
+	         android:id="@+id/tv_pay_offline"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:paddingLeft="6dp"
+	         android:text="货到付款"
+	         android:textSize="15sp"
+	         android:textColor="#333333"
+	         />
+	     
+	     <ImageView 
+	         android:id="@+id/iv_gou_pay_offline"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_alignBottom="@+id/tv_pay_offline"
+	         android:src="@drawable/btn_gou"
+	         android:visibility="gone"
+	         />
+	
+	</RelativeLayout>
+	 
+    <ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="18dp"
+		android:layout_marginRight="18dp"
+		android:src="#999999"
+	         />
+	 
+    <TextView
+	     android:id="@+id/tv_ok"
+	     android:layout_width="match_parent"
+	     android:layout_height="25dp"
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginRight="10dp"
+	     android:layout_marginTop="20dp"
+	     android:layout_marginBottom="15dp"
+	     android:gravity="center"
+	     android:text="确定"
+	     android:textColor="#ffffff"
+	     android:textSize="16sp"
+	     android:background="@drawable/btn_survey_list_style" />
+
+
+    
+    
+    
+</LinearLayout>

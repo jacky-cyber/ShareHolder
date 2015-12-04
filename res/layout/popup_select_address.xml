@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_alert_dialog_style"
+    android:orientation="vertical" >
+     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="38dp"
+        android:text="请选择送货地址"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        />
+    
+    <LinearLayout 
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:layout_marginLeft="20dp"
+	  android:orientation="horizontal" >
+	 
+	     <TextView
+	         android:id="@+id/tv_provice"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="广东"
+	         android:textSize="16sp"
+	         android:textColor="#666666"
+	         />
+	     
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="省"
+	         android:layout_marginLeft="13dp"
+	         android:layout_marginRight="20dp"
+	         android:textSize="15sp"
+	         android:textColor="#333333"
+	         />
+	     
+	     <TextView
+	         android:id="@+id/tv_city"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="广州"
+	         android:textSize="16sp"
+	         android:textColor="#666666"
+	         />
+	     
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="市"
+	         android:layout_marginLeft="13dp"
+	         android:layout_marginRight="20dp"
+	         android:textSize="15sp"
+	         android:textColor="#333333"
+	         />
+	     
+	     <TextView
+	         android:id="@+id/tv_district"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="天河"
+	         android:textSize="16sp"
+	         android:textColor="#666666"
+	         />
+	     
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="区/县"
+	         android:layout_marginLeft="13dp"
+	         android:layout_marginRight="20dp"
+	         android:textSize="15sp"
+	         android:textColor="#333333"
+	         />
+	
+	 </LinearLayout>
+	 
+    <TextView
+     android:id="@+id/tv_ok"
+     android:layout_width="match_parent"
+     android:layout_height="25dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:layout_marginTop="38dp"
+     android:layout_marginBottom="15dp"
+     android:gravity="center"
+     android:text="确定"
+     android:textColor="#ffffff"
+     android:textSize="16sp"
+     android:background="@drawable/btn_survey_list_style" />
+
+
+    
+    
+    
+</LinearLayout>

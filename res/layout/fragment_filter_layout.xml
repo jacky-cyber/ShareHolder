@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <!-- 选择日期 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:layout_marginTop="@dimen/title_padding_selectactivity"
+            android:background="#999999" />
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itme_height_selectactivity"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/title_padding_selectactivity"
+            android:paddingRight="@dimen/title_padding_selectactivity" >
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ico_diaoyanshijian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin_img_selectactivity"
+                android:layout_toRightOf="@id/iv_time"
+                android:text="@string/choose_according_time"
+                android:textColor="@color/current_survey_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2010.01.01"
+                    android:textColor="#dd8822"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="#dd8822"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015.12.12"
+                    android:textColor="#dd8822"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#999999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:layout_marginTop="@dimen/title_padding_selectactivity"
+            android:background="#999999" />
+
+        <!-- 选择城市和所有城市 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itme_height_select_city"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 选择城市 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/title_padding_selectactivity" >
+
+                <ImageView
+                    android:id="@+id/iv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ico_chengshi" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_margin_img_selectactivity"
+                    android:layout_toRightOf="@id/iv_city"
+                    android:text="@string/choose_according_city"
+                    android:textColor="@color/current_survey_text"
+                    android:textSize="14sp" />
+
+                <!-- 下拉按钮 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/select_city_padding_right" >
+
+                    <ImageView
+                        android:id="@+id/iv_show_cities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ico_wanxiala" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width_small"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/iv_city"
+                    android:background="#c4c4c4" />
+
+                <GridView
+                    android:id="@+id/gv_selected_cities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_margin_img_selectactivity"
+                    android:layout_marginRight="@dimen/text_margin_img_selectactivity"
+                    android:layout_toLeftOf="@id/rl_show_city"
+                    android:layout_toRightOf="@id/textView1"
+                    android:gravity="center_vertical"
+                    android:numColumns="5" >
+                </GridView>
+            </RelativeLayout>
+
+            <!-- 所有城市 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_all_cities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/all_city_margin_left"
+                    android:text="@string/change_city"
+                    android:textColor="#7a7a7a"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" 
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ico_guagnzhou" />
+
+                    <TextView
+                        android:id="@+id/tv_fixed_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fix_location_margin_left"
+                        android:textColor="#7a7a7a"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_search_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/search_location_margin_left"
+                        android:background="@drawable/ico_zhongxindingwei" />
+
+                    <TextView
+                        android:id="@+id/tv_relocate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/relocate_margin_left"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/select_city_padding_right"
+                        android:text="@string/relocate"
+                        android:textColor="#f7931e"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#999999" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#c4c4c4" />
+
+        <!-- 热门城市和所有城市 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- 热门城市 -->
+
+                <!-- 热门城市 结束 -->
+
+
+                <!-- 所有城市的列表 -->
+
+                <FrameLayout
+                    android:id="@+id/fl_all_cities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/lv_city"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:divider="@null" />
+
+                    <TextView
+                        android:id="@+id/dialog"
+                        android:layout_width="@dimen/activity_search_survey_dialog_size"
+                        android:layout_height="@dimen/activity_search_survey_dialog_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/show_head_toast_bg"
+                        android:gravity="center"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/activity_search_survey_dialog_text_size"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <!-- 所有城市的列表 结束 -->
+
+            </LinearLayout>
+
+            <com.example.shareholders.common.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="@dimen/activity_search_survey_side_bar_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <!-- 热门城市和所有城市 结束 -->
+
+
+        <!-- 选择行业 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itme_height_selectactivity"
+            android:layout_marginTop="@dimen/title_padding_selectactivity"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/title_padding_selectactivity" >
+
+            <ImageView
+                android:id="@+id/iv_industry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_diaoyanshijianxuanze" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_margin_img_selectactivity"
+                android:layout_toRightOf="@id/iv_industry"
+                android:text="@string/choose_according_industry"
+                android:textColor="@color/current_survey_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/sv_industry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <com.example.shareholders.common.MyGridView
+                    android:id="@+id/gridview_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:numColumns="3"
+                    android:paddingBottom="@dimen/gridview_paddingtop"
+                    android:paddingTop="@dimen/gridview_paddingtop"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/gridview_vertical_spacing" >
+                </com.example.shareholders.common.MyGridView>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white" />
+
+</LinearLayout>

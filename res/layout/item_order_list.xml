@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <View 
+        android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#eaeaea"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_list_tv_company_height"
+        >
+    
+	    <TextView 
+			 android:id="@+id/tv_company"
+			 android:layout_width="wrap_content"
+			 android:layout_height="match_parent"
+			 android:layout_marginLeft="12dp"
+			 android:gravity="center"
+			 android:text="微豆设计公司"
+			 android:textColor="#333333"
+			 android:textSize="14sp"
+			 android:drawableLeft="@drawable/ico_gongsi"
+			 android:drawablePadding="7dp"
+			 />
+	    
+	    <ImageView 
+	        android:id="@+id/iv_delete"
+			 android:layout_width="wrap_content"
+			 android:layout_height="match_parent"
+			 android:layout_alignParentRight="true"
+		     android:paddingRight="@dimen/order_list_margin_right"
+		     android:layout_centerVertical="true"
+			 android:src="@drawable/btn_order_list_delete"
+	        />
+    
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginLeft="33dp"
+		android:background="#eaeaea"
+        />
+       
+     <RelativeLayout
+	     android:id="@+id/rl_goods"
+	     android:layout_width="fill_parent"
+	     android:layout_height="@dimen/pc_good_height"
+	      >
+	
+	     <ImageView
+	         android:id="@+id/iv_pc_goods"
+	         android:layout_width="@dimen/pc_iv_size"
+	         android:layout_height="@dimen/pc_iv_size"
+	         android:layout_alignParentLeft="true"
+	         android:layout_centerVertical="true"
+	         android:layout_margin="@dimen/pc_good_margin"
+	         android:src="@drawable/demo" />
+	
+	     
+	     <TextView
+	         android:id="@+id/tv_pc_goods_name"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_toRightOf="@+id/iv_pc_goods"
+	         android:layout_alignTop="@+id/iv_pc_goods"
+	         android:layout_marginRight="@dimen/order_list_margin_right2"
+	         android:lines="2"
+	         android:ellipsize="end"
+	         android:text="唇膏口红全新雅诗兰红色诱惑夏日情怀海洋气息清新夏日情怀海洋气息清新夏日情怀海洋气息清新"
+	         android:textColor="#333333"
+	         android:textSize="12sp" />
+	     
+	     <TextView
+	         android:id="@+id/tv_pc_goods_type1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="7dp"
+	         android:layout_toRightOf="@+id/iv_pc_goods"
+	         android:layout_below="@+id/tv_pc_goods_name"
+	         android:text="蓝色"
+	         android:textColor="#e84d76"
+	         android:textSize="12sp" />
+	     
+	     <TextView
+	         android:id="@+id/tv_pc_goods_type2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="7dp"
+	         android:layout_marginTop="7dp"
+	         android:layout_toRightOf="@+id/tv_pc_goods_type1"
+	         android:layout_below="@+id/tv_pc_goods_name"
+	         android:text="玫瑰味"
+	         android:textColor="#e84d76"
+	         android:textSize="12sp" />
+	     
+	     <TextView
+	         android:id="@+id/tv_pc_goods_count"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="7dp"
+	         android:layout_marginTop="7dp"
+	         android:layout_toRightOf="@+id/tv_pc_goods_type2"
+	         android:layout_below="@+id/tv_pc_goods_name"
+	         android:text="x2"
+	         android:textColor="#e84d76"
+	         android:textSize="12sp" />
+	     
+	     <TextView
+	         android:id="@+id/tv_pc_goods_price"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_toRightOf="@+id/iv_pc_goods"
+	         android:layout_alignBottom="@+id/iv_pc_goods"
+	         android:text="￥ 222,000"
+	         android:textColor="#ff0000"
+	         android:textSize="14sp" />
+	     
+	     <ImageView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:layout_margin="@dimen/order_list_margin_right"
+	         android:src="@drawable/btn_gengduo" />
+	     
+	 </RelativeLayout>
+	 
+     <ImageView 
+        android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#eaeaea"
+        />
+     
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         >
+         
+         <TextView
+             android:id="@+id/tv_status"
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:gravity="center"
+	         android:layout_marginLeft="@dimen/order_list_margin_right"
+	         android:text="等待付款"
+	         android:textColor="#666666"
+	         android:textSize="13sp" />
+         
+         <TextView
+             android:id="@+id/tv_pay"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:gravity="center"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="@dimen/order_list_margin_right"
+	         android:layout_centerVertical="true"
+	         android:text="支付"
+	         android:textColor="#e57e17"
+	         android:textSize="12sp" 
+	         android:background="@drawable/bg_order_list_pay"
+	         />
+         
+     </RelativeLayout>
+
+</LinearLayout>

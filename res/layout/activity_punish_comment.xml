@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_pc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_pc_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title" >
+
+            <RelativeLayout
+                android:id="@+id/rl_return"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/title_fs_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/title_note_left"
+                    android:padding="5dp"
+                    android:src="@drawable/ico_fanhui" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_pc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="评价商品"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tvs_survey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pc_goods"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pc_good_height"
+            android:layout_margin="@dimen/pc_good_margin"
+            android:background="#f9f9f9" >
+
+            <ImageView
+                android:id="@+id/iv_pc_goods"
+                android:layout_width="@dimen/pc_iv_size"
+                android:layout_height="@dimen/pc_iv_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/pc_good_margin"
+                android:src="@drawable/demo" />
+
+            <TextView
+                android:id="@+id/tv_pc_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_pc_goods"
+                android:layout_marginRight="@dimen/pc_name_margin_right"
+                android:layout_toRightOf="@+id/iv_pc_goods"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="唇膏口红全新雅诗兰红色诱惑夏日情怀海洋气息清新夏日情怀海洋气息清新夏日情怀海洋气息清新"
+                android:textColor="#c64268"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_pc_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_pc_goods"
+                android:layout_toRightOf="@+id/iv_pc_goods"
+                android:text="￥ 222,000"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/rb_pc"
+            style="@style/commentRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pc_good_margin"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_pc"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pc_et_height"
+                android:layout_margin="@dimen/pc_good_margin"
+                android:layout_weight="1"
+                android:background="#f9f9f9"
+                android:gravity="top"
+                android:hint="请输入对商品的描述"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <!-- 增加照片 -->
+            <!--
+                 <ImageView
+	            android:id="@+id/iv_pc_add_photo"
+	            android:layout_width="@dimen/pc_iv_size"
+	            android:layout_height="@dimen/pc_iv_size"
+	            android:layout_marginRight="@dimen/pc_good_margin"
+	            android:padding="15dp"
+	            android:src="@drawable/btn_addphoto"
+	            android:background="#eaeaea" />
+            -->
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pc_gap_height"
+            android:layout_marginBottom="@dimen/pc_gap_margin_bottom"
+            android:layout_marginTop="@dimen/pc_gap_margin_top"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_pc_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pc_submit_height"
+            android:layout_marginLeft="@dimen/pc_submit_margin_left"
+            android:layout_marginRight="@dimen/pc_submit_margin_left"
+            android:background="@drawable/btn_survey_list_style"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

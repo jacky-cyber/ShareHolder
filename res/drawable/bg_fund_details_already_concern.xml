@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid
+        android:color="@color/fund_Details_concern_bg_color"/>
+	<size 
+	    android:width="@dimen/fund_details_concern_width"
+    	android:height="@dimen/fund_details_concern_height"/>
+	<corners
+	    android:radius="1dp"/>
+	
+</shape>

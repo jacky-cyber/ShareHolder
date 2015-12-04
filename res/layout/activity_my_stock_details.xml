@@ -1,0 +1,451 @@
+<com.example.shareholders.common.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/ico_fanhui" />
+
+        <ImageView
+            android:id="@+id/iv_stock_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ll_stock"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/stock_left" />
+
+        <ImageView
+            android:id="@+id/iv_stock_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ll_stock"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/stock_right" />
+
+        <LinearLayout
+            android:id="@+id/ll_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="浦发银行"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_stock_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="600000"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_stock_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_stock_right"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/stock_refresh" />
+
+        <ImageView
+            android:id="@+id/title_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_sousuo" />
+    </RelativeLayout>
+
+    <com.example.shareholders.common.TopFloatScrollView
+        android:id="@+id/sc_topfloat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_main_param"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_stock_details"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/layout_stock_details_param"
+                    layout="@layout/linearlayout_stock_details_param" />
+
+                <LinearLayout
+                    android:id="@+id/ll_chat_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.example.shareholders.common.MyViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <!-- viewpager 的指示圆点 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                        <com.example.shareholders.common.CircleImageView
+                            android:id="@+id/iv_indicator1"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:src="#7d94db" />
+
+                        <com.example.shareholders.common.CircleImageView
+                            android:id="@+id/iv_indicator2"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="#ffffff" />
+
+                        <com.example.shareholders.common.CircleImageView
+                            android:id="@+id/iv_indicator3"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="#ffffff" />
+
+                        <com.example.shareholders.common.CircleImageView
+                            android:id="@+id/iv_indicator4"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="#ffffff" />
+                    </LinearLayout>
+
+                    <!-- 五档 -->
+
+                    <TextView
+                        android:id="@+id/tv_five"
+                        android:layout_width="45dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="#143c82"
+                        android:gravity="center"
+                        android:text="五档"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <TableLayout
+                        android:id="@+id/layout_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:visibility="gone" >
+
+                        <!-- 1 -->
+
+                        <TableRow>
+
+                            <include
+                                android:id="@+id/layout_five_buyer1"
+                                layout="@layout/linearlayout_stock_details_five" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000" />
+
+                            <include
+                                android:id="@+id/layout_five_seller1"
+                                layout="@layout/linearlayout_stock_details_five" />
+                        </TableRow>
+
+                        <!-- 2 -->
+
+                        <TableRow>
+
+                            <include
+                                android:id="@+id/layout_five_buyer2"
+                                layout="@layout/linearlayout_stock_details_five" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000" />
+
+                            <include
+                                android:id="@+id/layout_five_seller2"
+                                layout="@layout/linearlayout_stock_details_five" />
+                        </TableRow>
+
+                        <!-- 3 -->
+
+                        <TableRow>
+
+                            <include
+                                android:id="@+id/layout_five_buyer3"
+                                layout="@layout/linearlayout_stock_details_five" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000" />
+
+                            <include
+                                android:id="@+id/layout_five_seller3"
+                                layout="@layout/linearlayout_stock_details_five" />
+                        </TableRow>
+
+                        <!-- 4 -->
+
+                        <TableRow>
+
+                            <include
+                                android:id="@+id/layout_five_buyer4"
+                                layout="@layout/linearlayout_stock_details_five" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000" />
+
+                            <include
+                                android:id="@+id/layout_five_seller4"
+                                layout="@layout/linearlayout_stock_details_five" />
+                        </TableRow>
+
+                        <!-- 5 -->
+
+                        <TableRow>
+
+                            <include
+                                android:id="@+id/layout_five_buyer5"
+                                layout="@layout/linearlayout_stock_details_five" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#00000000" />
+
+                            <include
+                                android:id="@+id/layout_five_seller5"
+                                layout="@layout/linearlayout_stock_details_five" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- 隐藏按钮 -->
+
+                    <ImageView
+                        android:id="@+id/iv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/stock_details_more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 聊一聊 -->
+
+            <LinearLayout
+                android:id="@+id/ll_chatroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_chatroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#efeff4" >
+
+                    <TextView
+                        android:id="@+id/tv_chatroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="聊一聊"
+                        android:textColor="#83868b"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_chat_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/tv_chatroom"
+                        android:src="@drawable/liaoyiliao_up" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="#eaeaea" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#eaeaea" />
+                </RelativeLayout>
+
+                <!-- 聊天内容 listview -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_chatlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="gone" >
+
+                    <com.example.shareholders.common.MyViewPager
+                        android:id="@+id/vp_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 新闻 公告 调研 研报 评论 -->
+
+            <LinearLayout
+                android:id="@+id/ll_tab"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#efeff4"
+                android:orientation="vertical" >
+
+                <include layout="@layout/linearlayout_stock_details_tab" />
+            </LinearLayout>
+
+                <com.example.shareholders.common.MyListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" />
+                
+                <View 
+                    android:id="@+id/view_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#ffffff"
+                    />
+                
+        </LinearLayout>
+    </com.example.shareholders.common.TopFloatScrollView>
+    
+    <LinearLayout
+        android:id="@+id/ll_share_collect"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/collectbackground" 
+        >
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            />
+        
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="点评"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            />
+        
+        <TextView
+            android:id="@+id/tv_alert"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="提醒"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+
+    <!-- 滑动悬停布局 通过addview和removeview控制 -->
+
+    <LinearLayout
+        android:id="@+id/ll_topfloat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0"
+        android:background="#000" />
+
+</com.example.shareholders.common.KeyboardListenRelativeLayout>

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.shareholders.activity.personal.IntroduceMyselfActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/introduce_myselft_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/introduce_myself_edit_height"
+        android:layout_marginTop="@dimen/shadow_height"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="@string/introduce_myselft_hint"
+        android:maxLength="20"
+        android:padding="@dimen/introduce_myself_edit_padding"
+        android:textColor="#333333"
+        android:textSize="14sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/change_nick_name_padding"
+        android:layout_marginRight="@dimen/change_nick_name_padding"
+        android:layout_marginTop="@dimen/change_nick_confirm_margin_top"
+        android:background="@drawable/btn_login_enable"
+        android:gravity="center"
+        android:text="@string/change_nick_name_confirm"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

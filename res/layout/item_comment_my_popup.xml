@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_photo_style"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_transmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_popup_btn_height"
+            android:gravity="center"
+            android:text="@string/transmit"
+            android:textColor="#4678db"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:layout_marginLeft="@dimen/photo_popup_line_margin"
+            android:layout_marginRight="@dimen/photo_popup_line_margin"
+            android:background="#b2b2b2" />
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_popup_btn_height"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="#4678db"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:layout_marginLeft="@dimen/photo_popup_line_margin"
+            android:layout_marginRight="@dimen/photo_popup_line_margin"
+            android:background="#b2b2b2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_popup_btn_height"
+        android:layout_below="@+id/ll_item"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/popup_photo_style"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#4678db"
+        android:textSize="13sp" />
+
+</RelativeLayout>

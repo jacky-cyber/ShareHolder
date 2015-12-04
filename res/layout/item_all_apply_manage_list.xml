@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/all_apply_line"
+        android:layout_width="fill_parent"
+        android:layout_height="57.5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/iv_all_apply"
+            android:layout_width="@dimen/all_apply_img"
+            android:layout_height="@dimen/all_apply_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/all_apply_marleft"
+            android:scaleType="center"
+            android:src="@drawable/ico_wodediaoyan" />
+
+        <LinearLayout
+            android:id="@+id/ll_all_apply_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_all_apply"
+            android:layout_marginLeft="@dimen/all_apply_marleft"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_all_apply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/message_center_my_survey"
+                android:textColor="@color/text_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_all_apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/all_apply_detail_top"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="2015.11.11-2015.11.12 广州"
+                android:textColor="@color/text_999999"
+                android:textSize="11sp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/ll_all_apply_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/all_apply_marright"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_countEnroll"
+                android:layout_width="@dimen/message_center_time_height"
+                android:layout_height="@dimen/message_center_time_width"
+                android:layout_gravity="center|right"
+                android:background="@drawable/message_center_time_background"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+            
+            <TextView
+                android:id="@+id/tv_countSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="#ec8e25"
+                android:layout_marginTop="@dimen/all_apply_detail_top"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/ll_all_apply_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ll_all_apply_3"
+            android:layout_marginRight="@dimen/all_apply_marright"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right" 
+                android:gravity="center"
+                android:text="待审核"
+                android:textColor="@color/text_666666"
+                android:textSize="10sp" />     
+            <TextView
+                android:id="@+id/message_center_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已报名"
+                android:textColor="@color/text_666666"
+                android:layout_marginTop="@dimen/all_apply_detail_top"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+
+</LinearLayout>

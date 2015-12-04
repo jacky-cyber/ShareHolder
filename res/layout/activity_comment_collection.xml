@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.example.shareholders.activity.personal.MyFriendMomentActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/comment_collection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginLeft="@dimen/total_padding_super_small"
+        android:layout_marginRight="@dimen/total_padding_super_small"
+        android:layout_marginTop="@dimen/total_padding_super_smallx"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_my_friend_moment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#f2f2f2"
+            android:dividerHeight="@dimen/total_padding_super_smallx" >
+        </ListView>
+    </com.example.shareholders.common.PullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="#000000" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wupinglun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wupinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="暂无收藏的评论"
+            android:textColor="#787878"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

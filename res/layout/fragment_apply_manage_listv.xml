@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/listview_pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/survey_list_list_margintop"
+            android:background="@color/white"
+            android:scrollbars="@null" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.example.shareholders.common.MyListView
+                    android:id="@+id/lv_apply_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="#eaeaea"
+                    android:dividerHeight="@dimen/line_width_small" >
+                </com.example.shareholders.common.MyListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width_small"
+                    android:background="#eaeaea" />
+            </RelativeLayout>
+        </ScrollView>
+    </com.example.shareholders.common.PullToRefreshView>
+
+</LinearLayout>

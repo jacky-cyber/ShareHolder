@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_friend_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_friend_height" >
+
+        <TextView
+            android:id="@+id/tv_enterprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_stock_enterprise_margin_left"
+            android:text="浦发银行"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_stock_symbol_margin_left"
+            android:layout_toRightOf="@+id/tv_enterprise"
+            android:text="600000"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_stock_range_margin_right"
+            android:background="@drawable/bg_text_confirm_percen_style"
+            android:gravity="center"
+            android:text="0.33%"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/item_stock_current_price_margin_right"
+            android:layout_centerVertical="true"
+			android:layout_toLeftOf="@+id/tv_range"
+            android:text="15.12"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/item_friend_line_padding"
+            android:paddingRight="@dimen/item_friend_line_padding"
+            android:src="#eaeaea" />
+    </RelativeLayout>
+
+</RelativeLayout>

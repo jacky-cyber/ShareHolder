@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/optional_fund_item_height"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    
+        <!-- 管理界面的删除图标，一开始是隐藏的 -->
+        <ImageView 
+            android:id="@+id/iv_of_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/optional_fund_item_margin"
+            android:layout_marginRight="@dimen/optional_fund_item_delete_margin_right"
+            android:src="@drawable/ico_delete"
+            android:padding="5dp" 
+            android:visibility="gone"
+            />
+        <!-- 管理界面的基金名称，一开始是隐藏的 -->
+        <TextView
+		        android:id="@+id/item_fund_name_manage"
+		        android:layout_width="@dimen/foud_name_width"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/optional_fund_item_manage_margin"
+		        android:singleLine="true"
+		        android:textColor="#333333"
+		        android:textSize="13sp" 
+		        android:visibility="gone"/>
+		            
+        <!-- 管理界面的基金代码，一开始是隐藏的 -->
+	    <TextView
+	        android:id="@+id/item_fund_num__manage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/optional_fund_item_manage_margin"
+	        android:gravity="center"
+	        android:textColor="@color/foud_code_color"
+	        android:textSize="13sp" 
+	        android:visibility="gone" />
+        
+        <RelativeLayout 
+            android:id="@+id/item_fund_name_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        
+		    <TextView
+		        android:id="@+id/item_fund_name"
+		        android:layout_width="@dimen/foud_name_width"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:singleLine="true"
+		        android:textColor="#333333"
+		        android:textSize="13sp" />
+		            
+		    <TextView
+		        android:id="@+id/item_fund_num"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/item_fund_name"
+		        android:layout_alignLeft="@+id/item_fund_name"
+		        android:gravity="center"
+		        android:textColor="@color/foud_code_color"
+		        android:textSize="13sp" />
+		    
+		    <TextView
+		        android:id="@+id/item_fund_type"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/item_fund_name"
+		        android:layout_toRightOf="@+id/item_fund_num"
+		        android:layout_marginLeft="@dimen/optional_fund_item_num_margin_type"
+		        android:gravity="center"
+		        android:textColor="#949493"
+		        android:textSize="13sp" />
+	    
+	    </RelativeLayout>
+	    
+	    <TextView
+	        android:id="@+id/item_fund_newest_net_worth"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textColor="#333333"
+	        android:textSize="12sp" />
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/foud_rate_height"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        >
+		    <TextView
+		        android:id="@+id/item_fund_daily_rate"
+		        android:layout_width="@dimen/foud_rate_width"
+		        android:layout_height="@dimen/foud_rate_height"
+		        android:gravity="center"
+		        android:textColor="@color/foud_rate_text_color"
+		        android:background="@color/foud_rate_background_color"
+		        android:textSize="12sp" />
+		</LinearLayout>
+		
+	    <!-- 管理界面的拖拽图标，一开始是隐藏的 -->
+	    <ImageView 
+            android:id="@+id/iv_of_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/optional_fund_item_margin"
+            android:src="@drawable/ico_youjiantou"
+            />
+		
+	    <!-- 管理界面的拖拽图标，一开始是隐藏的 -->
+	    <ImageView 
+            android:id="@+id/iv_of_item_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/optional_fund_item_margin"
+            android:src="@drawable/ico_sort"
+            android:visibility="gone" 
+            />
+
+</LinearLayout>

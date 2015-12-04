@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/iv_newthird_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="奇才股份"
+            android:textColor="@color/text_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iv_newthird_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="600000"
+            android:textColor="@color/text_666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_newthird_new"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="15.2"
+        android:textColor="@color/share_f73131"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/iv_newthird_zhangdie"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0.02"
+        android:textColor="@color/share_f73131"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_newthird_zhangfu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0.33%"
+        android:textColor="@color/share_f73131"
+        android:textSize="18sp" />
+
+</LinearLayout>

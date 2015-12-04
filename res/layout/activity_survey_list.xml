@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部栏 -->
+
+    <com.example.shareholders.common.ExpandableLayout
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/expand_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="#2146a9" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_list"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_return"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/title_note_left" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ico_fanhui" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/title_note_left"
+                android:paddingRight="@dimen/title_note_left" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_wodehuodong" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.example.shareholders.common.ExpandableLayout>
+
+    <!-- 头部栏结束 -->
+
+
+    <!-- 搜索头部 开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_content_height_selectactivity"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_survey_list_search" >
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ico_sousuolist" />
+
+                <TextView
+                    android:id="@+id/et_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:maxLines="1"
+                    android:text="@string/enter_search_hint_survey_list"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:layout_alignParentBottom="true"
+            android:background="#999999" />
+    </RelativeLayout>
+    <!-- 搜索头部 结束 -->
+
+
+    <!-- 按钮切换 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_list_choose_height"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <!-- 排序 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_list_sort"
+                android:textColor="#848585"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_sort"
+                android:src="@drawable/ico_zhuangtai2" />
+        </RelativeLayout>
+
+        <!-- 状态 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_list_state"
+                android:textColor="#848585"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_state"
+                android:src="@drawable/ico_zhuangtai2" />
+        </RelativeLayout>
+
+        <!-- 筛选 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_list_filter"
+                android:textColor="#848585"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_filter"
+                android:src="@drawable/ico_zhuangtai2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:background="#999999" />
+
+    <!-- 按钮切换  结束 -->
+
+    <com.example.shareholders.common.MyViewPager
+        android:id="@+id/vp_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.shareholders.common.MyViewPager>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_about_logout"
+    android:orientation="vertical" 
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/iv_tiaokuan_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/tiaokuan_return" />
+
+    <TextView
+        android:id="@+id/tv_tiaokuang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_tiaokuan_return"
+        android:layout_centerHorizontal="true"
+        android:text="@string/server_term"
+        android:textColor="#0071bb"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/sv_tiaokuang_content"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/iv_tiaokuan_return"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:scrollbarThumbVertical="@drawable/btn_huatiao" >
+
+        <TextView
+            android:id="@+id/tv_tiaokuang_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="tiaokuangneirong" 
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+    </ScrollView>
+
+</RelativeLayout>

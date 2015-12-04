@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/ll_pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:text="@string/pay_success"
+        android:textColor="#f7931e"
+        android:textSize="25sp" />
+    
+
+	<View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"
+        />
+	
+	<TextView
+        android:id="@+id/tv_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pc_submit_height"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="@dimen/pc_submit_margin_left"
+        android:layout_marginRight="@dimen/pc_submit_margin_left"
+        android:gravity="center"
+        android:text="@string/view_order"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/btn_survey_list_style" />
+	
+	<TextView
+        android:id="@+id/tv_continue_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pc_submit_height"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="@dimen/pc_submit_margin_left"
+        android:layout_marginRight="@dimen/pc_submit_margin_left"
+        android:gravity="center"
+        android:text="@string/continue_shopping"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/btn_survey_list_style" />
+        
+    
+    </LinearLayout>
+
+</merge>

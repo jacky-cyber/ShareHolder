@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp" >
+
+        <com.example.shareholders.common.CircleImageView
+            android:id="@+id/person_manage_sign"
+            android:layout_width="@dimen/item_friend_face_size"
+            android:layout_height="@dimen/item_friend_face_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_friend_face_margin_left"
+            android:src="@drawable/demo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/person_manage_sign" >
+
+            <RelativeLayout
+                android:id="@+id/manage_name_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_manage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="adu啊杜"
+                    android:textColor="#3d52be"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/numb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_manage_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8.5dp"
+                    android:layout_toRightOf="@+id/tv_manage_name"
+                    android:text="21"
+                    android:textColor="#ec8e25"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_manage_industry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manage_name_age"
+                android:layout_marginTop="8dp"
+                android:text="互联网"
+                android:textColor="#cbcbcb"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_manage_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manage_name_age"
+                android:layout_alignBottom="@+id/tv_manage_industry"
+                android:layout_marginLeft="13.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/tv_manage_industry"
+                android:src="@drawable/ico_dingwei2" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manage_name_age"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_manage_location"
+                android:text="广州"
+                android:textColor="#cbcbcb"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_manage_request"
+            android:gravity="center"
+            android:text="通过"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

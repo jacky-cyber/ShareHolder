@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/announce_item_padding"
+    android:paddingRight="@dimen/announce_item_padding" >
+
+    <ImageView
+        android:id="@+id/iv_laba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/announce_item_text_top"
+        android:src="@drawable/ico_laba" />
+
+    <TextView
+        android:id="@+id/tv_announce_text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/announce_item_text_left"
+        android:layout_marginTop="@dimen/announce_item_text_top"
+        android:layout_toRightOf="@+id/iv_laba"
+        android:text="as"
+        android:textColor="#262626"
+        android:singleLine="false"
+        android:maxLength="50"
+        android:textSize="@dimen/announce_item_text_size" />
+
+    <TextView
+        android:id="@+id/tv_announce_date_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_announce_text_item"
+        android:layout_marginTop="@dimen/announce_item_text_date_top"
+        android:text="as"
+        android:textColor="#949493"
+        android:textSize="@dimen/announce_item_text_date_size" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/im_notlogin"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/ll_newthird_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/total_gray" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/third_name"
+                android:textColor="@color/text_666666"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/third_new"
+                android:textColor="@color/text_666666"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/third_zhangdie"
+                android:textColor="@color/text_666666"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/third_zhangfu"
+                android:textColor="@color/text_666666"
+                android:textSize="13sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_share_list_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/ll_newthird_head"
+        android:background="#999999" />
+
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/refresh_newthird"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fragment_share_list_img"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/newthird_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/fragment_share_list_img"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#eaeaea"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </com.example.shareholders.common.PullToRefreshView>
+
+</RelativeLayout>

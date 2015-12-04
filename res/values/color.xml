@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="login_color">#cbb1af</color>
+    
+    <color name="top_bg_green">#00B5EE</color>
+    
+    <!-- 灰色 -->
+    <color name="gray">#e0e0e0</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#EFEFEF</color>
+    <color name="total_gray">#efeff4</color>
+    <color name="total_line_gray">#eaeaea</color>
+    <!-- 蓝色 -->
+    <color name="blue1">#5d8adb</color>
+    <color name="blue2">#98c6e5</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 常用字体颜色 -->
+    <color name="text_319dd0">#319dd0</color>
+    <color name="text_5d8adb">#5d8adb</color>
+    <color name="text_999999">#999999</color>
+    <color name="text_333333">#333333</color>
+    <color name="text_666666">#666666</color>
+    <!-- 调研头部颜色 -->
+    <color name="title">#2146a9</color>
+    <color name="title_select">#338ae2</color>
+    <!-- 曲线区域颜色 -->
+    <color name="xian">#97abe2</color>
+    <!-- 列表日期字体颜色 -->
+    <color name="ist_date">#939393</color>
+    <!-- 列表背景颜色 -->
+    <color name="list_background">#ffffff</color>
+    <!-- 列表关注人数字体颜色 -->
+    <color name="list_watch_person_num">#848484</color>
+    <!-- 调研聚焦''更多"字体颜色 -->
+    <color name="survey_focus_more">#9b9b9b</color>
+    <!-- 造纸厂企业调研字体颜色 -->
+    <color name="paper_mill">#dd8822</color>
+    <!-- 底部按下去颜色 -->
+    <color name="tab_press">#106ad6</color>
+    <!-- 底部正常颜色 -->
+    <color name="tab_nor">#2146a9</color>
+    <!-- 关注人数颜色 -->
+    <color name="current_list_date">#939393</color>
+    <!-- 近期调研列表日期颜色 -->
+    <color name="current_list_person">#848484</color>
+    <!-- 近期调研列表关注人数数字颜色 -->
+    <color name="current_list_person_num_text">#e5a157</color>
+    <!-- 近期调研颜色 -->
+    <color name="current_survey_text">#262626</color>
+    <!-- activity_search_survey -->
+    <color name="activity_search_survey_text_color">#dd8822</color>
+    <color name="activity_search_survey_background">#efefef</color>
+    <color name="selected_cities_color">#f7931e</color>
+
+    <!-- SelectActivity -->
+    <color name="background_color_selectActivity">#efefef</color>
+    <color name="hint_color">#7f92c3</color>
+    <color name="gridview_item_color">#828282</color>
+    <!-- 调研详情，粗分隔线颜色 -->
+
+    <color name="space_color">#efefef</color>
+    <color name="line">#dbdbdb</color>
+    <color name="round_image_border_color">#ed9027</color>
+
+    <!-- SurveyListActivity -->
+    <color name="radio_btn_normal">#848585</color>
+    <color name="radio_btn_selected">#ff0000</color>
+    <color name="tab_tv_color_normal">#848585</color>
+    <color name="tab_tv_color_selected">#f79c41</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!-- SurveyListActivity -->
+
+    <color name="text_line_color">#ff3f3f</color>
+
+    <!-- Inform -->
+    <color name="inform_first_text">#686868</color>
+    <!-- InformEdit -->
+    <color name="inform_edit_text">#b7b7b7</color>
+
+    <!-- CommentList -->
+    <color name="title_text_choose_color">#2ab6f4</color>
+    <color name="title_text_chosen_color">#99daf8</color>
+    <color name="title_text_normal_background">#2ab6f4</color>
+
+    <!-- FoudListActivity -->
+    <color name="foud_text_base_color">#939393</color>
+    <color name="foud_text_select_color">#dd8822</color>
+    <color name="foud_title_background_color">#efeff4</color>
+    <color name="foud_title_item_color">#848484</color>
+    <color name="foud_code_color">#dd8822</color>
+    <color name="foud_accrual_color">#c1272d</color>
+    <color name="foud_rate_text_color">#ff8888</color>
+    <color name="foud_rate_background_color">#ff0000</color>
+    <!-- FoudSearchActivity -->
+    <color name="foud_search_text_color">#848484</color>
+    <color name="foud_search_background_color">#f2f2f2</color>
+    <color name="foud_search_code_color">#939393</color>
+
+    <!-- FundDetailsActivity -->
+    <color name="fund_Details_name_color">#333333</color>
+    <color name="fund_Details_code_color">#d58527</color>
+    <color name="fund_Details_type_color">#949393</color>
+    <color name="fund_Details_selected_color">#d58527</color>
+    <color name="fund_Details_unselected_color">#949393</color>
+    <color name="fund_Details_concern_bg_color">#dfa359</color>
+    <color name="fund_Details_rise_color">#e7161a</color>
+    <color name="fund_Details_dividingline_color">#eaeaea</color>
+    <color name="fund_Details_background_color">#efeff4</color>
+    <color name="state_baoming">#f7931e</color>
+    <color name="state_yijieshu">#c3ce55</color>
+    <color name="time_color">#dd8822</color>
+
+    <!-- FundHomeActivity -->
+    <color name="fund_xian">#eaeaea</color>
+    <color name="activity_starting">#6ca0ea</color>
+    <color name="detail_line">#999999</color>
+    <!-- K线图背景颜色 -->
+    <color name="k_background">#cfecf9</color>
+    <color name="remain_to_review">#e2e2e2</color>
+    <color name="signed">#ffffff</color>
+    <color name="sign_fail">#999999</color>
+    <color name="area_code_selected">#f7f7f7</color>
+    <color name="get_code_able">#2ca7dd</color>
+    <color name="get_code_unable">#7cc2e8</color>
+    <color name="unselected_text_color">#666666</color>
+    <color name="selected_text_color">#dd8822</color>
+    <color name="sharefir_s_list">#eaeaea</color>
+
+    <!-- 行情搜索界面按钮点击后颜色 -->
+    <color name="share_83a9e5">#83a9e5</color>
+    <color name="unsignable">#a6ecff</color>
+    <color name="editable_color">#0099e9</color>
+    <color name="uneditable_color">#7dd7ff</color>
+	<color name="ll_background_sign">#2146a9</color>
+	<color name="ll_background_unsign">#206fe2</color>
+	<color name="ll_background_thin">#4079cc</color>
+    <color name="share_8a8aa0">#8a8aa0</color>
+    <color name="share_53a00a">#53a00a</color>
+    <color name="share_f73131">#f73131</color>
+    <!-- all apply manage activity -->
+    <color name="apply_background">#f2f2f2</color>
+
+    <!-- 个股详情指示圆点颜色 -->
+    <color name="stock_details_indicator_color">#7d94db</color>
+    <color name="stock_details_select_color">#5f93c7</color>
+
+    
+    <!-- 商城首页top字体颜色 -->
+    <color name="shop_top_bar_select">#ffffff</color>
+    <color name="shop_top_bar_unselect">#d8d8d8</color>
+
+
+</resources>

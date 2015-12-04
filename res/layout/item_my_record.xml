@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/record_manage_activity_item_padding" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_record_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录音1"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_record_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_record_name"
+                android:layout_marginTop="@dimen/record_manage_activity_item_date_margin_top"
+                android:text="2015.12.19"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_record_name"
+                android:layout_marginLeft="@dimen/record_manage_activity_item_time_margin_left"
+                android:layout_marginTop="@dimen/record_manage_activity_item_date_margin_top"
+                android:layout_toRightOf="@+id/tv_record_date"
+                android:text="00:29"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_trash" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:src="#eaeaea" />
+
+    <RelativeLayout
+        android:id="@+id/rl_seek"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seek_bar_relative_height"
+        android:background="#eaeaea"
+        android:paddingLeft="@dimen/seek_bar_relative_padding"
+        android:paddingRight="@dimen/seek_bar_relative_padding"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/btn_play1" />
+
+        <ProgressBar
+            android:id="@+id/sb_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/seek_bar_margin_left"
+            android:layout_toRightOf="@+id/iv_state" />
+    </RelativeLayout>
+
+</LinearLayout>

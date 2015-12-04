@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl_fl"
+    android:layout_width="wrap_content"
+    android:layout_height="46.5dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+    
+        <LinearLayout 
+            android:id="@+id/ll_item_foud_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:orientation="vertical"
+            >
+	    
+	    <TextView
+	        android:id="@+id/item_foud_name"
+	        android:layout_width="@dimen/foud_name_width"
+	        android:layout_height="wrap_content"
+	        android:maxEms="4"
+	        android:singleLine="true"
+	        android:text="@string/foud_name"
+	        android:textColor="#333333"
+	        android:textSize="13sp" />
+        
+	    <TextView
+	        android:id="@+id/item_foud_num"
+	        android:layout_width="70dp"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/foud_code_color"
+	        android:textSize="13sp" 
+	        />
+	    
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/foud_item_height"
+            android:layout_toRightOf="@+id/ll_item_foud_name"
+            android:background="#eaeaea"
+            />
+
+	    <com.example.shareholders.common.InterceptScrollContainer
+	        android:id="@+id/scroollContainter"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/ll_item_foud_name"
+	        android:focusable="false" >
+	        
+	        <com.example.shareholders.common.MyHScrollView
+	            android:id="@+id/horizontalScrollView1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:focusable="false"
+	            android:scrollbars="none" >
+	            
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+	                android:orientation="horizontal" >
+	    
+				    
+				    <TextView
+				        android:id="@+id/item_foud_accrual_time"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_accrual_time"
+				        android:textColor="#939393"
+				        android:textSize="13sp"
+				        android:visibility="gone" />
+	                
+	                
+				    <TextView
+				        android:id="@+id/item_foud_accrual"
+				        android:layout_width="70dp"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="@dimen/foud_num_margin_accrual"
+				        android:gravity="center"
+				        android:text="@string/foud_accrual"
+				        android:textColor="@color/foud_rate_text_color"
+				        android:textSize="13sp"
+				        android:visibility="gone" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_rate"
+				        android:layout_width="@dimen/foud_annual_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_annual_rate"
+				        android:textColor="@color/foud_rate_text_color"
+				        android:textSize="13sp"
+				        android:visibility="gone"  />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_release_date"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_release_date"
+				        android:textColor="#939393"
+				        android:textSize="13sp" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_newest_nav"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_newest_nav"
+				        android:textColor="@color/foud_rate_background_color"
+				        android:textSize="13sp" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_day_rise"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_day_rise"
+				        android:textColor="@color/foud_rate_background_color"
+				        android:textSize="13sp" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_week_rise"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_week_rise"
+				        android:textColor="@color/foud_rate_background_color"
+				        android:textSize="13sp" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_month_rise"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_month_rise"
+				        android:textColor="@color/foud_rate_background_color"
+				        android:textSize="13sp" />
+				    
+				    <TextView
+				        android:id="@+id/item_foud_year_rise"
+				        android:layout_width="@dimen/foud_rate_width"
+				        android:layout_height="@dimen/foud_rate_height"
+				        android:layout_marginLeft="@dimen/foud_accrual_margin_rate"
+				        android:gravity="center"
+				        android:text="@string/foud_year_rise"
+				        android:textColor="@color/foud_rate_background_color"
+				        android:textSize="13sp" />
+				    
+	    		</LinearLayout>
+	    	</com.example.shareholders.common.MyHScrollView>
+    </com.example.shareholders.common.InterceptScrollContainer>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eaeaea" />
+
+</RelativeLayout>

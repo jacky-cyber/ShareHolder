@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        >
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_marginTop="43dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="--"
+            android:textSize="14sp"
+            android:textColor="#c1ccd3"
+            />  
+            
+            <RadioButton 
+                android:id="@+id/rbn_complex_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_below="@+id/tv_title"
+            	android:button="@null"
+	            android:drawableRight="@drawable/selector_stock_details_right_drawable"
+	            android:padding="3dp"
+	            android:text="前复权"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+	            android:background="@drawable/bg_goods_details_viewpager"
+            />
+            
+            <LinearLayout 
+                android:id="@+id/ll_avg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_below="@+id/tv_title"
+                >
+            <TextView 
+                android:id="@+id/tv_avgline"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="3dp"
+	            android:text="设均线"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+	            android:background="@drawable/bg_goods_details_viewpager"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_tag1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="MA5:"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_param1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_tag2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="MA10:"
+	            android:textSize="10sp"
+	            android:textColor="#00ff00"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_param2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#00ff00"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_tag3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="MA20:"
+	            android:textSize="10sp"
+	            android:textColor="#406dd3"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_ma_param3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/tv_avgline"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#406dd3"
+            />
+            </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_zoom_in_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:src="@drawable/zoom_in_x" />
+        
+        <ImageView
+            android:id="@+id/iv_zoom_out_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/iv_zoom_in_x"
+            android:padding="10dp"
+            android:src="@drawable/zoom_out_x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" 
+        >
+        
+        <LinearLayout 
+                android:id="@+id/ll_index"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+                >
+            <TextView 
+                android:id="@+id/tv_index"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="3dp"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+	            android:background="@drawable/bg_goods_details_viewpager"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_tag1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="--:"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_param1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#ffffff"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_tag2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="--:"
+	            android:textSize="10sp"
+	            android:textColor="#00ff00"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_param2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#00ff00"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_tag3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="--:"
+	            android:textSize="10sp"
+	            android:textColor="#406dd3"
+            />
+            
+            <TextView 
+                android:id="@+id/tv_index_param3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="--"
+	            android:textSize="10sp"
+	            android:textColor="#406dd3"
+            />
+            </LinearLayout>
+            
+		    <com.github.mikephil.charting.charts.CombinedChart
+		        android:id="@+id/cc2"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp" 
+		        android:layout_below="@+id/ll_index"
+		        />
+	</RelativeLayout>
+</LinearLayout>

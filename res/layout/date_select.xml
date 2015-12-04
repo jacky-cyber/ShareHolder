@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_total_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_note_left"
+                android:src="@drawable/ico_fanhui" />
+
+            <TextView
+                android:id="@+id/tv_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/date_select"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tvs_survey" />
+
+            <ImageView
+                android:id="@+id/title_research"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:src="@drawable/btn_search_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+          android:layout_height="@dimen/date_select_height"
+        android:layout_marginTop="@dimen/date_begin_top"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/banner_padding_right"
+                android:layout_centerVertical="true"
+                android:text="@string/date_begin"
+                android:textColor="#262626"
+                android:textSize="@dimen/current_survey" />
+        <TextView
+                android:id="@+id/date_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/banner_padding_right"
+                android:text="2015-12-12"
+                 android:layout_centerVertical="true"
+                android:textColor="#dd8822"
+                android:textSize="@dimen/current_survey_listitem_name_size" />
+    </RelativeLayout>
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/date_select_height"
+        android:layout_marginTop="@dimen/date_begin_top"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/banner_padding_right"
+                android:layout_centerVertical="true"
+                android:text="@string/date_finish"
+                android:textColor="#262626"
+                android:textSize="@dimen/current_survey" />
+        <TextView
+                android:id="@+id/date_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/banner_padding_right"
+                android:text="2015-12-12"
+                 android:layout_centerVertical="true"
+                android:textColor="#dd8822"
+                android:textSize="@dimen/current_survey_listitem_name_size" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/date_begin_top"
+        android:background="@color/white"
+        android:orientation="vertical" >
+       
+    </RelativeLayout>
+</LinearLayout>

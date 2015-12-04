@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.shareholders.activity.personal.ChangeNickNameActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/change_nick_name_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/my_information_ll_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/change_nick_name_padding"
+        android:paddingRight="@dimen/change_nick_name_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/change_nick_name_top"
+            android:text="@string/nick_name"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <com.example.shareholders.common.ClearEditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginTop="@dimen/change_nick_et_name_margin_top"
+            android:background="@drawable/btn_login_account"
+            android:hint="@string/change_nick_name_limit"
+            android:paddingLeft="@dimen/change_nick_et_name_padding_left"
+            android:paddingRight="@dimen/change_nick_et_name_padding_right"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:cursorVisible="false"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </com.example.shareholders.common.ClearEditText>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/change_nick_confirm_margin_top"
+            android:background="@drawable/btn_login_enable"
+            android:gravity="center"
+            android:text="@string/change_nick_name_confirm"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

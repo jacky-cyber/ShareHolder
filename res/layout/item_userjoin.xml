@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/userjoin_height_top"
+        android:layout_marginTop="@dimen/userjoin_height_top" >
+
+        <com.example.shareholders.common.CircleImageView
+            android:id="@+id/iv_uj"
+            android:layout_width="@dimen/userjoin_img_height"
+            android:layout_height="@dimen/userjoin_img_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/userjoin_padding_left" />
+
+        <LinearLayout
+            android:id="@+id/tv_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/userjoin_num_left"
+            android:layout_toRightOf="@+id/iv_uj"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_uj_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#3a4a53"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_uj_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/userjoin_num_left"
+                android:text="TextView"
+                android:textColor="#ec8e25"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_uj_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ll"
+            android:layout_marginLeft="@dimen/userjoin_num_left"
+            android:layout_marginTop="@dimen/userjoin_text_top"
+            android:layout_toRightOf="@+id/iv_uj"
+            android:text="2015.12.12"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_xinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/userjoin_img_right"
+            android:src="@drawable/signed_list" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <com.example.shareholders.common.CircleImageView
+            android:id="@+id/message_center_headView"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="@dimen/message_center_head_padding_left"
+            android:layout_marginTop="@dimen/message_center_head_padding_right"
+            android:src="@drawable/ico_gujiatixing" />
+
+        <LinearLayout
+            android:id="@+id/message_center_friend_shape"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/message_center_friend_padding_bottom"
+            android:layout_marginLeft="@dimen/message_center_friend_padding_left"
+            android:layout_marginRight="@dimen/message_center_friend_padding_right"
+            android:layout_marginTop="@dimen/message_center_friend_padding_top"
+            android:layout_toLeftOf="@+id/message_center_friend_line"
+            android:layout_toRightOf="@+id/message_center_headView"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:text="何广浩"
+                android:textColor="#2146a9"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/friend_say"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_friend_message_top"
+                android:maxLines="2"
+                android:text="好像说得挺好的"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/friend_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_friend_message_time_top"
+                android:text="昨天"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_center_friend_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/message_center_motion_right"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friend_motion"
+                android:layout_width="@dimen/message_center_motion_width"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:maxLines="5"
+                android:text="其实我什么也不懂的"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/message_center_friend_shape"
+            android:background="#eaeaea" />
+    </RelativeLayout>
+
+</LinearLayout>

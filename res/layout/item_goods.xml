@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/goods_width"
+        android:paddingRight="@dimen/goods_padding"
+        android:layout_height="@dimen/popular_goods_height" >
+
+        <ImageView
+            android:id="@+id/iv_good"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/empty_photo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.6"
+            android:background="#000000" >
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="万岁寿司三文鱼大降价18元一份"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+            <TextView
+                android:id="@+id/tv_price"
+             	android:layout_below="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="￥16"
+                android:textColor="#f79797"
+                android:textSize="9sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

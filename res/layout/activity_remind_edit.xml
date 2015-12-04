@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efeff4" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_remind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title" >
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@drawable/ico_fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提醒设置"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_edit_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_company_message"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_edit_remind"
+            android:layout_marginTop="13.5dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_edit_name"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit_message1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_zhangfu_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:textColor="#fc0606"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zhangfu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/tv_zhangfu_num"
+                        android:text="涨幅"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zhangdie_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:layout_toLeftOf="@+id/tv_zhangfu"
+                        android:textColor="#fc0606"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zhangdie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/tv_zhangdie_num"
+                        android:text="涨跌"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newestPrice_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:layout_toLeftOf="@+id/tv_zhangdie"
+                        android:textColor="#fc0606"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newestPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/tv_newestPrice_num"
+                        android:text="最新价"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_edit_message1"
+                    android:layout_marginTop="9dp" >
+
+                    <TextView
+                        android:id="@+id/tv_huanshoulv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.5dp"
+                        android:layout_toLeftOf="@+id/tv_huanshoulv_num"
+                        android:text="换手率"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_huanshoulv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/tv_turnoverAmount"
+                        android:textColor="#fc0606"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_turnoverAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.5dp"
+                        android:layout_toLeftOf="@+id/tv_turnoverAmount_num"
+                        android:text="成交金额"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_turnoverAmount_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:textColor="#fc0606"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_company_message"
+            android:layout_marginTop="13.5dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_zhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="股价涨到"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/tv_yuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/iv_remind_btn_close1"
+                    android:text="元"
+                    android:textColor="#727272"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_edit_line1"
+                    android:layout_width="100dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignBottom="@+id/tv_yuan1"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tv_yuan1"
+                    android:background="#777777" />
+
+                <EditText
+                    android:id="@+id/et_high_price"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_edit_line1"
+                    android:layout_alignLeft="@+id/tv_edit_line1"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_die"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_remind_zhang"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="股价跌到"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/tv_yuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/iv_remind_btn_close2"
+                    android:text="元"
+                    android:textColor="#727272"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_edit_line2"
+                    android:layout_width="100dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignBottom="@+id/tv_yuan2"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tv_yuan2"
+                    android:background="#777777" />
+
+                <EditText
+                    android:id="@+id/et_low_price"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_edit_line2"
+                    android:layout_alignLeft="@+id/tv_edit_line2"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_dailyRaise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_remind_die"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="日涨幅超过"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/tv_baifenbi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/iv_remind_btn_close3"
+                    android:text="%"
+                    android:textColor="#727272"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_edit_line3"
+                    android:layout_width="100dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignBottom="@+id/tv_baifenbi"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tv_baifenbi"
+                    android:background="#777777" />
+
+                <EditText
+                    android:id="@+id/et_changeRatio"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_edit_line3"
+                    android:layout_alignLeft="@+id/tv_edit_line3"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_blank3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_remind_dailyRaise"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#999999" />
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_blank3"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="成交金额达到"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/tv_wanyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_remind_btn_close4"
+                    android:text="万元"
+                    android:textColor="#727272"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_edit_line4"
+                    android:layout_width="100dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignBottom="@+id/tv_wanyuan"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tv_wanyuan"
+                    android:background="#777777" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_edit_line4"
+                    android:layout_alignLeft="@+id/tv_edit_line4"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_remind_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_remind_4"
+                android:layout_marginTop="22.5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="换手率达到"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/tv_baifenbi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/iv_remind_btn_close5"
+                    android:text="%"
+                    android:textColor="#727272"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_edit_line5"
+                    android:layout_width="100dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignBottom="@+id/tv_baifenbi2"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tv_baifenbi2"
+                    android:background="#777777" />
+
+                <EditText
+                    android:id="@+id/et_turnoverate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_edit_line5"
+                    android:layout_alignLeft="@+id/tv_edit_line5"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_blank4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_remind_5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#999999" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_remind6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_blank4"
+                android:layout_marginTop="22.5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="公告新闻研报处理"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remind_btn_close6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/btn_close" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/rl_remind"
+            android:layout_marginTop="13.5dp"
+            android:background="#fff" />
+    </RelativeLayout>
+
+</ScrollView>

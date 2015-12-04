@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 本地联系人邀请背景 -->
+    <solid android:color="#5d8adb"/>
+    <stroke android:width="0dp" android:color="#ffffff"/>
+    <corners android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"/>
+
+</shape>

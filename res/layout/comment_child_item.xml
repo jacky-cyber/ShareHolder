@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:background="@drawable/bg_comment_style"
+    >
+
+    <com.example.shareholders.common.CircleImageView
+        android:id="@+id/ci_face"
+        android:layout_width="30.5dp"
+        android:layout_height="30.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/total_padding_small"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/empty_photo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.5dp"
+        android:layout_toRightOf="@+id/ci_face"
+        android:paddingLeft="@dimen/name_margin_left" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="梅梅.奥古斯丁.伊丽莎白.韩"
+            android:textColor="#ed9027"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/ci_face"
+        android:text="12分钟前"
+        android:textColor="#949493"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_detial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginTop="8dp"
+        android:paddingRight="@dimen/name_margin_left"
+        android:text="过分！！！我们转了三圈都没有找到他们的更衣室！"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <com.example.shareholders.common.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detial"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_toRightOf="@+id/ci_face"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:paddingBottom="@dimen/grid_padding"
+        android:paddingTop="@dimen/grid_padding"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gridView"
+        android:layout_marginTop="@dimen/praise_comment_padding"
+        android:paddingRight="10.5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_comment_praise_style" >
+
+            <ImageView
+                android:id="@+id/iv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_zan_new" />
+
+            <TextView
+                android:id="@+id/tv_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/num_margin"
+                android:layout_toRightOf="@+id/iv_praise"
+                android:text="20"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/comment_margin"
+            android:layout_toRightOf="@+id/rl_praise"
+            android:src="@drawable/btn_comment_gray" />
+    </RelativeLayout>
+
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#efeff4"
+        android:layout_below="@id/rl_view"
+        android:layout_marginTop="10dp"
+        />
+    
+</RelativeLayout>

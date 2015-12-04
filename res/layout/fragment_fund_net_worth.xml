@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+
+    <!-- 基金名称详情 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_name_height"
+        android:layout_marginTop="@dimen/fund_details_margin_top"
+        android:background="@color/white">
+        
+        <LinearLayout
+            android:id="@+id/ll_fd_fund_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/fund_details_margin_left"
+        	android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/tv_fd_fund_name"
+                android:layout_width="@dimen/foud_name_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fund_Details_name_color"
+                android:textSize="14sp"
+                android:singleLine="true"/>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/tv_fd_fund_code"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/fund_Details_code_color"
+	                android:textSize="11sp"/>
+                
+                <TextView
+                    android:id="@+id/tv_fd_fund_type"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/fund_Details_type_color"
+	                android:textSize="11sp"
+                    android:layout_marginLeft="@dimen/fund_details_margin_left"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+           	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:layout_centerVertical="true"
+       		android:layout_marginRight="@dimen/fund_details_margin_left"
+       		android:layout_alignParentRight="true"
+       		android:orientation="vertical"
+       		>
+            
+            <TextView 
+                android:id="@+id/tv_fd_concern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_fund_details_concern"
+                android:text="@string/fund_details_concern"
+                android:textColor="@color/fund_Details_code_color"
+                android:textSize="8sp"
+                android:gravity="center"
+                android:singleLine="true"/>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/tv_fd_open_purchase"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:maxLength="13"
+	                android:text="@string/fund_details_open_purchase"
+	                android:textColor="@color/fund_Details_type_color"
+	                android:textSize="11sp"/>
+                
+                <TextView
+                    android:id="@+id/tv_fd_open_redemption"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/fund_details_open_redemption"
+	                android:textColor="@color/fund_Details_type_color"
+	                android:textSize="11sp"
+                    android:layout_marginLeft="@dimen/fund_details_margin_left"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+    <ImageView 
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/fund_Details_dividingline_color"/>
+    
+    <!-- 基金详细数据 -->
+    
+    <!-- 非货币基金 -->
+    <LinearLayout
+        android:id="@+id/ll_fund_details_param"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_param_height"
+        android:layout_marginTop="@dimen/fund_details_margin_top"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/linearlayout_fund_details_param" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#eaeaea" />
+
+        <include layout="@layout/linearlayout_fund_details_param1" />
+    </LinearLayout>
+
+    <!-- 货币基金 -->
+    <LinearLayout
+        android:id="@+id/ll_fund_details_money_param"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_param_height"
+        android:layout_marginTop="@dimen/fund_details_margin_top"
+        android:background="@color/white"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/linearlayout_fund_details_money_param" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#eaeaea" />
+
+        <include layout="@layout/linearlayout_fund_details_money_param1" />
+    </LinearLayout>
+    
+    <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eaeaea"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        >
+	    <TextView 
+	        android:id="@+id/tv_fd_param_details"
+	        android:layout_width="wrap_content"
+	        android:layout_height="25dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/fund_details_details"
+	        android:textColor="@color/fund_Details_code_color"
+	        android:textSize="11sp"
+	        android:gravity="center"/>
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/fund_details_margin_top"
+        android:background="@color/fund_Details_dividingline_color"/>
+    
+    <!-- 预留单位净值和累计净值曲线图 --> 
+   <include 
+       layout="@layout/linearlayout_fund_networth_tab" />
+   
+   <RelativeLayout 
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            />
+    <include 
+       layout="@layout/linearlayout_fund_networth_rbn" />
+    </RelativeLayout>
+    <!-- 日净值历史明细 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_history_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/fund_details_margin_left"
+        android:layout_marginTop="@dimen/fund_details_margin_top"
+        android:background="@color/white"
+        android:text="@string/fund_details_history"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_header_height"
+        android:paddingLeft="@dimen/fund_details_margin_left"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_details_date"
+            android:textSize="11sp"
+            android:textColor="@color/fund_Details_type_color"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fund_details_header_open_margin_left1"
+            android:text="@string/fund_details_net_asset_value"
+            android:textSize="11sp"
+            android:textColor="@color/fund_Details_type_color"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fund_details_header_open_margin_left2"
+            android:text="@string/fund_details_accumulated_net_worth"
+            android:textSize="11sp"
+            android:textColor="@color/fund_Details_type_color"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fund_details_header_open_margin_left3"
+            android:text="@string/fund_details_daily_growth_rate"
+            android:textSize="11sp"
+            android:textColor="@color/fund_Details_type_color"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_list_title_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_header_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fund_details_margin_left"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_details_date"
+            android:textColor="@color/fund_Details_type_color"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fund_details_history_margin_left1"
+            android:text="@string/fund_details_accrual"
+            android:textColor="@color/fund_Details_type_color"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fund_details_history_margin_left2"
+            android:text="@string/fund_details_annual_rate"
+            android:textColor="@color/fund_Details_type_color"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <com.example.shareholders.common.MyListView
+        android:id="@+id/lv_fd_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4" >
+    </com.example.shareholders.common.MyListView>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/fund_Details_dividingline_color"/>
+    
+</LinearLayout>
+</ScrollView>

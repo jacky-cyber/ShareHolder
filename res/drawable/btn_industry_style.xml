@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="@dimen/line_width"
+        android:color="@color/gridview_item_color" />
+
+    <solid android:color="@color/white" />
+
+    <corners android:radius="@dimen/gridview_item_radius" />
+
+    <padding
+        android:bottom="@dimen/gridview_item_padding_top"
+        android:left="@dimen/gridview_item_padding_left"
+        android:right="@dimen/gridview_item_padding_left"
+        android:top="@dimen/gridview_item_padding_top" />
+
+</shape>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_pick_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_popup_btn_height"
+        android:gravity="center"
+        android:text="@string/album"
+        android:textColor="#4678db"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:background="#b2b2b2"
+        android:layout_marginLeft="@dimen/photo_popup_line_margin"
+        android:layout_marginRight="@dimen/photo_popup_line_margin" />
+
+     <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_popup_btn_height"
+        android:gravity="center"
+        android:text="@string/film"
+        android:textColor="#4678db"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#b2b2b2"
+        android:layout_height="@dimen/line_width_small"
+        android:layout_marginLeft="@dimen/photo_popup_line_margin"
+        android:layout_marginBottom="@dimen/photo_popup_line_margin_bottom"
+        android:layout_marginRight="@dimen/photo_popup_line_margin" />
+    
+</LinearLayout>

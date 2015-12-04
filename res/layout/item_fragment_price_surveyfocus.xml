@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/banner_padding_right"
+    android:paddingRight="@dimen/banner_padding_right" >
+
+    <TextView
+        android:id="@+id/focus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/focus_survey_listitem_text_top"
+        android:text="@string/focus_text"
+        android:textSize="@dimen/bank_textsize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/focus_survey_listitem_text_top"
+        android:layout_marginTop="@dimen/focus_survey_listitem_text_top" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/focus_survey_heart_right"
+                android:src="@drawable/ico_finger_dianzan" />
+
+            <TextView
+                android:id="@+id/focus_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/focus_survey_chat_right"
+                android:text="12"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/survey_focus_more"
+                android:textSize="@dimen/current_survey_listitem_apply_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/focus_survey_heart_right"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ico_xiaoxi" />
+
+            <TextView
+                android:id="@+id/focus_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/survey_focus_more"
+                android:textSize="@dimen/current_survey_listitem_apply_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/focus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/focus_bottom_text"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_hottest_comment"
+            android:textColor="#dd8822" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

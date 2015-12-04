@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<!-- 点击添加提示 -->
+        <FrameLayout 
+	        android:id="@+id/fl_optional_fund_add_tip"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/optional_fund_add_tip_height"
+	        android:layout_marginTop="@dimen/fund_details_margin_top"
+	        android:background="@color/white"
+	        android:gravity="center"
+	        >
+	        
+	        <TextView 
+	            android:id="@+id/tv_optional_fund_add_tip"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:drawableTop="@drawable/ico_tianjia2"
+	            android:drawablePadding="@dimen/optional_fund_add_tip_drawable_padding"
+	            android:text="@string/optional_fund_add_tip"
+	            android:textColor="#949393"
+	            android:textSize="13sp"
+	            />
+	        
+	    </FrameLayout>
+	    
+        
+    	<!-- 列表 -->
+        <LinearLayout 
+            android:id="@+id/ll_optional_fund_list"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/foud_title_background_color"
+		    android:orientation="vertical"
+		    >
+	        <LinearLayout
+	            android:id="@+id/ll_optional_fund_item_title"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="0.5dp"
+	            android:background="@color/foud_title_background_color"
+	            android:orientation="horizontal">
+	            
+	            <TextView
+	                android:id="@+id/rl_fl_foud_name_title"
+	                android:layout_width="0dp"
+	                android:layout_height="@dimen/foud_item_title_height"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text="@string/optional_fund_name"
+	                android:textColor="@color/foud_title_item_color"
+	                android:textSize="11sp" />
+	            
+	            <TextView
+	                android:id="@+id/rl_fl_foud_num_title"
+	                android:layout_width="0dp"
+	                android:layout_height="@dimen/foud_item_title_height"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text="@string/optional_fund_newest_net_worth"
+	                android:textColor="@color/foud_title_item_color"
+	                android:textSize="11sp" />
+	            
+	            <TextView
+	                android:id="@+id/rl_fl_foud_accrual_title"
+	                android:layout_width="0dp"
+	                android:layout_height="@dimen/foud_item_title_height"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text="@string/optional_fund_daily_rise"
+	                android:textColor="@color/foud_title_item_color"
+	                android:textSize="11sp" />
+	            
+	            <TextView
+	                android:id="@+id/rl_fl_foud_empty_title"
+	                android:layout_width="15dp"
+	                android:layout_height="@dimen/foud_item_title_height"
+	                 />
+	            
+	        </LinearLayout>
+    
+
+		
+		        <com.example.shareholders.common.DragListView
+		            android:id="@+id/mv_foud_list"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:divider="#eaeaea"
+		            android:dividerHeight="0.5dp"
+		            android:background="#efeff4" >
+		        </com.example.shareholders.common.DragListView>
+		        
+    </LinearLayout>
+</LinearLayout>

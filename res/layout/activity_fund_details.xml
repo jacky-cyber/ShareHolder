@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_fd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/title_fs_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="5dp"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fund_details_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+        
+
+    </RelativeLayout>
+    
+	<android.support.v4.view.ViewPager
+        android:id="@+id/fd_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <View
+	        android:id="@+id/iv_fd_btn1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0.5dp"
+	        android:layout_weight="1"
+	        android:background="@color/fund_Details_selected_color"
+	        />
+	    
+	    <View
+	        android:id="@+id/iv_fd_btn2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0.5dp"
+	        android:layout_weight="1"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+	    
+	    <View
+	        android:id="@+id/iv_fd_btn3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0.5dp"
+	        android:layout_weight="1"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+	    
+	    <View
+	        android:id="@+id/iv_fd_btn4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0.5dp"
+	        android:layout_weight="1"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+	    
+	    <View
+	        android:id="@+id/iv_fd_btn5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0.5dp"
+	        android:layout_weight="1"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+	    
+	</LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/fd_rgp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fund_details_bottom_height"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/fd_rbtn1"
+            style="@style/fund_rbtn"
+            android:checked="true"
+            android:background="@color/white"
+            android:text="@string/fund_details_net_worth"
+            android:textColor="@drawable/btn_fd_tab_selector"
+            android:textSize="14sp" />
+        
+        <ImageView
+	        android:layout_width="0.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+
+        <RadioButton
+            android:id="@+id/fd_rbtn2"
+            style="@style/fund_rbtn"
+            android:background="@color/white"
+            android:text="@string/fund_details_notice"
+            android:textColor="@drawable/btn_fd_tab_selector"
+            android:textSize="14sp" />
+        
+        <ImageView
+	        android:layout_width="0.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+
+        <RadioButton
+            android:id="@+id/fd_rbtn3"
+            style="@style/fund_rbtn"
+            android:background="@color/white"
+            android:text="@string/fund_details_position"
+            android:textColor="@drawable/btn_fd_tab_selector"
+            android:textSize="14sp" />
+        
+        <ImageView
+	        android:layout_width="0.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+
+        <RadioButton
+            android:id="@+id/fd_rbtn4"
+            style="@style/fund_rbtn"
+            android:background="@color/white"
+            android:text="@string/fund_details_dividend"
+            android:textColor="@drawable/btn_fd_tab_selector"
+            android:textSize="14sp" />
+        
+        <ImageView
+	        android:layout_width="0.5dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/fund_Details_unselected_color"
+	        />
+
+        <RadioButton
+            android:id="@+id/fd_rbtn5"
+            style="@style/fund_rbtn"
+            android:background="@color/white"
+            android:text="@string/fund_details_discuss"
+            android:textColor="@drawable/btn_fd_tab_selector"
+            android:textSize="14sp" />
+    </RadioGroup>
+    
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/survey_comment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+    <!-- 评论标题栏 -->
+
+    <ImageView
+        android:id="@+id/space_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_title"
+        android:src="#262626" />
+
+    <LinearLayout
+        android:id="@+id/rl_comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space_line"
+        android:background="#246fdd"
+        android:orientation="horizontal"
+        android:padding="@dimen/comment_title_padding_left_right" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_title_height"
+            android:layout_margin="@dimen/comment_title_padding_left_right"
+            android:layout_weight="1"
+            android:background="#99daf8"
+            android:gravity="center"
+            android:text="@string/all_comment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_popular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_title_height"
+            android:layout_margin="@dimen/comment_title_padding_left_right"
+            android:layout_weight="1"
+            android:background="@color/title_text_choose_color"
+            android:gravity="center"
+            android:text="@string/popular_comment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_friend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_title_height"
+            android:layout_margin="@dimen/comment_title_padding_left_right"
+            android:layout_weight="1"
+            android:background="@color/title_text_choose_color"
+            android:gravity="center"
+            android:text="@string/friend_comment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_initiator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_title_height"
+            android:layout_margin="@dimen/comment_title_padding_left_right"
+            android:layout_weight="1"
+            android:background="@color/title_text_choose_color"
+            android:gravity="center"
+            android:text="@string/initiator_comment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_comment_title"
+        android:background="@color/white" >
+
+        <com.example.shareholders.common.PullToRefreshView
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/mv_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </com.example.shareholders.common.PullToRefreshView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_write_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/iv_write_letter_margin"
+        android:layout_marginRight="@dimen/iv_write_letter_margin"
+        android:src="@drawable/ico_bianji" />
+    <!--
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="#000000" >
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_wupinglun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wupinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="暂无任何评论"
+            android:textColor="#787878"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

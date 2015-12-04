@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="@dimen/inform_edit_dialog_width"
+        android:layout_height="@dimen/inform_edit_dialog_height"
+        android:background="@drawable/bg_dialog_survey_list_style"
+        android:gravity="center"
+      android:textSize="@dimen/inform_edit_dialog_text"
+      android:textColor="#0071bc"
+        android:text="@string/inform_edit_dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_list_dialog_below_height"
+        android:layout_marginTop="@dimen/survey_list_dialog_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_survey_list_style"
+            android:gravity="center"
+               android:textSize="@dimen/inform_edit_dialog_text"
+             android:textColor="#0071bc"
+            android:text="@string/survey_list_confirm" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/survey_list_dialog_margin"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_survey_list_style"
+            android:gravity="center"
+               android:textSize="@dimen/inform_edit_dialog_text"
+             android:textColor="#0071bc"
+            android:text="@string/survey_list_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

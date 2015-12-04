@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_gd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/title_note_left"
+                android:paddingRight="@dimen/title_note_left"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/for_refund"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+    <!-- 头部 结束 -->
+
+
+    <!-- 退款原因 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/total_padding_large" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/refund_start_margin_left"
+            android:paddingTop="4dp"
+            android:src="@drawable/ico_xinghao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/refund_tips_margin_left"
+            android:layout_marginRight="@dimen/total_padding_largex"
+            android:text="@string/refund_tips"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refund_reson_height"
+        android:layout_marginLeft="@dimen/refund_tips_margin_left"
+        android:layout_marginRight="@dimen/refund_tips_margin_left"
+        android:layout_marginTop="@dimen/refund_reson_margin_top"
+        android:background="@drawable/bg_refund_reason"
+        android:gravity="top"
+        android:padding="@dimen/refund_reson_padding"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:layout_marginTop="@dimen/refund_line_margin_top"
+        android:background="#efeff4" />
+
+    <!-- 退款金额 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refund_amount_height" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/refund_start_margin_left"
+            android:src="@drawable/ico_xinghao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/refund_tips_margin_left"
+            android:layout_marginRight="@dimen/total_padding_largex"
+            android:text="@string/refund_amount"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refund_amount_et_height"
+        android:layout_marginLeft="@dimen/refund_tips_margin_left"
+        android:layout_marginRight="@dimen/refund_tips_margin_left"
+        android:background="@drawable/bg_refund_reason"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:padding="@dimen/refund_reson_padding"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:layout_marginTop="@dimen/refund_line_margin_top_small"
+        android:background="#efeff4" />
+
+    <!-- 上传凭证 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/refund_amount_height"
+        android:layout_marginLeft="@dimen/refund_tips_margin_left"
+        android:layout_marginRight="@dimen/total_padding_largex"
+        android:gravity="center_vertical"
+        android:text="@string/upload_proof"
+        android:textColor="#666666"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_add_photo"
+        android:layout_width="@dimen/refund_photo_width"
+        android:layout_height="@dimen/refund_photo_width"
+        android:layout_marginLeft="@dimen/refund_tips_margin_left"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_addphoto2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:layout_marginTop="@dimen/refund_line_margin_top_small"
+        android:background="#efeff4" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_next_height"
+        android:layout_marginLeft="@dimen/btn_next_margin_left"
+        android:layout_marginRight="@dimen/btn_next_margin_left"
+        android:layout_marginTop="@dimen/refund_commit_margin_top"
+        android:background="@drawable/btn_next_style"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

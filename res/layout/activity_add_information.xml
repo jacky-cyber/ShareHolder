@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shareholders.activity.login.AddInformationActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/total_margin_left_small"
+            android:paddingRight="@dimen/total_margin_left_small"
+            android:text="@string/survey_list_cancel"
+            android:textColor="#0071bb"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/title_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/total_margin_left_small"
+            android:paddingRight="@dimen/total_margin_left_small"
+            android:text="@string/title_register"
+            android:textColor="#0071bb"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="#929292" />
+    </RelativeLayout>
+
+    <com.example.shareholders.common.CircleImageView
+        android:id="@+id/ci_face"
+        android:layout_width="@dimen/face_size"
+        android:layout_height="@dimen/face_size"
+        android:layout_below="@+id/rl_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/face_margin_top"
+        android:src="@drawable/btn_tianjiatupian" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ci_face"
+        android:layout_marginTop="@dimen/face_margin_top"
+        android:paddingLeft="@dimen/relative_padding"
+        android:paddingRight="@dimen/relative_padding" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.example.shareholders.common.ClearEditText
+                android:id="@+id/et_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_below="@+id/tv_nickname"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:background="@drawable/btn_login_account"
+                android:hint="@string/nick_name_hint"
+                android:paddingLeft="@dimen/add_edit_padding"
+                android:paddingRight="5dp"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_nickname"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:text="@string/password"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.example.shareholders.common.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_below="@+id/tv_password"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:background="@drawable/btn_login_account"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="@dimen/add_edit_padding"
+                android:paddingRight="5dp"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_password_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_password"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:maxLength="16"
+                android:text="@string/password_confirm"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.example.shareholders.common.ClearEditText
+                android:id="@+id/et_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_below="@+id/tv_password_again"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:background="@drawable/btn_login_account"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/add_edit_padding"
+                android:paddingRight="5dp"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_below="@+id/et_password_again"
+                android:layout_marginTop="@dimen/register_margin_top"
+                android:background="@drawable/btn_login_enable"
+                android:gravity="center"
+                android:text="@string/title_register"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

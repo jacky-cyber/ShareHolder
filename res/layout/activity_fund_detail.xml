@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_note_left"
+                android:padding="@dimen/return_padding"
+                android:src="@drawable/ico_fanhui" />
+
+            <TextView
+                android:id="@+id/tv_main_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/funddetails"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tvs_survey" />
+
+            <ImageView
+                android:id="@+id/title_research"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:padding="@dimen/fund_wen_padding"
+                android:src="@drawable/ico_wenjianjia" />
+        </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" />
+    <RadioGroup
+        android:id="@+id/rgp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_gravity="bottom"
+        android:background="@color/tab_nor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab1_top_drawable_selector"
+            android:text="@string/frag_home" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            style="@style/main_rbtn"
+             android:checked="true"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab2_top_drawable_selector"
+            android:text="@string/frag_survey" />
+
+        <RadioButton
+            android:id="@+id/rbtn3"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+           
+            android:drawableTop="@drawable/btn_tab3_top_drawable_selector"
+            android:text="@string/frag_price" />
+
+        <RadioButton
+            android:id="@+id/rbtn4"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab4_top_drawable_selector"
+            android:text="@string/frag_goods" />
+
+        <RadioButton
+            android:id="@+id/rbtn5"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab5_top_drawable_selector"
+            android:text="@string/frag_me" />
+    </RadioGroup>
+</LinearLayout>

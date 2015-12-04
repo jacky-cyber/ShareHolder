@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_selectActivity"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingRight="@dimen/title_padding_selectactivity" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_padding_selectactivity" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_search_style"
+            android:text="@string/search_SelectActivity"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_content_height_selectactivity"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/search_content_margin_selectactivity"
+            android:layout_marginRight="@dimen/search_content_margin_selectactivity"
+            android:layout_toLeftOf="@id/iv_search"
+            android:layout_toRightOf="@id/rl_return"
+            android:background="@drawable/bg_rl_search_content_style" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ico_fangdajing" />
+
+                <EditText
+                    android:id="@+id/et_search_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/search_et_margin_selectactivity"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search_content_hint_selectactivity"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:focusable="false"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+<com.example.shareholders.common.PullToRefreshView 
+    android:id="@+id/main_pull_refresh_view"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/sv_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_search_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_result_title_height" >
+
+                <!-- 有内容时候的版本 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_search_title_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#efefef"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/search_result_title_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已为你找到"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_search_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="广州"
+                        android:textColor="#dd8822"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="的"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_search_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个相关活动"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- 内容为空时显示的版本 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_search_title_no_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#efeff4"
+                    android:paddingLeft="@dimen/search_result_title_padding"
+                     >
+
+                    <TextView
+                        android:id="@+id/tv_no_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="没有找到相关活动"
+                        android:layout_centerVertical="true"
+                        android:textColor="#999999"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+           <com.example.shareholders.common.MyListView
+                android:id="@+id/lv_search_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_search_title"
+                android:divider="#deffe2"
+                android:dividerHeight="1dp"
+            />
+        </RelativeLayout>
+    </ScrollView>
+    </com.example.shareholders.common.PullToRefreshView>
+</LinearLayout>

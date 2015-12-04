@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/iv_edit_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:id="@+id/tv_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/inform_edit_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:text="@string/inform_edit_publish"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/inform_edit"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="top"
+        android:background="@drawable/bg_dialog_style2"
+        android:maxLength="100"
+        android:padding="@dimen/inform_edit_padding"
+        android:textColor="#8e8e8e"
+        android:textSize="@dimen/inform_edit_textsize" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

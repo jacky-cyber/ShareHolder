@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kuang"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/pop_survey_more_linear_padding_top" >
+
+        <TextView
+            android:id="@+id/tv_ask_for_survey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/pop_survey_more_text_padding"
+            android:paddingTop="@dimen/pop_survey_more_text_padding"
+            android:text="@string/ask_for_survey"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:paddingLeft="@dimen/pop_survey_more_image_padding"
+            android:paddingRight="@dimen/pop_survey_more_image_padding"
+            android:src="#999999" />
+
+        <TextView
+            android:id="@+id/tv_manage_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/pop_survey_more_text_padding"
+            android:paddingTop="@dimen/pop_survey_more_text_padding"
+            android:text="@string/manage_sign"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:paddingLeft="@dimen/pop_survey_more_image_padding"
+            android:paddingRight="@dimen/pop_survey_more_image_padding"
+            android:src="#999999" />
+
+        <TextView
+            android:id="@+id/tv_manage_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/pop_survey_more_text_padding"
+            android:paddingTop="@dimen/pop_survey_more_text_padding"
+            android:text="@string/manage_record"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="#eeeeee" />
+    
+    <com.example.shareholders.common.MyListView
+        android:id="@+id/lv_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#eeeeee"
+        android:dividerHeight="@dimen/line_width" >
+    </com.example.shareholders.common.MyListView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="#eeeeee" />
+
+</LinearLayout>

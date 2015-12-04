@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shareholders"
+    android:versionCode="9"
+    android:versionName="1.0.0" >
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 发信息权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/invest_circle"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".IndexActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.personal.SetUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.personal.AllApplyManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.ShareAndFriendsSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.AskForSurveyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MyFriendMomentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SearchSurveyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MyInformationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.TestPicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SelectActivity"
+            android:label="@string/title_activity_select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ActivityCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.survey.DetailSurveyActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.survey.InformEditActivity"
+            android:label="@string/title_activity_select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.DateSelectActivity"
+            android:label="@string/title_activity_select"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ActivityCreateCompanyBrief"
+            android:label="@string/title_activity_select"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ActivityCreateEditActivity"
+            android:label="@string/title_activity_select"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.RecordSoundActivity"
+            android:label="@string/title_activity_record_sound"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.RegistrationListActivity"
+            android:label="@string/title_activity_registration_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.InviteFriendsActivity"
+            android:label="@string/title_activity_invite_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.InformActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ActivitySearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.surveyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".activity.survey.UserJoinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".activity.survey.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.personal.PersonalAboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="gudonghui#test" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <activity
+            android:name=".activity.survey.SingleCommentActivity"
+            android:label="@string/title_activity_single_comment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.PublishCommentActivity"
+            android:label="@string/title_activity_publish_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ReviewDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SelectPicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyleBottom"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.DetailAndCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SurveyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/title_activity_main_activity1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundListActivity"
+            android:label="@string/title_activity_fund_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.QueryFundActivity"
+            android:label="@string/title_activity_query_fund"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundSearchActivity"
+            android:label="@string/title_activity_fund_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="rue61lm7YHrbFHw4vRB4uPG8" />
+
+        <activity
+            android:name=".activity.fund.FundDetailsActivity"
+            android:label="@string/title_activity_fund_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundDetailsWatchDetailsActivity"
+            android:label="@string/title_activity_fund_details_watch_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.OptionalFundActivity"
+            android:label="@string/title_activity_optional_fund"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DiscussDetailActivity"
+            android:label="@string/title_activity_discuss_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CursorDSLV"
+            android:label="@string/title_activity_cursor_dslv"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundInformationListActivity"
+            android:label="@string/title_activity_fund_information_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.TranspondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundNoticeDetailsActivity"
+            android:label="@string/title_activity_fund_notice_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.FundInformationDetailsActivity"
+            android:label="@string/title_activity_fund_information_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.NewFundActivity"
+            android:label="@string/title_activity_new_fund"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.PublishTopicActivity"
+            android:label="@string/title_activity_publish_topic"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".service.PublishTopicsService" >
+        </service>
+        <service android:name=".service.GetWeiBoInfoService" >
+        </service>
+        <service android:name=".service.GetInformationAfterLoginService" >
+        </service>
+        <service android:name=".service.PostPersonalInformationService" >
+        </service>
+        <!-- 审核报名 -->
+        <service android:name=".service.AuditRegistrationService" >
+        </service>
+
+        <activity
+            android:name=".activity.login.LogAndRegiActivity"
+            android:label="@string/title_activity_log_and_regi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.fund.PublishDiscussActivity"
+            android:label="@string/title_activity_publish_discuss"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".service.PublishDiscussService" >
+        </service>
+        <service android:name=".service.GetInformationAfterClearService" >
+        </service>
+
+        <activity
+            android:name=".activity.fund.FundDiscussDetailsActivity"
+            android:label="@string/title_activity_fund_discuss_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.AreaCodeActivity"
+            android:label="@string/title_activity_area_code"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.TouHQLoginActivity"
+            android:label="@string/title_activity_tou_hqlogin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.FindPasswordActivity"
+            android:label="@string/title_activity_find_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.NewPasswordActivity"
+            android:label="@string/title_activity_new_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 腾讯授权登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104754441" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微博 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".activity.login.ServerTermActivity"
+            android:label="@string/title_activity_new_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.login.AddInformationActivity"
+            android:label="@string/title_activity_add_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ShopHomeActivity"
+            android:label="@string/title_activity_shop_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.GoodsDetailsActivity"
+            android:label="@string/title_activity_goods_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.CompanyDetailActivity"
+            android:label="@string/title_activity_company_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ImageAndTextDetailsActivity"
+            android:label="@string/title_activity_image_and_text_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.CompanyGoodsListActivity"
+            android:label="@string/title_activity_company_goods_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.GoodsCommentActivity"
+            android:label="@string/title_activity_goods_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.OtherPeolpeInformationActivity"
+            android:label="@string/title_activity_other_peolpe_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyFriend"
+            android:label="@string/title_activity_my_friend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.PunishCommentActivity"
+            android:label="@string/title_activity_punish_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MyProfileActivity"
+            android:label="@string/title_activity_my_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ChangeNickNameActivity"
+            android:label="@string/title_activity_change_nick_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.IntroduceMyselfActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ShoppingCartActivity"
+            android:label="@string/title_activity_shopping_cart"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MyDataActivity"
+            android:label="@string/title_activity_my_data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.SearchGoodsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.FillOrderActivity"
+            android:label="@string/title_activity_fill_order"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.MyCollectedGoodsActivity"
+            android:label="@string/title_activity_my_collected_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.MyConcernCompanyActivity"
+            android:label="@string/title_activity_my_concern_company"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.RefundActivity"
+            android:label="@string/title_activity_refund"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.OrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.SalesReturnActivity"
+            android:label="@string/title_activity_sales_return"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.RefundReturnActivity"
+            android:label="@string/title_activity_refund_return"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.RefundDetailActivity"
+            android:label="@string/title_activity_refund_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.OrderDetailsActivity"
+            android:label="@string/title_activity_order_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ComplaintActivity"
+            android:label="@string/title_activity_complaint"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.StockFriendsActivity"
+            android:label="@string/title_activity_stock_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.StockFriendsSearchFriednsActivity"
+            android:label="@string/title_activity_stock_friends_search_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.StockFriendsLocalContacts"
+            android:label="@string/title_activity_phone_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- umeng 一键更新 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56447567e0f55a0740004c6e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="lele123" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ReturnDetailActivity"
+            android:label="@string/title_activity_return_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ApplyForStatementActivity"
+            android:label="@string/title_activity_apply_for_statement"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ConsultsCollectActivity"
+            android:label="@string/title_activity_consults_collect"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MessageCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.PersonCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CashierDeskActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.LogisticsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.CommentCollectionActivity"
+            android:label="@string/title_activity_comment_collection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MySurveyListActivity"
+            android:label="@string/title_activity_my_survey_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.CashierDeskActivity"
+            android:label="@string/title_activity_cashier_desk"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ModifyBindActivity"
+            android:label="@string/title_activity_modify_bind"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.BindPhoneActivity"
+            android:label="@string/title_activity_bind_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.BindEmailActivity"
+            android:label="@string/title_activity_bind_email"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.RecordManageActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.RecordActivity"
+            android:label="@string/title_activity_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.FeedbackActivity"
+            android:label="@string/title_activity_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.ManageSignActivity"
+            android:label="@string/activity_manage_sign"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MessageMySurveyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MessageShareRemindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MessageShopMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.EditMyselfActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.shop.InteractActivity"
+            android:label="@string/title_activity_interact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.RemindEditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.EditMyselfNewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.survey.SurveyCommentActivity"
+            android:label="@string/title_activity_survey_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.EditMyselfAnnouncementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.EditMyselfResearchReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fragment.Fragment_EditMyself_Comments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.PersonalCommentActivity"
+            android:label="@string/title_activity_personal_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.StockCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.StockFriendsActivityCopy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.MyStockDetailsActivity"
+            android:label="@string/title_activity_my_stock_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.OtherPeopleStockActivity"
+            android:label="@string/title_activity_other_people_stock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.OtherPeopleSurveyActivity"
+            android:label="@string/title_activity_other_people_survey"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.MyStockDetailsParamActivity"
+            android:label="@string/title_activity_my_stock_details_param"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.MessageCenterSetting"
+            android:label="@string/title_activity_my_stock_details_param"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.PersonalMessageCenterSetting"
+            android:label="@string/title_activity_my_stock_details_param"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.personal.AboutIndexActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.newthird.NewThirdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.newthird.NewThirdBianJiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.newthird.NewThirdSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.stock.FinanceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.shareholders.activity.stock.SetAvgLineActivity"
+            android:label="@string/title_activity_set_avg_line"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.shareholders.activity.personal.MessageSystemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.newthird.TouHangQuanWebActivity" >
+        </activity>
+    </application>
+
+</manifest>

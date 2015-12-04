@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/viewpager_height" >
+
+            <com.example.shareholders.view.TouTiaoHeadViewPager
+                android:id="@+id/vp_toutiao_head"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/viewpager_height" >
+            </com.example.shareholders.view.TouTiaoHeadViewPager>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_dots_height"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popular_goods_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/popular_label_width"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_remenshangpin" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:scrollbars="none" >
+		
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent" >
+		
+		            <GridView
+		                android:id="@+id/gridview_popular"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:numColumns="10"
+		                android:columnWidth="78dp"
+		                android:horizontalSpacing="7.5dp"
+		                android:stretchMode="none" >"
+		            </GridView>
+		            
+		        </LinearLayout>
+		        
+		    </HorizontalScrollView>
+		    
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popular_enterprise_height"
+            android:layout_marginTop="@dimen/ll_dots_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/popular_label_width"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+		        
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#eaeaea" 
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_remengongsi" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#eaeaea"
+                    android:visibility="gone"/>
+                
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#eaeaea" />
+                
+            </RelativeLayout>
+
+            <HorizontalScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:scrollbars="none" >
+		
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent" >
+		
+		            <GridView
+		                android:id="@+id/gridview_enterprise"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:numColumns="10"
+		                android:columnWidth="102dp"
+		                android:horizontalSpacing="0dp"
+		                android:stretchMode="none" >
+		            </GridView>
+		            
+		        </LinearLayout>
+		        
+		    </HorizontalScrollView>
+		    
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popular_goods_height"
+            android:layout_marginTop="@dimen/ll_dots_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/popular_label_width"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_xinpinshangjia" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:scrollbars="none" >
+		
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent" >
+		
+		            <GridView
+		                android:id="@+id/gridview_newest"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:numColumns="10"
+		                android:columnWidth="78dp"
+		                android:horizontalSpacing="7.5dp"
+		                android:stretchMode="none" >
+		            </GridView>
+		            
+		        </LinearLayout>
+		        
+		    </HorizontalScrollView>
+		    
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popular_goods_height"
+            android:layout_marginTop="@dimen/ll_dots_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/popular_label_width"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_tuijianshangpin" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:scrollbars="none" >
+		
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent" >
+		
+		            <GridView
+		                android:id="@+id/gridview_promote"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:numColumns="10"
+		                android:columnWidth="78dp"
+		                android:horizontalSpacing="7.5dp"
+		                android:stretchMode="none" >
+		            </GridView>
+		            
+		        </LinearLayout>
+		        
+		    </HorizontalScrollView>
+		    
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

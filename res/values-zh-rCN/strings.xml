@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- gong -->
+    <string name="choose_photo">相册</string>
+    <string name="take_photo">拍照</string>
+    <string name="app_name">股东会</string>
+    <string name="hello_world">世界你好</string>
+    <string name="action_settings">设置</string>
+    <string name="frag3_title">调研</string>
+    <string name="company_detail">公司详情</string>
+    <string name="frag_home">首页</string>
+    <string name="frag_survey">调研</string>
+    <string name="frag_price">沪深</string>
+    <string name="frag_goods">商城</string>
+    <string name="frag_me">我的</string>
+    <string name="title_survey">调研</string>
+    <!-- survey -->
+    <string name="my_all_survey">我的调研</string>
+    <string name="bank_name">工商银行</string>
+    <string name="bank_num">1234</string>
+    <string name="recent_survey">近期调研</string>
+    <string name="more"><u>查看更多</u></string>
+    <string name="recent_listview_name">造纸厂企业调研</string>
+    <string name="recent_istview_date">2015.12.12-2016.03.03</string>
+    <string name="recent_listview_person">关注人数: </string>
+    <string name="recent_listview_person_num">20</string>
+    <string name="recent_listview_apply"><u>报名</u></string>
+    <string name="recent_listview_place">地点</string>
+    <string name="survey_focus">调研好评</string>
+    <string name="focus_text">未知</string>
+    <string name="enroll_under_audlt">您的报名已提交给发起人，请耐心等候</string>
+    <string name="enroll_already">您已经报名，欢迎您来参加活动</string>
+    <string name="enroll_full">活动已满员，欢迎您通过现场互动，发起人评论实时了解更多活动信息</string>
+
+    <!-- Date_Select -->
+    <string name="date_select">选择日期</string>
+    <string name="date_begin">开始日期</string>
+    <string name="date_finish">结束日期</string>
+    <string name="focus_bottom_text">造纸厂企业调研</string>
+    <!-- activity_search_survey -->
+
+    <string name="finish">完成</string>
+
+    <!-- activity_search_survey -->
+
+    <string name="activity_search_survey_title">创建活动</string>
+    <string name="activity_search_survey_confirm">确认</string>
+    <string name="activity_search_survey_search_hint">输入城市名字</string>
+    <string name="activity_search_survey_search_locate_to_me">定位到我的位置</string>
+    <string name="activity_search_survey_search_popular_city">热门城市</string>
+    <string name="activity_search_survey_search_all_city">全部城市</string>
+
+    <!-- SelectActivity -->
+    <string name="search_SelectActivity">搜索</string>
+    <string name="search_content_hint_selectactivity">输入名称，发起人，公司搜索</string>
+    <string name="choose_according_city">选择城市</string>
+    <string name="choose_according_time">选择日期</string>
+    <string name="choose_according_industry">选择行业</string>
+    <string name="change_city">所有城市</string>
+    <string name="all_city">所有</string>
+    <string name="follow_members">关注人数：</string>
+
+    <!-- Easy_Touch -->
+    <string name="easy_touch">现场互动</string>
+    <string name="easy_touch_time">时间:  </string>
+    <string name="easy_touch_place">地点:  </string>
+    <string name="easy_touch_field">领域:  </string>
+    <string name="easy_touch_record">录音</string>
+
+    <!-- RecordSoundActivity -->
+    <string name="record_sound">录音</string>
+    <string name="manage_my_record_sound">我的录音管理</string>
+    <string name="edit_record_sound">编辑</string>
+    <string name="delete_record_sound">删除</string>
+
+    <!-- Information -->
+    <string name="announcement_title">通知</string>
+
+    <!-- SurveyDetailActivity -->
+    <string name="outline">提纲</string>
+    <string name="survey_enterprise">调研企业</string>
+    <string name="detail">详情</string>
+    <string name="follow">浏览:</string>
+    <string name="collection">收藏:</string>
+    <string name="register">报名:</string>
+    <string name="register_list"><u>报名列表</u></string>
+    <string name="comment">评论</string>
+    <string name="initiate">发起</string>
+    <string name="schedule">活动时间:</string>
+    <string name="place">活动地点：</string>
+    <string name="sign_up">报名</string>
+    <string name="signed_up">已报名</string>
+    <string name="collect">收藏</string>
+    <string name="initiator">发起人</string>
+    <string name="related_enterprises">相关企业</string>
+    <string name="survey_outline">调研提纲</string>
+    <string name="registratable">报名中</string>
+    <string name="registration_ends">报名结束</string>
+    <string name="underway">进行中</string>
+    <string name="activity_end">活动结束</string>
+    <string name="notes">报名须知</string>
+    <string name="registration_fee">报名费用</string>
+    <string name="meeting_place">会见地点</string>
+    <string name="receiver">接待人员</string>
+    <string name="link_man">联系人：</string>
+    <string name="phone">电话:</string>
+    <string name="service">商务服务</string>
+    <string name="registrated_number">已报名人数</string>
+    <!-- RegistrationActivity -->
+    <string name="activity_registration_title">调研报名</string>
+    <string name="name">姓名</string>
+    <!-- ReistrationListActivity -->
+    <string name="activity_registration_list_title">报名人员名单</string>
+
+    <!-- InviteFriendsActivity -->
+    <string name="invite_friends_title">邀請好友</string>
+    <string name="invite_friends_search_friends">搜索好友</string>
+    <string name="invite_friends_send_friends">发送邀请</string>
+    <!-- MessageActivity -->
+    <string name="message_title">消息</string>
+
+    <!-- SurveyFristActivity -->
+    <string name="survey">活动提纲</string>
+    <string name="survey_list1">个人提纲列表</string>
+    <!-- SurveySecondActivity -->
+
+    <string name="survey_list2">我的提纲</string>
+    <string name="survey_list2_btn_text">创建</string>
+
+    <!-- ServeyListActivity -->
+    <string name="survey_list_sort">排序</string>
+    <string name="survey_list_state">状态</string>
+    <string name="survey_list_filter">筛选</string>
+    <string name="survey_list">调研活动列表</string>
+    <string name="survey_list_follow_member">浏览人数： </string>
+    <string name="survey_list_cancel_sign_up">是否取消报名</string>
+    <string name="survey_list_confirm_sign_up">是否确定报名</string>
+    <string name="survey_list_cancel">返回</string>
+    <string name="survey_list_confirm">确定</string>
+    <string name="time_in_ascending_order">按时间降序</string>
+    <string name="time_in_descending_order">按时间升序</string>
+    <string name="name_in_ascending_order">按名称升序</string>
+    <string name="name_in_descending_order">按名称降序</string>
+    <string name="heat_in_ascending_order">按热度</string>
+    <string name="heat_in_descending_order">按热度降序</string>
+    <string name="all">全部</string>
+    <string name="signing_up">报名中</string>
+    <string name="under_way"> 进行中</string>
+    <string name="past_survey">往期 </string>
+    <string name="relocate">重新定位</string>
+    <string name="confirm">确定</string>
+    <string name="cities_limit">所选城市不能超过5个哦！</string>
+    <string name="industry_limit">所选行业不能超过5个哦！</string>
+    <string name="two_tundred_limit">(200字以内)</string>
+
+    <!-- UserJoinActivity -->
+    <string name="userjoin_title">报名列表</string>
+    <string name="userjoin_member">人数：</string>
+    <string name="userjoin_research">查找</string>
+    <string name="sign_up_manage"><u>报名管理</u></string>
+    <string name="userjoin_research_mem">报名人数：</string>
+    <string name="userjoin_none_user">暂时无其他报名</string>
+    <string name="userjoin_none_inform">暂时无其他通知</string>
+    <!-- InformEdit -->
+    <string name="inform_edit_title">发通知</string>
+    <string name="inform_edit_publish"><u>发布</u></string>
+    <string name="inform_edit_dialog">一旦确定保存发布</string>
+    <string name="inform_edit_dialog1">一旦确定保存发布</string>
+    <string name="inform_edit_dialog2">系统将自动给每一个报名者发送通知</string>
+    <!-- InformSponsorActivity -->
+    <string name="inform_dialog">您的通知已发送给活动报名成员</string>
+    <!-- ActivityCreatActivity -->
+    <string name="create_title">创建活动</string>
+    <string name="create_edit">编辑活动</string>
+    <!-- Fragment_ActivityCreate1 -->
+    <string name="frag1_activity_name_text">活动名称</string>
+    <!-- Fragment_ActivityCreate2 -->
+    <string name="frag2_activity_name_text">活动调研企业</string>
+    <string name="frag2_activity_add_text"><u>添加调研企业</u></string>
+    <!-- ActivityCeateCompanyBrief -->
+    <string name="brief_title">企业简介</string>
+    <string name="brief_commit"><u>确定</u></string>
+    <!-- ActivitySearchActivity -->
+    <string name="search_activity_search">搜索</string>
+    <string name="search_activity_search_content">搜索您的内容</string>
+    <string name="search_activity_history">搜索历史</string>
+    <!-- CompanyGoodsListActivity -->
+    <string name="search_product">请输入商品名字搜索本公司内商品</string>
+    <!-- SignUpActivity -->
+    <string name="sign_up_text">报名列表</string>
+    <!-- ActivityActivityCreate2Edit -->
+    <string name="edit_name">企业简称</string>
+    <string name="edit_city">企业所在城市</string>
+    <string name="edit_post">被调研人职务</string>
+    <string name="edit_time">调研时间</string>
+    <string name="edit_outline">提纲</string>
+    <string name="edit_true"><u>确定</u></string>
+    <string name="edit_delete"><u>删除</u></string>
+    <string name="edit_false"><u>取消</u></string>
+    <string name="hint_text">(输入您所要搜索的公司或者公司代码)</string>
+    <string name="hint_text1">(默认地点为系统显示的公司所在城市)</string>
+    <string name="hint_text2">(此处填写被调研人职务，不能超过4个字)</string>
+    <string name="hint_text3">(此处填写调研活动的纲目和各个要点，不能超过200个字)</string>
+    <string name="set_name_tip">为您的活动起个响亮的名字吧（但不能超过8个字哦）</string>
+    <string name="promote_photo">活动宣传图片</string>
+    <string name="activity_introduction">活动简介</string>
+    <string name="activity_introduction_tip">简单介绍下您的活动，会为您带来更多的追随者哦</string>
+    <string name="next">下一步</string>
+    <string name="album">相册</string>
+    <string name="film">拍摄</string>
+    <string name="contact">联系人</string>
+    <string name="Telephone">联系人电话</string>
+    <string name="other_statement">其他说明</string>
+    <string name="completed">完成</string>
+    <string name="create_activity_tip">创建成功，您的活动需求将保存在个人中心，我们将尽快审核，与调研公司联系，并将情况及时反馈给您</string>
+    <string name="have_to_fill_tip">带*号的部分是必填内容</string>
+    <string name="survey_activity">调研活动</string>
+
+    <!-- Comment List -->
+    <string name="all_comment_activity">全部活动评论</string>
+    <string name="all_comment">所有</string>
+    <string name="comment_sort_by_time">按时间排序</string>
+    <string name="comment_sort_by_heat">按热度排序</string>
+    <string name="initiator_comment"><u>发起人</u></string>
+    <string name="popular_comment">热门评论</string>
+    <string name="friend_comment"><u>股友</u></string>
+    <string name="my_comment">我的评论</string>
+    <string name="video_link">视频链接</string>
+    <string name="transmit">转发</string>
+    <string name="share_to">分享至</string>
+    <string name="copy">复制</string>
+    <string name="report">举报</string>
+    <!-- SingleCommentActivity -->
+    <string name="activity_single_comment_title">个评详情</string>
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="publish_comment_et">发布评论</string>
+
+    <!-- Comment List -->
+    <string name="item_enterprise_outline">Outline</string>
+
+    <!-- ReviewDetailsActivity -->
+    <string name="rd_comment">评论</string>
+    <string name="rd_all_comment">全部活动评论</string>
+    <string name="rd_initiator_comment">我的</string>
+
+    <!-- PublishCommentActivity -->
+    <string name="write_comment">写评论</string>
+    <string name="write_topic">创建话题</string>
+    <string name="publish_comment"><u>发表</u></string>
+    <!-- TestPicActivity -->
+    <string name="photo">相册</string>
+    <!-- FoudListActivity -->
+    <string name="foud_list_title">基金列表</string>
+    <string name="open_foud">开放基金</string>
+    <string name="closed_foud">封闭基金</string>
+    <string name="stock_foud">股票基金</string>
+    <string name="bond_foud">债券基金</string>
+    <string name="blend_foud">混合基金</string>
+    <string name="money_foud">货币基金</string>
+    <string name="other_foud">其他基金</string>
+    <string name="foud_name">基金名称</string>
+    <string name="foud_code">基金代码</string>
+    <string name="foud_accrual">万份收益</string>
+    <string name="foud_annual_rate">7日年化收益</string>
+    <string name="foud_release_date">发行日期</string>
+    <string name="foud_newest_nav">最新净值</string>
+    <string name="foud_day_rise">日涨幅</string>
+    <string name="foud_week_rise">周涨幅</string>
+    <string name="foud_month_rise">月涨幅</string>
+    <string name="foud_year_rise">年涨幅</string>
+    <string name="foud_accrual_time">收益时间</string>
+
+    <!-- FoudSearchActivity -->
+    <string name="foud_search_title">搜索基金</string>
+    <string name="foud_search_text">输入代码/全称/简称</string>
+
+    <!-- FundDetailsActivity -->
+    <string name="fund_details_title">基金详情</string>
+    <string name="fund_details_concern">关注</string>
+    <string name="fund_details_already_concern">已关注</string>
+    <string name="fund_details_open_purchase">开发申购</string>
+    <string name="fund_details_open_redemption">开发赎回</string>
+    <string name="fund_details_pause_redemption">暂停赎回</string>
+    <string name="fund_details_net_worth">净值</string>
+    <string name="fund_details_notice">公告</string>
+    <string name="fund_details_position">持仓</string>
+    <string name="fund_details_dividend">分红</string>
+    <string name="fund_details_discuss">讨论</string>
+    <string name="fund_details_rise">涨幅</string>
+    <string name="fund_details_accumulated_net_worth">累计净值</string>
+    <string name="fund_details_ranking">同类排名</string>
+    <string name="fund_details_rate">费率</string>
+    <string name="fund_details_manager">管理人</string>
+    <string name="fund_details_history">日净值历史明细</string>
+    <string name="fund_details_date">日期</string>
+    <string name="fund_details_net_asset_value">单位净值</string>
+    <string name="fund_details_details"><u>查看明细</u></string>
+    <!-- FundDetailsWatchDetailsActivity -->
+    <string name="fund_details_fund_information">基金资料</string>
+    <string name="fund_details_fund_name">基金全称</string>
+    <string name="fund_details_fund_code">基金代码</string>
+    <string name="fund_details_fund_type">基金类型</string>
+    <string name="fund_details_risk_level">风险等级</string>
+    <string name="fund_details_register_date">成立日期</string>
+    <string name="fund_details_asset_size">基金规模</string>
+    <string name="fund_details_share_size">份额规模</string>
+    <string name="fund_details_fund_keeper">基金管理人</string>
+    <string name="fund_details_fund_custodian">基金托管人</string>
+    <string name="fund_details_fund_manager">基金经理</string>
+    <string name="fund_details_fund_manager_intro">基金经理简介</string>
+    <string name="fund_details_accrual">每万份收益</string>
+    <string name="fund_details_accrual_month">每万份收益（月）</string>
+    <string name="fund_details_annual_rate">7日年化收益率</string>
+    <string name="fund_details_accrual_date">收益计算日期</string>
+    <string name="fund_details_accumulate_accrual">累计收益率</string>
+    <string name="fund_details_daily_growth_rate">日增长率</string>
+    <!-- OptionalFundActivity -->
+    <string name="optional_fund_my_concerned_fund">我关注的基金</string>
+    <string name="optional_fund_manage">管理</string>
+    <string name="optional_fund_add_tip">没有关注的基金，点击添加</string>
+    <string name="optional_fund_name">基金名称</string>
+    <string name="optional_fund_newest_net_worth">最新净值</string>
+    <string name="optional_fund_daily_rise">日涨幅</string>
+
+    <!-- FundHomeActivity -->
+    <string name="fund">基金</string>
+    <string name="fund_zixuan">自选基金</string>
+    <string name="fund_sousuo">基金搜索</string>
+    <string name="fund_chaxun">基金查询</string>
+    <string name="fund_tuijian">推荐基金</string>
+    <string name="fund_xinfa">新发基金</string>
+    <string name="fund_zhixun">基金资讯</string>
+    <string name="lastest_204">没有最新调研</string>
+    <string name="lastest_400">参数错误</string>
+
+    <!-- QueryFundActivity -->
+    <string name="query_fund_title">查询基金</string>
+    <string name="earning_interval">收益区间</string>
+    <string name="query_fund_start_date">起始</string>
+    <string name="query_fund_end_date">结束</string>
+    <string name="query_btn">查  询</string>
+    <string name="select_again"><u>重新选定</u></string>
+    <string name="other_error">网络错误</string>
+    <string name="cancel_success">取消报名成功</string>
+    <string name="enroll_success">报名成功</string>
+    <string name="cancel_500">没有足够权限</string>
+
+    <!-- FundDetailsActivity -->
+    <string name="funddetails">基金详情</string>
+    <string name="unfollow">收藏</string>
+    <string name="followed">已收藏</string>
+    <string name="follow_success">收藏成功</string>
+    <string name="unfollow_success">取消收藏成功</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="edit_Activity">编辑</string>
+    <string name="notice">发通知</string>
+    <string name="heat_cities">热门城市</string>
+    <string name="whole_cities">全部城市</string>
+    <string name="edit_line"><u>编辑</u></string>
+
+    <!-- PositionFragment -->
+    <string name="configuration_detail">资产配置明细</string>
+    <string name="stock_detail">股票投资明细</string>
+    <string name="bond_detail">债券投资明细</string>
+    <string name="rate_of_all">占净值比例</string>
+    <string name="report_journal">报告期</string>
+    <string name="position_name">名称</string>
+    <string name="stock_rate">股票占净比</string>
+    <string name="debenture_rate">债券占净比</string>
+    <string name="cash_rate">现金占净比</string>
+    <string name="net_asset">净资产(亿)</string>
+    <string name="stock_number">持股数(万股)</string>
+    <string name="position_value">持仓市值(万元)</string>
+    <string name="location">企业所在城市</string>
+    <string name="default_city">(系统默认企业所在城市)</string>
+
+    <!-- Fragment_Fund_Announcement -->
+    <string name="fund_an_title">公告</string>
+    <!-- FundNoticeDetailsActivity -->
+    <string name="fund_an_title_details">公告详情</string>
+
+    <!-- Fragment_FundDividend -->
+    <string name="dividend_distribution">分红配送详情</string>
+    <string name="dividend_split">分红拆分详情</string>
+    <string name="dividend_year">年份</string>
+    <string name="ex_dividend_day">除息日</string>
+    <string name="per_dividend">每份分红</string>
+    <string name="dividend_grant_day">分红发放日</string>
+    <string name="split_category">拆分比例</string>
+    <string name="split_convert_rate">拆分折算比例</string>
+    <string name="grant_cash">派现金</string>
+    <string name="equality_register_day">权益登记日</string>
+    <string name="temporarily_no_data">暂无数据</string>
+
+    <!-- Fragment_FundDicuss -->
+    <string name="sort_in_time_order">按时间排序</string>
+    <string name="sort_in_heat_order">按热度排序</string>
+    <!-- FundInformationActivity -->
+    <string name="fi_fund_information_list">资讯列表</string>
+    <string name="fi_fund_information">基金资讯</string>
+    <!-- FundInformationDetailsActivity -->
+    <string name="fi_details_title">资讯详情</string>
+    <!-- NewFundActivity -->
+    <string name="new_fund_title">新发基金</string>
+    <string name="volley_error1">暂时没有数据</string>
+    <!-- XListView -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+
+    <!-- TranspondActivity -->
+    <string name="transpond_title">转发</string>
+    <string name="transpond_publish">发表</string>
+    <string name="no_comment">暂无任何评论</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+
+    <!-- LogAndRegiActivity -->
+    <string name="login">登    录</string>
+    <string name="logout">退出登录</string>
+    <string name="register_main">注    册</string>
+    <string name="have_a_look">随便看看</string>
+    <string name="select_area">选择国家或区号</string>
+    <string name="find_password">找回密码</string>
+    <string name="visitor_into">以游客身份进入</string>
+
+    <!-- LoginActivity -->
+    <string name="account_hint">请输入手机号，昵称或邮箱</string>
+    <string name="enter_phone_get_veri">输入手机号码获取验证码</string>
+    <string name="passward_hint">密码为6至128位</string>
+    <string name="enter_verification_code">请输入验证码</string>
+    <string name="choose_area_number">选择区号</string>
+    <string name="login_ways">使用下面的帐号登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="login_failed">登录失败</string>
+    <string name="wrong_passward">密码错误，请重新输入</string>
+
+    <!-- TouHQActivity -->
+    <string name="enter_touhq_account">请输入投行圈账号</string>
+
+    <!-- FindPasswordActivity -->
+    <string name="enter_new_password">请输入新密码</string>
+    <string name="enter_new_password_again">请再次输入密码</string>
+    <string name="new_password_hint">密码为6~16位数字</string>
+    <string name="new_password_not_consistent">两次输入密码不同，请重新输入</string>
+    <string name="new_password_success">找回密码成功，欢迎再次登录</string>
+    <string name="title_register">注册</string>
+    <string name="tv_get_vervification_code">获取验证码</string>
+    <string name="tv_login_directly">使用投行圈账号直接登录>></string>
+    <string name="tips">温馨提示：如果您已有投行圈账号，请使用投行圈账号直接登录</string>
+    <string name="verifyCode_hint">请输入验证码</string>
+
+    <!-- ServerTermActivity -->
+    <string name="server_term">服务条款</string>
+    <string name="argee">同意</string>
+    <!-- AddInformationActivity -->
+    <string name="nickname">请输入昵称</string>
+    <string name="password">请输入密码</string>
+    <string name="password_hint">密码为6~16位</string>
+    <string name="password_confirm">请再次输入密码</string>
+
+    <!-- CompanyDetailActivity -->
+    <string name="company_good">商品</string>
+    <string name="company_new_good">新品</string>
+    <string name="company_all_goods">全部商品</string>
+    <string name="company_price_down">促销</string>
+    <string name="company_newest_zixun">最新资讯</string>
+    <string name="company_introduce">公司简介</string>
+    <string name="company_gupiaoxiangqing">股票详情</string>
+    <string name="company_newest_push">最新推出……</string>
+    <string name="kefu">客服</string>
+    <string name="share">分享</string>
+    <string name="guanzhu">关注</string>
+    <string name="shopping_cart">购物车</string>
+
+    <!-- CompanyGoodsListActivity -->
+    <string name="can_find_nothing">抱歉，没有找到相关商品</string>
+    <string name="shopping_again">再去逛逛</string>
+    <string name="monthly_sell">月销</string>
+    <string name="good_reputation">好评</string>
+
+    <!-- ServerTermActivity -->
+
+
+    <!-- AddInformationActivity -->
+    <string name="my_collect_goods">我收藏的商品</string>
+    <string name="my_concern_enterprises">我关注的公司</string>
+    <string name="my_orders">我的订单</string>
+    <string name="shop_cart">购物车</string>
+    <string name="my_point">我的积分</string>
+    <string name="information_center">消息中心</string>
+    <string name="my_survey">我的调研</string>
+    <string name="friend_list">股友列表</string>
+    <string name="friend_moment">股友动态</string>
+    <string name="collected_comments">评论收藏</string>
+    <string name="collected_consults">资讯收藏</string>
+    <string name="orders">商城订单</string>
+    <string name="setup">设置</string>
+    <string name="survey_comment">活动评论</string>
+    <string name="apply_for_quoted">申请成为上市公司</string>
+    <string name="change_password">修改密码</string>
+    <string name="change_binding">修改绑定</string>
+    <string name="check_update">检查更新</string>
+    <string name="callBack">用户反馈</string>
+    <string name="about">关于</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="voice_record">我的录音</string>
+    <string name="see_more">查看更多</string>
+
+    <!-- GoodsDetailsActivty -->
+    <string name="gd_title">商品详情</string>
+    <string name="gd_promotion">促销</string>
+    <string name="gd_choose_type_and_count">选择分类</string>
+    <string name="gd_send_to">送至</string>
+    <string name="gd_details">图文详情</string>
+    <string name="gd_other">其他说明</string>
+    <string name="gd_comment">商品评价</string>
+    <string name="gd_param">商品参数</string>
+    <!-- MyInformationActivity -->
+    <string name="my_information_title">我的资料</string>
+    <string name="change_figure">更改头像</string>
+    <string name="user_name">用户名</string>
+    <string name="introduce">一句话介绍</string>
+    <string name="industry">行业</string>
+    <string name="city_under">所在城市</string>
+    <string name="change_nick_name_title">修改昵称</string>
+    <string name="nick_name">请输入昵称</string>
+    <string name="change_nick_name_confirm">确    定</string>
+    <string name="change_nick_name_limit">昵称不能超过10个字</string>
+    <string name="introduce_myselft_title">一句话介绍自己</string>
+    <string name="introduce_myselft_hint">用一句话简单介绍下自己吧，但不能超过20字</string>
+
+    <!-- GoodsCommentActivity -->
+    <string name="gc_title">商品评论</string>
+
+    <!-- ShoppingCartActivity -->
+    <string name="sc_title">购物车</string>
+    <string name="sc_edit"><u>编辑</u></string>
+    <string name="sc_complete"><u>完成</u></string>
+    <string name="sc_empty_tips">购物车是空的</string>
+    <string name="sc_again">再去逛逛</string>
+    <string name="sc_select_all">全选</string>
+    <string name="sc_total">合计: </string>
+
+    <!-- SearchGoodsActivity -->
+    <string name="heat_search">热搜</string>
+    <string name="input_goods_name">请输入商品或者公司的名称</string>
+    <string name="goods_launched">推出产品： </string>
+    <string name="has_new">有新品</string>
+    <string name="promotion">促销</string>
+
+    <!-- FillOrderActivity -->
+    <string name="fo_title">填写订单</string>
+    <string name="fo_receiver">收货人：</string>
+    <string name="fo_deliver_district">收货地址：</string>
+    <string name="fo_deliver_address">详细地址：</string>
+    <string name="fo_deliver_type">配送方式：</string>
+    <string name="fo_pay_type">支付方式：</string>
+    <string name="fo_leave_a_message">给商家留言：</string>
+    <string name="fo_deliver_cost">运费：</string>
+    <string name="fo_total_cost">总额：</string>
+
+    <!-- RefundActivity -->
+    <string name="for_refund">申请退款</string>
+    <string name="refund_tips">卖家已发货！请说明退款原因	。系统会与卖家联系，如卖家72小时内没回应，系统将自动退款</string>
+    <string name="sales_return_tips">请说明退货原因，并与卖家联系，如卖家72小时内没回应，系统将自动退款</string>
+    <string name="refund_amount">退款金额</string>
+    <string name="whether_get_goods">是否拿货</string>
+    <string name="upload_proof">上传凭证</string>
+    <string name="commit">提交</string>
+    <string name="commit_success">提交成功</string>
+
+    <!-- OrderListActivity -->
+    <string name="order_list_title">订单列表</string>
+    <string name="order_list_return"><u>退款/退货</u></string>
+    <string name="order_list_all"><u>全部</u></string>
+    <string name="order_list_obligations"><u>待付款</u></string>
+    <string name="order_list_to_deliver"><u>待发货</u></string>
+    <string name="order_list_to_receive"><u>待收货</u></string>
+    <string name="order_list_to_comment"><u>待评价</u></string>
+    <string name="order_list_to_pay">等待付款</string>
+    <string name="order_list_pay"><u>支付</u></string>
+
+    <!-- SalesReturnActivity -->
+    <string name="for_return">申请退货</string>
+    <string name="has_gotton_goods">已拿到货</string>
+    <string name="not_got_goods">未拿到货</string>
+    <string name="select_sales_state">请选择货物状态</string>
+    <string name="ensure_get_goods">请确认您是否拿到货</string>
+
+    <!-- RefundReturnActivity -->
+    <string name="refund_return">退款/退货</string>
+    <string name="return_detail">退货详情</string>
+    <string name="refund_negotiate">退款协商</string>
+    <string name="return_negotiate">退货协商</string>
+    <string name="refund_number">退款编号</string>
+    <string name="company_name">公司名称</string>
+    <string name="refund_reason">退款原因</string>
+    <string name="return_reason">退货原因</string>
+    <string name="application_date">申请时间</string>
+    <string name="refund_failed">退款失败</string>
+    <string name="apply_again"><u>重写申请</u></string>
+    <string name="cancel_apply">撤销申请</string>
+    <string name="complaint_company"><u>投诉公司</u></string>
+    <string name="wait_for_refund">等待卖家处理退款申请</string>
+    <string name="wait_for_return">等待卖家处理退货申请</string>
+    <string name="if_agree">如果卖家同意，申请达成并退款成功</string>
+    <string name="if_refuse">如果卖家拒绝，将需要您修改退款申请</string>
+    <string name="if_not_resolve">如果卖家未处理，72小时后将自动达成申请并退款成功</string>
+    <string name="if_agree_return">如果卖家同意，申请达成并退货成功</string>
+    <string name="if_refuse_return">如果卖家拒绝，将需要您修改退货申请</string>
+    <string name="if_not_resolve_return">如果卖家未处理，72小时后将自动达成申请并退货成功</string>
+    <string name="explain_your_problem">请简要描述您遇到的问题</string>
+    <string name="complaint">投诉</string>
+    <string name="refund_success">退款成功</string>
+    <string name="refund_account_dot">退款金额： &#032;&#032;</string>
+    <string name="refund_time_dot">退款时间： &#032;&#032;</string>
+    <string name="nick_name_hint">请输入昵称</string>
+
+    <!-- RefundDetailActivity -->
+    <string name="refund_details_title">退款详情</string>
+
+    <!-- MyConcernCompanyActivity -->
+    <string name="my_concern_company_title">关注的公司</string>
+
+    <!-- StockFriendsActivity -->
+    <string name="stock_friends_title">股友列表</string>
+    <string name="enterprise">所在企业</string>
+    <string name="enterprise_name_tip">请写出你所在的企业名称</string>
+    <string name="your_position">你的职位</string>
+    <string name="your_position_tip">请写出你的职务</string>
+    <string name="contact_way">联系方式</string>
+    <string name="submit">提交</string>
+    <string name="consults_collect">资讯收藏</string>
+    <string name="myFriendMoment">股友动态</string>
+    <string name="comment_collection">评论收藏</string>
+    <string name="ask_for_survey">调研需求</string>
+
+    <!-- ManageSignActivity -->
+    <string name="manage_sign_title">报名管理</string>
+
+    <!-- MessageCenterActivity -->
+    <string name="message_center_my_survey">我的调研</string>
+    <string name="message_center_my_survey_detail">暂无消息</string>
+    <string name="message_center_stock_remind">股价提醒</string>
+    <string name="message_center_stock_remind_detail">暂无消息</string>
+    <string name="message_center_store_message">商城消息</string>
+    <string name="message_center_store_message_detail">浦发银行（600000）最新价达到了13.14</string>
+    <string name="message_center_comment">评论动态</string>
+    <string name="message_center_comment_detail">暂无消息</string>
+    <string name="message_center_system_message">系统消息</string>
+    <string name="message_center_system_message_detail">暂无消息</string>
+    <string name="message_center_titile_remind">提醒</string>
+    <string name="message_center_title_shejiao">社交</string>
+
+    <!-- StockFiendsLocalFriends -->
+    <string name="stock_friends_local_contacts_title">本地联系人</string>
+    <string name="stock_friends_local_contacts_invite">邀请</string>
+
+    <!-- CenterfriendListItem -->
+    <string name="item_friend_name_n">黎法鹏</string>
+    <string name="item_friend_say_n">嘿，最近还好吗？</string>
+
+    <!-- comment_set_activity -->
+    <string name="comment_set_title">设置</string>
+    <string name="comment_set_mysurvey">我的调研</string>
+    <string name="comment_set_remind1">屏蔽提醒</string>
+    <string name="comment_set_remind2">对话设置</string>
+    <string name="comment_set_remind3">清除消息记录</string>
+
+    <!-- comment_activity -->
+    <string name="comment_default">暂无任何信息</string>
+    <string name="comment_title">评论动态</string>
+
+    <!-- ResetPasswordActivity -->
+    <string name="reset_password">修改密码</string>
+    <string name="input_old_password">请先输入原密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_new_password_again">请再次输入密码</string>
+    <string name="forget_password_line"><u>忘记密码</u></string>
+    <string name="toast_success_password">密码修改成功！</string>
+
+    <!-- CashierDeskActivity -->
+    <string name="cashier_desk_title">收银台</string>
+    <string name="pay_way">请选择付款方式</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="view_order">查看订单</string>
+    <string name="continue_shopping">再次购买</string>
+    <string name="try_again">再试一次</string>
+
+    <!-- LogisticsActivity -->
+    <string name="logistics_title">查看物流</string>
+    <string name="survey_company">调研企业</string>
+    <string name="request_company">点击选择你需要调研的企业名称</string>
+    <string name="manage_sign">报名管理</string>
+    <string name="manage_record">录音管理</string>
+    <string name="signed_activity">报名的调研活动</string>
+    <string name="collected_activity">收藏的调研活动</string>
+    <string name="organized_activity">发起的调研活动</string>
+    <string name="wrong_passaord">密码错误！</string>
+    <string name="password_different">新密码两次输入不相同</string>
+    <string name="reset_password_success">修改成功！</string>
+    <string name="reset_new_old_same">新密码不能和原密码相同</string>
+
+    <!-- ModifyBindActivity -->
+    <string name="modify_bind">修改绑定</string>
+    <string name="telephone">手机</string>
+    <string name="email">邮箱</string>
+    <string name="bounded">已绑定</string>
+    <string name="unbounded">未绑定</string>
+    <string name="qq">QQ</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="wechat2">微信</string>
+    <string name="weibo">微博</string>
+    <string name="verified">审核通过</string>
+    <string name="unverify">待审核</string>
+    <string name="verify_failed">审核失败</string>
+    <string name="admitted">答复通过</string>
+    <string name="unadmit">待答复</string>
+    <string name="banned">拒绝通过</string>
+    <string name="qq_zone">QQ空间</string>
+    <!-- BindPhoneActivity -->
+    <string name="bind_phone">绑定手机</string>
+    <string name="input_new_tele">请输入新的手机号</string>
+    <string name="new_phone_will_be_login">新手机将用于下次登录</string>
+
+    <!-- BindEmailActivity -->
+    <string name="bind_email">绑定邮箱</string>
+    <string name="input_email">请输入邮箱地址</string>
+    <string name="get_email_verification"><u>获取邮箱验证码</u></string>
+    <string name="new_email_can_be_login">新邮箱将用于下次登录</string>
+    <string name="copyright">CopyRight2015 Billionhome.All Rights Reserved</string>
+    <string name="problem_and_advice">问题和意见</string>
+
+    <!-- OrderDetailsActivity -->
+    <string name="order_details_title">订单详情</string>
+    <string name="order_details_trade_success">交易成功</string>
+    <string name="order_details_delivered">卖家已发货</string>
+    <string name="order_details_received">买家已收货</string>
+    <string name="order_details_to_pay">等待买家付款</string>
+    <string name="order_details_order_has_canceled">订单已取消</string>
+    <string name="order_details_logistics">查看物流</string>
+    <string name="order_details_order_num">订单号:</string>
+    <string name="order_details_order_time">下单时间:</string>
+    <string name="order_details_telephone">联系电话:</string>
+    <string name="title_activity_my_record_manage">我的录音管理</string>
+    <string name="order_details_customer_service">联系客服</string>
+    <string name="order_details_delete_order"><u>刪除订单</u></string>
+    <string name="order_details_modify_order"><u>修改订单</u></string>
+    <string name="order_details_for_refund"><u>申请退款</u></string>
+    <string name="order_details_for_return"><u>申请退货</u></string>
+    <string name="record">录音</string>
+    <string name="name_for_record">请输入录音名称</string>
+    <string name="save">保存</string>
+
+    <!-- fragment_share_list -->
+    <string name="share_name">名称</string>
+    <string name="share_new">最新</string>
+    <string name="share_updown">涨跌</string>
+    <string name="share_amountofincrease">涨幅</string>
+    <string name="share_tradingvolume">成交量</string>
+    <string name="share_volumeoftransaction">成交额</string>
+    <string name="share_amount">金额</string>
+    <string name="share_max">最高</string>
+    <string name="share_min">最低</string>
+    <string name="share_swing">振幅</string>
+    <string name="share_turnoverrate">换手率</string>
+    <string name="share_PEratio">市盈率</string>
+    <string name="share_totalvalue">总市值</string>
+    <string name="network_anomaly">网络异常</string>
+    <string name="brief_introduction">活动简介</string>
+    <string name="henggang">---</string>
+
+    <!-- sharefriendssearch_Activity -->
+    <string name="search_share">搜股票</string>
+    <string name="search_sharefriends">搜股友</string>
+    <string name="search_result">搜索结果</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_clean_history">清除搜索历史</string>
+    <string name="find_sharefriends">找股友</string>
+    <string name="enrolling">报名中</string>
+    <string name="enrollend">报名结束</string>
+    <string name="surveying">进行中</string>
+    <string name="surveyend">结束</string>
+    <string name="enter_search_hint_survey_list">输入活动、发起人和公司名称关键字搜索</string>
+    <!-- newthirdactivity -->
+    <string name="choose_situation">三板行情</string>
+    <string name="choose_myself">三板自选</string>
+    <string name="newthirdadd">新三板新增</string>
+    <string name="touzijigou">投资机构</string>
+    <string name="touhangquanhuodong">投行圈活动</string>
+    <string name="third_name">名称</string>
+    <string name="third_new">最新</string>
+    <string name="third_zhangdie">涨跌</string>
+    <string name="third_zhangfu">涨幅</string>
+    <!-- stockFragment -->
+    <string name="zixuan">自选</string>
+    <string name="bankuai">板块</string>
+    <string name="hangqing">行情</string>
+    <!-- plateFragment -->
+    <string name="plate_name">名称</string>
+    <string name="plate_zhangfu">涨幅</string>
+    <string name="plate_zhanglinggu">涨领股</string>
+    <string name="plate_hangye">行业</string>
+    <string name="plate_diqu">地区</string>
+    <!-- FinanceActivity -->
+    <string name="tv_finance">金融业</string>
+    <string name="tv_finance_name">名称</string>
+    <string name="tv_finance_new">最新</string>
+    <string name="tv_finance_zhangdie">涨跌</string>
+    <string name="tv_finance_zhangfu">涨幅</string>
+    <!-- EditMyselfActivity -->
+    <string name="tv_collect_news"><u>收藏</u></string>
+    <string name="tv_share_news"><u>分享</u></string>
+    <string name="please_input_name">"请输入用户昵称"</string>
+    <string name="please_input">"请输入代码、全拼或首字母"</string>
+    <string name="search_wechar">"微信好友"</string>
+    <string name="search_qq">"QQ好友"</string>
+    <string name="search_weibo">"微博好友"</string>
+    <string name="search_phone">"通讯录好友"</string>
+    <string name="no_find_share">"没有找到相关股票"</string>
+    <string name="software_information"><u>"Copyright@2015 Billionhome.All Rights Reserved"</u></string>
+
+    <!-- FragmentPrice -->
+    <string name="share_situation">"行情"</string>
+    <string name="share_news">"新闻"</string>
+    <string name="share_announcement">"公告"</string>
+    <string name="share_research_report">"研报"</string>
+    <string name="share_comment">"评论"</string>
+    <string name="friend">股友</string>
+    <string name="no_survey_activity">该用户暂无参与的活动</string>
+    <string name="no_survey_comment">该用户暂无发起的评论</string>
+    <string name="no_survey_friend">该用户暂无关注的股友</string>
+    <string name="no_survey_stock">该用户暂无自选股</string>
+    <string name="already_report">已举报</string>
+
+    <!-- FragmentSituation -->
+    <string name="tv_Agu">A股</string>
+    <string name="tv_Bgu">B股</string>
+    <string name="tv_bankuai">板块</string>
+    <!-- 短信分析 -->
+    <string name="sms_share">股东会是一个能让普通投资者和专业投资者、上市公司一起交流的平台，一个调研、拜访A股、新三板公司的链接平台。请加入我们  http://duobeibao.com/index.php?r=download</string>
+
+</resources>

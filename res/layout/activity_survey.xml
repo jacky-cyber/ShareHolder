@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_total_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/title" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_note_left"
+                android:src="@drawable/ico_fanhui" />
+
+            <TextView
+                android:id="@+id/tv_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/survey"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tvs_survey" />
+
+            <ImageView
+                android:id="@+id/title_research"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                  android:background="@drawable/bg_text_confirm_style"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:src="@drawable/ico_shuru" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/survey_padding_bottom"
+        android:paddingLeft="@dimen/survey_padding_left"
+        android:paddingRight="@dimen/survey_padding_left"
+        android:paddingTop="@dimen/survey_padding_top" >
+
+        <TextView
+            android:id="@+id/tv_survey_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="占领微豆调研活动"
+            android:textColor="#2e2e2e"
+            android:textSize="@dimen/survey_title_textSize" />
+
+        <TextView
+            android:id="@+id/tv_survey_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/survey_padding_top"
+            android:text="占领微豆调研活动"
+            android:textColor="#5d5d5d"
+            android:textSize="@dimen/survey_content_textSize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_mark_height"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_person_height"
+        android:paddingLeft="@dimen/survey_padding_left"
+        android:layout_marginTop="@dimen/survey_person_top"
+                  android:background="@color/white" 
+
+        android:paddingRight="@dimen/survey_num_padding_right" >
+
+        <TextView
+            android:id="@+id/tv_survey_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/survey_list"
+            android:textColor="#2e2e2e"
+            android:textSize="@dimen/survey_title_textSize" />
+
+        <TextView
+            android:id="@+id/tv_survey_person_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="8"
+            android:textColor="#2e2e2e"
+            android:textSize="@dimen/survey_num_textSize" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_mark_height"
+        android:background="#cccccc" />
+
+    <ListView
+        android:id="@+id/lv_survey_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/white" 
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

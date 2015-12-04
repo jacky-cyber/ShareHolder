@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:paddingLeft="@dimen/foud_search_item_padding_left"
+	    	android:paddingTop="@dimen/foud_search_item_text_padding"
+	    	android:paddingBottom="@dimen/foud_search_item_text_padding"
+	    	android:orientation="vertical">
+	        
+		    <TextView
+		        android:id="@+id/item_foud_search_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textColor="#333333"
+		        android:textSize="13sp" />
+		     
+	        <LinearLayout
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:paddingTop="@dimen/foud_search_item_text_padding"
+		    	android:orientation="horizontal">
+		        
+			    <TextView
+			        android:id="@+id/item_foud_search_code"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+	
+			        android:textColor="@color/foud_search_code_color"
+			        android:textSize="11sp" />
+			    
+			    <TextView
+			        android:id="@+id/item_foud_search_short_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:textColor="@color/foud_search_code_color"
+			        android:textSize="11sp" />
+			    
+			    <TextView
+			        android:id="@+id/item_foud_search_type"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+			        android:textColor="@color/foud_search_code_color"
+			        android:textSize="11sp" />
+			    </LinearLayout>
+		</LinearLayout>
+		
+
+	    <ImageView
+	        	android:id="@+id/item_foud_search_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:padding="@dimen/return_padding" />
+	</RelativeLayout>>
+</RelativeLayout>

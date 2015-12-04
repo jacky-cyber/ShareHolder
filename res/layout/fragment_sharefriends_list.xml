@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="没找到相关股友"
+        android:textSize="14sp"
+        android:textColor="#5000"
+        />
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/refresh1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sb_fs_sidebar"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_sharefriends_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" >
+        </ListView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:src="#eaeaea" />
+    </com.example.shareholders.common.PullToRefreshView>
+
+</LinearLayout>

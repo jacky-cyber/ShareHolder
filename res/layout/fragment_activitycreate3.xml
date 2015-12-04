@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <!-- 最下面的下一步和三个小圆点 -->
+
+    <LinearLayout
+        android:id="@+id/ll_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/btn_next_margin_bottom" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_create_top"
+            android:background="#efeff4" />
+
+        <TextView
+            android:id="@+id/tv_compeleted"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_next_height"
+            android:layout_marginLeft="@dimen/btn_next_margin_left"
+            android:layout_marginRight="@dimen/btn_next_margin_left"
+            android:layout_marginTop="@dimen/btn_next_margin_top"
+            android:background="@drawable/btn_next_style"
+            android:gravity="center"
+            android:text="@string/completed"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btn_dots_margin_top"
+            android:src="@drawable/ico_3" />
+    </LinearLayout>
+
+    <!-- 最下面的下一步和三个小圆点 -结束 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_completed"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+
+            <!-- 联系人和联系电话 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/contact_tel_padding_bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/contact_margin_bottom"
+                    android:layout_marginLeft="@dimen/contact_padding"
+                    android:layout_marginRight="@dimen/contact_margin_right"
+                    android:layout_marginTop="@dimen/contact_padding"
+                    android:orientation="vertical" >
+
+                    <!-- 联系人 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ico_lianxiren2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/contact_margin_left"
+                            android:text="@string/contact"
+                            android:textColor="#ed9027"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- 联系电话 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tel_contact_margin_top"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ico_lianxidianhua2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/contact_margin_left"
+                            android:text="@string/Telephone"
+                            android:textColor="#ed9027"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 左边图标结束 -->
+
+
+                <!-- 右边编辑区 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/ll_contact"
+                    android:orientation="vertical" >
+
+                    <!-- 联系人编辑 -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/total_left_padding"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <EditText
+                            android:id="@+id/et_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical"
+                            android:textColor="#666666"
+                            android:maxLength="10"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/line_width"
+                            android:layout_alignParentBottom="true"
+                            android:background="#b2b2b2" />
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/xinghao_margin_left"
+                            android:src="@drawable/ico_xinghao" />
+                    </RelativeLayout>
+
+                    <!-- 联系人编辑 -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:paddingRight="@dimen/total_left_padding"
+                        android:focusableInTouchMode="true" >
+
+                        <EditText
+                            android:id="@+id/et_tel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical"
+                            android:digits="1234567890."  
+                            android:textColor="#666666"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/line_width"
+                            android:layout_alignParentBottom="true"
+                            android:background="#b2b2b2" />
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/xinghao_margin_left"
+                            android:src="@drawable/ico_xinghao" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 右边编辑区结束 -->
+
+            </LinearLayout>
+
+            <!-- 联系人和联系电话结束 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+
+            <!-- 其他说明 -->
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/contact_padding"
+                android:layout_marginTop="@dimen/other_statement_margin_top"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ico_qitashuoming2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/contact_margin_left"
+                    android:text="@string/other_statement"
+                    android:textColor="#ed9027"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_other_statement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_introduction_height"
+                android:layout_marginBottom="@dimen/other_statement_content_margin_bottom"
+                android:layout_marginLeft="@dimen/other_statement_content_margin_left"
+                android:layout_marginRight="@dimen/other_statement_content_margin_left"
+                android:layout_marginTop="@dimen/other_statement_content_margin_top"
+                android:background="@drawable/bg_set_activity_name_style"
+                android:gravity="top"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_sharefri_search"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_sharefri_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17.5dp"
+        android:gravity="center"
+        android:text="武刚股份"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_sharefri_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18.5dp"
+        android:layout_toRightOf="@id/tv_sharefri_name"
+        android:gravity="center"
+        android:text="600005"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_sharefri_addcut"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/title_padding_left"
+        android:paddingRight="@dimen/title_padding_left" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_sharefri_addcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add" />
+    </LinearLayout>
+
+</RelativeLayout>

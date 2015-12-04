@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e4499"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_login_height"
+        android:layout_marginLeft="@dimen/tv_login_margin_left"
+        android:layout_marginRight="@dimen/tv_login_margin_left"
+        android:layout_marginTop="@dimen/tv_login_margin_top"
+        android:background="@drawable/btn_login_background"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_login_height"
+        android:layout_marginLeft="@dimen/tv_login_margin_left"
+        android:layout_marginRight="@dimen/tv_login_margin_left"
+        android:layout_marginTop="@dimen/tv_register_margin_top"
+        android:background="@drawable/btn_login_background"
+        android:gravity="center"
+        android:text="@string/register_main"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_big_large"
+        android:layout_marginLeft="@dimen/tv_login_margin_left"
+        android:layout_marginRight="@dimen/tv_login_margin_left"
+        android:layout_marginTop="@dimen/line_margin_top"
+        android:background="#a8a8a8" />
+
+    <LinearLayout
+        android:id="@+id/ll_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/have_a_look_margin_top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/have_a_look"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/tioazhuan_margin_left"
+            android:src="@drawable/ico_tiaozhuan" />
+    </LinearLayout>
+
+</LinearLayout>

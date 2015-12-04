@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_layout"
+    android:orientation="vertical" >
+
+    <!-- 标题：自选基金 -->
+    <RelativeLayout
+        android:id="@+id/rl_fl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/title_fl_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="5dp"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fund_zixuan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+        
+        <ImageView
+                android:id="@+id/title_fl_research"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:padding="@dimen/return_padding"
+                android:src="@drawable/btn_sousuo_normal" />
+    </RelativeLayout>
+    <ImageView
+            android:id="@+id/fl_space_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#efeff4" />
+
+    <!-- 我关注的基金 -->
+    <LinearLayout
+        android:id="@+id/rl_fl_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/optional_fund_my_concern_height"
+            android:layout_marginTop="@dimen/fund_details_margin_top"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/fund_details_margin_left"
+                android:text="@string/optional_fund_my_concerned_fund"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                />
+            
+            <TextView 
+                android:id="@+id/tv_optional_fund_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/fund_details_margin_left"
+                android:text="@string/optional_fund_manage"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:background="@drawable/bg_optional_fund_manage_disabled"
+                />
+            
+        </LinearLayout>
+
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eaeaea"/>
+        
+        <LinearLayout
+            android:id="@+id/rl_fl_foud_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/foud_title_background_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fl_open_foud"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/foud_title_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/open_foud"
+                android:textColor="@color/foud_text_base_color"
+                android:textSize="13sp" />
+            
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/foud_title_height"
+                android:background="#eaeaea"/>
+
+            <TextView
+                android:id="@+id/tv_fl_closed_foud"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/foud_title_height"
+                android:layout_weight="1"
+                android:textColor="@color/foud_text_base_color"
+                android:gravity="center"
+                android:text="@string/closed_foud"                
+                android:textSize="13sp" />
+            
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/foud_title_height"
+                android:background="#eaeaea"/>
+
+            <TextView
+                android:id="@+id/tv_fl_money_foud"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/foud_title_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/money_foud"
+                android:textColor="@color/foud_text_base_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/rl_fl_foud_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/foud_title_background_color"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rl_fl_open_foud_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#eaeaea"/>
+            
+            <ImageView
+                android:id="@+id/rl_fl_closed_foud_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#eaeaea"/>
+            
+            <ImageView
+                android:id="@+id/rl_fl_money_foud_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#eaeaea"/>
+            
+        </LinearLayout>
+        
+        
+        <!-- 点击添加提示 -->
+        
+    
+    </LinearLayout>
+    
+    <com.example.shareholders.common.NoScrollViewPager
+        android:id="@+id/vp_optional_fund"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

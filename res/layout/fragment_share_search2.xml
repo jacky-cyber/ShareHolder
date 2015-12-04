@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="34.5dp"
+        android:layout_below="@id/ll_search_btn"
+        android:background="@color/total_gray"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.5dp"
+            android:text="@string/search_result"
+            android:textColor="@color/unselected_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+   <ListView
+        android:id="@+id/share_search_s_list2"
+        android:layout_below="@id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/sharefri_search_list_divider"
+        android:dividerHeight="0.5dp">
+    </ListView>
+    
+    </RelativeLayout>

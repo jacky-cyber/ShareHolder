@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+                <!-- 热门城市 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_heat_cities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/heat_city_title_height"
+                        android:layout_marginLeft="@dimen/heat_city_title_margin_left"
+                        android:gravity="center_vertical"
+                        android:text="@string/heat_cities"
+                        android:textColor="#262626"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_width_small"
+                        android:layout_marginLeft="@dimen/heat_city_line_margin_left"
+                        android:background="#acacac" />
+
+                    <!-- 热门城市列表 -->
+
+                    <GridView
+                        android:id="@+id/gv_heat_cities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/heat_city_list_margin_bottom"
+                        android:layout_marginLeft="@dimen/heat_city_title_margin_left"
+                        android:layout_marginRight="@dimen/heat_city_title_margin_left"
+                        android:layout_marginTop="@dimen/heat_city_list_margin_top"
+                        android:numColumns="5"
+                        android:scrollbars="@null"
+                        android:verticalSpacing="@dimen/heat_city_list_vertical_spacing" >
+                    </GridView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_width_small"
+                        android:background="#acacac" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/all_city_title_margin_bottom"
+                        android:layout_marginLeft="@dimen/heat_city_title_margin_left"
+                        android:layout_marginTop="@dimen/all_city_title_margin_top"
+                        android:text="@string/whole_cities"
+                        android:textColor="#262626"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- 热门城市 结束 -->
+    
+
+</LinearLayout>

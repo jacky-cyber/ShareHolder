@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_style2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingLeft="@dimen/dialog_message_padding_left"
+            android:paddingRight="@dimen/dialog_message_padding_left"
+            android:paddingBottom="@dimen/dialog_message_padding_top"
+            android:paddingTop="@dimen/dialog_message_padding_top"
+            android:text="@string/survey_list_confirm_sign_up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_button_margin_bottom"
+            android:layout_marginLeft="@dimen/dialog_button_margin_left"
+            android:layout_marginRight="@dimen/dialog_button_margin_left"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dialog_button_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/survey_list_confirm"
+                android:background="@drawable/btn_survey_list_style"
+                />
+         <!--  
+            <TextView 
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/dialog_button_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/survey_list_cancel"
+                android:layout_marginLeft="@dimen/dialog_button_margin_left"
+                android:background="@drawable/btn_survey_list_style"
+                />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_month"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/selector_fund_networth_left_drawable"
+                    android:gravity="center"
+                    android:text="一月"
+                    android:textColor="@drawable/selector_stock_details_tab_textcolor"
+                    android:textSize="13sp" />
+                
+
+
+                <RadioButton
+                    android:id="@+id/rb_festival"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_fund_networth_left_drawable"
+                    android:gravity="center"
+                    android:text="一季度"
+                    android:textColor="@drawable/selector_stock_details_tab_textcolor"
+                    android:textSize="13sp" />
+                
+                <RadioButton
+                    android:id="@+id/rb_halfyear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_fund_networth_left_drawable"
+                    android:gravity="center"
+                    android:text="半年"
+                    android:textColor="@drawable/selector_stock_details_tab_textcolor"
+                    android:textSize="13sp" />
+                
+                <RadioButton
+                    android:id="@+id/rb_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_fund_networth_left_drawable"
+                    android:gravity="center"
+                    android:text="一年"
+                    android:textColor="@drawable/selector_stock_details_tab_textcolor"
+                    android:textSize="13sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

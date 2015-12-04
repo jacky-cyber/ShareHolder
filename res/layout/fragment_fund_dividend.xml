@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 分红配送详情 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configuration_detail_title_height"
+            android:layout_marginTop="@dimen/gap_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/configuration_detail_title_padding_left"
+            android:text="@string/dividend_distribution"
+            android:textColor="#d58527"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/position_row_padding_top"
+            android:paddingTop="@dimen/position_row_padding_top" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/configuration_detail_title_padding_left"
+                android:text="@string/dividend_year"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/equality_register_day"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ex_dividend_day"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/per_dividend"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/dividend_grant_day"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 分红配送详情  结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 分红配送详情列表 -->
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/lv_dividend_distribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.example.shareholders.common.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/no_data_height"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="@string/temporarily_no_data"
+            android:textColor="#949393"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 分红拆分详情 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configuration_detail_title_height"
+            android:layout_marginTop="@dimen/gap_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/configuration_detail_title_padding_left"
+            android:text="@string/dividend_split"
+            android:textColor="#d58527"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efeff2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/position_row_padding_top"
+            android:paddingTop="@dimen/position_row_padding_top" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/configuration_detail_title_padding_left"
+                android:text="@string/equality_register_day"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/split_category"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/configuration_detail_title_padding_left"
+                android:text="@string/split_convert_rate"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 分红拆分详情 结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 分红拆分详情 列表 -->
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/lv_dividend_split"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.example.shareholders.common.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/no_data_height"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="@string/temporarily_no_data"
+            android:textColor="#949393"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+    </LinearLayout>
+
+</ScrollView>

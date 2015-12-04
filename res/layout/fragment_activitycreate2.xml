@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <!-- 最下面的下一步和三个小圆点 -->
+
+    <LinearLayout
+        android:id="@+id/ll_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/btn_next_margin_bottom" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_create_top"
+            android:background="#efeff4" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_next_height"
+            android:layout_marginLeft="@dimen/btn_next_margin_left"
+            android:layout_marginRight="@dimen/btn_next_margin_left"
+            android:layout_marginTop="@dimen/btn_next_margin_top"
+            android:background="@drawable/btn_next_style"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btn_dots_margin_top"
+            android:src="@drawable/ico_2" />
+    </LinearLayout>
+
+    <!-- 最下面的下一步和三个小圆点 -结束 -->
+
+    
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frag2_height"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/frag1_activity_text_left"
+                    android:layout_marginRight="@dimen/frag1_activity_text_right"
+                    android:src="@drawable/ico_hudongdiaoyanqiye2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/frag2_activity_name_text"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/frag1_activity_name_textsize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eaeaea" />
+
+            <com.example.shareholders.common.MyListView
+                android:id="@+id/lv_frag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                />
+          
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/frag2_company_height"
+                android:layout_marginTop="@dimen/frag2_company_add_top"
+                android:background="@drawable/bg_activity_create2"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/frag2_company_add_left"
+                    android:layout_marginRight="@dimen/frag2_company_add_right"
+                    android:src="@drawable/ico_shizijia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/frag2_company_add_left"
+                    android:text="@string/frag2_activity_add_text"
+                    android:textColor="#939393"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

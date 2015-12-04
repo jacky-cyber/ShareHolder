@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/current_icon"
+        android:layout_width="@dimen/current_survey_image_size"
+        android:layout_height="@dimen/current_survey_image_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bank_text_right"
+        android:layout_marginRight="@dimen/bank_text_right"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/current_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/bank_text_right"
+        android:layout_toRightOf="@+id/current_icon"
+        android:text="@string/recent_listview_name"
+        android:textColor="#333333"
+        android:textSize="@dimen/current_survey_listitem_name_size"/>
+
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_name"
+        android:layout_marginTop="@dimen/current_survey_listitem_date_top"
+        android:layout_toRightOf="@+id/current_icon"
+        android:paddingBottom="@dimen/bank_text_right"
+        android:text="@string/recent_istview_date"
+        android:textColor="@color/current_list_date"
+        android:textSize="@dimen/current_survey_listitem_date_text" />
+
+    <LinearLayout
+        android:id="@+id/recent_listview_person_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/bank_text_right"
+        android:layout_marginTop="@dimen/current_survey_more_top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浏览:"
+            android:textColor="#848484"
+            android:textSize="@dimen/current_survey_listitem_apply_text" />
+
+        <TextView
+            android:id="@+id/current_watch_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_listview_person_num"
+            android:textColor="#848484"
+            android:textSize="@dimen/current_survey_listitem_apply_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recent_listview_person_linear"
+        android:paddingBottom="@dimen/current_survey_listitem_apply_bottom"
+        android:paddingLeft="@dimen/bank_text_right"
+        android:paddingRight="@dimen/bank_text_right"
+        android:paddingTop="@dimen/bottom_drawable_bottom"
+        android:src="@drawable/btn_baoming" />
+
+    <TextView
+        android:id="@+id/current_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/current_time"
+        android:layout_marginLeft="@dimen/current_survey_listitem_place_left"
+        android:layout_toRightOf="@+id/current_time"
+        android:text="广州"
+        android:textColor="@color/current_list_date"
+        android:textSize="@dimen/current_survey_listitem_date_text" />
+
+</RelativeLayout>

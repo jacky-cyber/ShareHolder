@@ -1,0 +1,294 @@
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingLeft="@dimen/navbar_padding_left_right"
+        android:paddingRight="@dimen/navbar_padding_left_right" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="企业所在城市"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_search_survey_title" />
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_search_survey_confirm"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_title"
+        android:src="#2e0c78" />
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/rl_choose_city_padding"
+        android:paddingRight="@dimen/rl_choose_city_padding"
+        android:paddingTop="@dimen/rl_choose_city_padding" >
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_didian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/location_margin"
+                android:layout_toRightOf="@+id/iv_location"
+                android:text="@string/location"
+                android:textColor="#848484"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_choose_top"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_location_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/location_margin"
+                android:layout_marginRight="@dimen/location_margin"
+                android:background="@drawable/bg_activity_edit"
+                android:textColor="#dbba9c"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_relocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_choose_city"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:src="#eaeaea" />
+
+        <RelativeLayout
+            android:id="@+id/rl_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/rl_relocate_padding"
+            android:layout_marginRight="@dimen/rl_relocate_padding"
+            android:paddingBottom="@dimen/rl_relocate_inner_padding"
+            android:paddingTop="@dimen/rl_relocate_inner_padding" >
+
+            <TextView
+                android:id="@+id/tv_default_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#7a7a7a"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_default_city"
+                android:text="@string/default_city"
+                android:textColor="#7a7a7a"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/rl_relocate_padding"
+            android:layout_marginRight="@dimen/rl_relocate_padding"
+            android:paddingBottom="@dimen/rl_relocate_inner_padding"
+            android:paddingTop="@dimen/rl_relocate_inner_padding" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_didian2" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="广州"
+                android:textColor="#7a7a7a"
+                android:textSize="13sp" />
+
+        
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_default"
+            android:src="#eaeaea" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_popular_cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_relocate"
+        android:layout_marginTop="@dimen/activity_search_survey_popular_mar_top"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/activity_search_survey_linear_padding"
+        android:paddingRight="@dimen/activity_search_survey_linear_padding" >
+
+        <TextView
+            android:id="@+id/tv_popular_cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/activity_search_survey_search_popular_city"
+            android:textColor="#333333"
+            android:textSize="@dimen/activity_search_survey_all_city_size" />
+
+        <com.example.shareholders.common.MyGridView
+            android:id="@+id/mv_cities"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_popular_cities"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/activity_search_survey_gridview_mar_top"
+            android:gravity="center_horizontal"
+            android:numColumns="4" >
+        </com.example.shareholders.common.MyGridView>
+    </RelativeLayout>
+
+
+    <ImageView 
+        android:id="@+id/iv_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/rl_popular_cities"
+        android:layout_marginTop="@dimen/activity_search_survey_popular_mar_top"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_line3"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_all_cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/activity_search_survey_linear_padding"
+            android:layout_marginTop="@dimen/activity_search_survey_all_city_mar_top"
+            android:text="@string/activity_search_survey_search_all_city"
+            android:textColor="#333333"
+            android:textSize="@dimen/activity_search_survey_all_city_size" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_all_cities"
+            android:layout_marginTop="10dp"
+            android:background="#eaeaea" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_line" >
+
+            <ListView
+                android:id="@+id/lv_city"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="@dimen/activity_search_survey_dialog_size"
+                android:layout_height="@dimen/activity_search_survey_dialog_size"
+                android:layout_gravity="center"
+                android:background="@drawable/show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/activity_search_survey_dialog_text_size"
+                android:visibility="invisible" />
+
+            <com.example.shareholders.common.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="@dimen/activity_search_survey_side_bar_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

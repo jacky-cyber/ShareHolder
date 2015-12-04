@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            <LinearLayout
+	            android:layout_width="match_parent"
+	           	android:layout_height="wrap_content"
+	           	android:orientation="horizontal">
+               
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_gravity="left"
+                   android:text="@string/fund_details_accrual_date"
+                   android:textColor="@color/fund_Details_type_color"
+                   android:textSize="11dp"
+                   android:textStyle="bold" />
+               
+               <TextView
+                   android:id="@+id/tv_fd_param_accrual_date"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:textColor="#333333"
+                   android:textSize="11dp"
+                   android:textStyle="bold" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fund_details_ranking"
+                    android:textColor="@color/fund_Details_type_color"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+                
+                	<TextView
+	                    android:id="@+id/tv_fd_param_ranking_num_money"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right"
+	                    android:text="1"
+	                    android:textColor="@color/fund_Details_rise_color"
+	                    android:textSize="11dp"
+	                    android:textStyle="bold" />
+
+                	<TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right"
+	                    android:text=" | "
+	                    android:textColor="@color/fund_Details_type_color"
+	                    android:textSize="11dp"
+	                    android:textStyle="bold" />
+                    
+	                <TextView
+	                    android:id="@+id/tv_fd_param_ranking_total_money"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right"
+	                    android:text="120"
+	                    android:textColor="#333333"
+	                    android:textSize="11dp"
+	                    android:textStyle="bold" />
+	                
+
+                
+            </LinearLayout>
+            
+
+
+            
+        </LinearLayout>
+
+</merge>
+
+

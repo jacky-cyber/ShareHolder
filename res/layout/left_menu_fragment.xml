@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_background" >
+
+    <com.example.shareholders.common.CircleImageView
+        android:id="@+id/ic_face"
+        android:layout_width="@dimen/face_size"
+        android:layout_height="@dimen/face_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ci_face_margin"
+        android:src="@drawable/ico_default_headview" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tv_name_margin"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tv_name_margin"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ico_dingwei1" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="广州"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_location"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ll_padding"
+        android:paddingRight="@dimen/ll_padding" >
+
+        <LinearLayout
+            android:id="@+id/ll_my_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_marigin_to_top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/item_size"
+                android:layout_height="@dimen/item_size"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_shoucang1" />
+
+            <TextView
+                android:id="@+id/tv_my_collected_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/text_marigin_to_top_image"
+                android:gravity="center"
+                android:text="@string/my_collect_goods"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/line_top"
+            android:src="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_my_concern_enterprises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/linear_item_margin_top" >
+
+            <ImageView
+                android:layout_width="@dimen/item_size"
+                android:layout_height="@dimen/item_size"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_guanzhu" />
+
+            <TextView
+                android:id="@+id/tv_my_concern_company"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/text_marigin_to_top_image"
+                android:text="@string/my_concern_enterprises"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/line_top"
+            android:src="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

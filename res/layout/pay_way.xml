@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/ll_to_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeff4"
+        android:orientation="vertical"
+        >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/pay_way"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:padding="1dp"
+        android:background="@drawable/bg_tablelayout_pay"
+        >
+        
+        <TableRow >
+            
+            <ImageView 
+                android:id="@+id/iv_zhifubao"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/btn_personal_zhifubao"
+                android:background="#ffffff"
+                />
+            
+            <View 
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:background="#999999"
+                />
+            
+            <ImageView 
+                android:id="@+id/iv_baidu"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/btn_personal_baidu"
+                android:background="#ffffff"
+                />
+            
+        </TableRow>
+        	<View 
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#999999"
+                />
+        <TableRow >
+            
+        </TableRow>
+        
+        <TableRow >
+            
+            <ImageView 
+                android:id="@+id/iv_weixin"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/btn_personal_weixin"
+                android:background="#ffffff"
+                />
+            
+            <View 
+                android:layout_width="0.5dp"
+                android:layout_height="120dp"
+                android:background="#999999"
+                />
+            
+            <ImageView 
+                android:id="@+id/iv_yinlian"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/btn_personal_yinlian"
+                android:background="#ffffff"
+                />
+            
+        </TableRow>
+        
+    </TableLayout>
+    
+    </LinearLayout>
+
+</merge>

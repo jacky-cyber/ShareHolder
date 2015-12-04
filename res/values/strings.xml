@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_photo">Choose Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="frag3_title">Survey</string>
+    <string name="company_detail">Company Detail</string>
+    <string name="frag_home">Home</string>
+    <string name="frag_survey">Survey</string>
+    <string name="frag_price">Information</string>
+    <string name="frag_goods">Mall</string>
+    <string name="frag_me">Mine</string>
+    <string name="app_name">StakeHolders</string>
+    <string name="survey_comment">Survey Comment</string>
+    <!-- survey -->
+
+    <string name="recent_survey">Recent Survey</string>
+    <string name="more"><u>More</u></string>
+    <string name="recent_listview_person">Follow Member:</string>
+    <string name="survey_focus">Survey Focus</string>
+    <!-- activity_search_survey -->
+    <string name="activity_search_survey_title">Create Activity</string>
+    <string name="activity_search_survey_confirm">Confirm</string>
+    <string name="activity_search_survey_search_hint">input the city name</string>
+    <string name="activity_search_survey_search_locate_to_me">Locate to My Position</string>
+    <string name="activity_search_survey_search_popular_city">Popular Cities</string>
+    <string name="activity_search_survey_search_all_city">All Cities</string>
+
+    <!-- survey -->
+    <string name="title_activity_select">SelectActivity</string>
+    <string name="title_activity_create_activity">ActivityCreateActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="enroll_under_audlt">Your enrollment has submitted to sponsor, please wait for response.</string>
+    <string name="enroll_already">You had enrolled. Us welcome your coming!</string>
+    <string name="enroll_full">The Activity is at full strength. You can get more information through easy touch or real-time comment.</string>
+    <string name="enroll_success">Success</string>
+    <string name="enroll_adult">Adult</string>
+    <string name="enroll_fail">Full</string>
+    <string name="enrolled">Enroll over</string>
+
+    <!-- SelectActivity -->
+    <string name="search_SelectActivity">Search</string>
+    <string name="search_content_hint_selectactivity">Enter name,sponor or company</string>
+    <string name="choose_according_city">Select City</string>
+    <string name="choose_according_time">Select Time</string>
+    <string name="choose_according_industry">Select Industry</string>
+    <string name="change_city">All Cities</string>
+    <string name="all_city">All</string>
+    <string name="follow_members">Follow Members: </string>
+    <string name="title_activity_record_sound">RecordSoundActivity</string>
+
+    <!-- survey -->
+    <!-- Date_Select -->
+
+
+    <!-- SelectActivity -->
+
+
+    <!-- SurveyDetailActivity -->
+    <string name="survey_enterprise">Survey Enterprise</string>
+    <string name="outline">Outline</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signed_up">Signed Up</string>
+    <string name="collect">Collect It</string>
+    <string name="initiate">Initiate</string>
+    <string name="schedule">Schedule:</string>
+    <string name="follow">Browse:</string>
+    <string name="collection">Collect:</string>
+    <string name="register">Register:</string>
+    <string name="register_list"><u>RegisterList</u></string>
+    <string name="place">Place:</string>
+    <string name="detail">Detail</string>
+    <string name="comment">Comment</string>
+    <string name="initiator">Initiator</string>
+    <string name="related_enterprises">Related Enterprises</string>
+    <string name="survey_outline">Survey Outline</string>
+    <string name="registratable">Registerable</string>
+    <string name="registration_ends">Registration Ends</string>
+    <string name="underway">Underway</string>
+    <string name="activity_end">Activity Ended</string>
+    <string name="notes">Notes</string>
+    <string name="registration_fee">Registration Fee</string>
+    <string name="meeting_place">Meeting Place</string>
+    <string name="receiver">Receiver</string>
+    <string name="link_man">Link Man：</string>
+    <string name="phone">Phone:</string>
+    <string name="service">Service</string>
+    <string name="registrated_number">Registrated Number</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <!-- RegistrationActivity -->
+    <string name="activity_registration_title">Registration</string>
+    <string name="name">Name</string>
+    <!-- RecordSoundActivity -->
+    <string name="record_sound">Record</string>
+    <string name="manage_my_record_sound">Manage My Record</string>
+    <string name="edit_record_sound">Edit</string>
+    <string name="delete_record_sound">Delete</string>
+
+    <!-- Easy_Touch -->
+    <string name="easy_touch">Easy Touch</string>
+    <string name="easy_touch_time">Time:  </string>
+    <string name="easy_touch_place">Place:  </string>
+    <string name="easy_touch_field">Field:  </string>
+    <string name="easy_touch_record">Record </string>
+    <string name="title_activity_invite_friends">InviteFriendsActivity</string>
+    <string name="title_activity_registration_list">RegistrationListActivity</string>
+    <!-- ReistrationListActivity -->
+    <string name="activity_registration_list_title">Registration List</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+
+    <!-- InviteFriendsActivity -->
+    <string name="invite_friends_title">Invite Friends</string>
+    <string name="invite_friends_search_friends">Search Friends</string>
+    <string name="invite_friends_send_friends">Send Invites</string>
+    <string name="title_activity_message">MessageActivity</string>
+
+    <!-- MessageActivity -->
+    <string name="message_title">Message</string>
+
+    <!-- Announcement -->
+    <string name="announcement_title">Inform</string>
+    <!-- SurveyFirstActivity -->
+    <string name="survey">Survey</string>
+    <string name="survey_list">Personal OutLine List</string>
+    <string name="title_activity_survey_list">SurveyListActivity</string>
+
+    <!-- SurveySecondActivity -->
+
+    <string name="survey_list2">My OutLine</string>
+    <string name="survey_list2_btn_text">Found</string>
+
+    <!-- ServeyListActivity -->
+    <string name="survey_list_sort">Sort</string>
+    <string name="survey_list_state">State</string>
+    <string name="survey_list_filter">Filter</string>
+    <string name="survey_list_follow_member">Follow member: </string>
+    <string name="survey_list_cancel_sign_up">Cancel Registration?</string>
+    <string name="survey_list_confirm_sign_up">Confirm Registration?</string>
+    <string name="cities_limit">The Number of selected cities should not over 5!</string>
+    <string name="industry_limit">The Number of selected industries should not over 5!</string>
+    <string name="survey_list_cancel">Back</string>
+    <string name="survey_list_confirm">Yes</string>
+    <string name="time_in_ascending_order">Time in Descending Order</string>
+    <string name="time_in_descending_order">Time in Ascending OrderTime in Descending Order</string>
+    <string name="name_in_ascending_order">Name in Ascending Order</string>
+    <string name="name_in_descending_order">Name in Descending Order</string>
+    <string name="heat_in_ascending_order">Heat in Ascending Order</string>
+    <string name="heat_in_descending_order">Heat in Descending Order</string>
+    <string name="all">All</string>
+    <string name="two_tundred_limit">(Within 200 words.)</string>
+    <string name="signing_up">Signing Up </string>
+    <string name="under_way">Under Way </string>
+    <string name="past_survey">Past </string>
+    <string name="relocate">Relocate</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- UserJoinActivity -->
+
+    <string name="userjoin_title">UserJoin</string>
+    <string name="userjoin_member">Number：</string>
+    <string name="userjoin_research">Find</string>
+    <string name="userjoin_research_mem">Enrollment：</string>
+    <string name="userjoin_none_inform">Being no other notifications</string>
+    <string name="userjoin_none_user">Being no other registration</string>
+    <!-- InformEdit -->
+    <string name="inform_edit_title">Written Notification</string>
+    <string name="inform_edit_publish"><u>Publish</u></string>
+    <string name="inform_edit_dialog1">Once saved released</string>
+    <string name="inform_edit_dialog2">he system will automatically give each of the applicants to send notifications</string>
+    <!-- InformSponsorActivity -->
+    <string name="inform_dialog">Your notification has been sent to the members of Event Registration</string>
+
+    <!-- Comment List -->
+
+
+    <!-- ActivitySearchActivity -->
+    <string name="search_activity_search">Search</string>
+    <string name="search_activity_search_content">Search your content</string>
+    <string name="search_activity_history">Search History</string>
+    <!-- SignUpActivity -->
+    <string name="sign_up_text">Registration List</string>
+
+    <!-- CompanyGoodsListActivity -->
+    <string name="search_product">Please enter the product name to search goods within the company</string>
+    
+    <!-- Comment List -->
+
+    <string name="all_comment">All</string>
+    <string name="popular_comment">Popular</string>
+    <string name="friend_comment">Friend</string>
+    <string name="initiator_comment">Initiator</string>
+    <string name="title_activity_single_comment">SingleCommentActivity</string>
+
+    <!-- ActivityCreatActivity -->
+
+    <string name="my_comment">mine</string>
+    <string name="video_link">Video Link</string>
+    <string name="transmit">Transmit</string>
+    <string name="copy">Copy</string>
+    <string name="report">Report</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- ActivityCreatActivity -->
+
+    <string name="create_title">Creating Activities</string>
+    <string name="create_edit">Edit Activities</string>
+    <!-- CreateActivityFragment1 -->
+    <string name="set_name_tip">Set a beautiful name for your Activity(Less than 8 words)</string>
+    <string name="promote_photo">Picture for your activity</string>
+    <string name="activity_introduction">Introduction For Your Activity</string>
+    <string name="activity_introduction_tip">A brief introduction will attract more partners</string>
+    <string name="next">Next</string>
+    <string name="album">Album</string>
+    <string name="film">Film</string>
+    <string name="survey_activity">Survey Activity</string>
+
+    <!-- Fragment_ActivityCreate2 -->
+    <string name="frag2_activity_name_text">Events Research Enterprise</string>
+    <string name="frag2_activity_add_text"><u>Add a research company</u></string>
+
+    <!-- CreateActivityFragment3 -->
+    <string name="contact">Contact</string>
+    <string name="Telephone">Telephone</string>
+    <string name="other_statement">Statement</string>
+    <string name="completed">Completed</string>
+    <string name="create_activity_tip">Your activity had been published and is under adult. The draug is saved in personal</string>
+
+    <!-- CreateActivityFragment3 -->
+    <string name="item_enterprise_outline">Outline</string>
+    <!-- ActivityCeateCompanyBrief -->
+    <string name="brief_title">Company profile</string>
+    <string name="brief_commit"><u>Determine</u></string>
+    <string name="have_to_fill_tip">Please fill the blank with *</string>
+
+    <!-- SingleCommentActivity -->
+    <string name="activity_single_comment_title">Single Comment</string>
+    <string name="title_activity_publish_comment">PublishCommentActivity</string>
+    <!-- PublishCommentActivity -->
+    <string name="write_comment">Comment</string>
+    <string name="write_topic">Write Topic</string>
+    <string name="publish_comment">Publish</string>
+    <!-- TestPicActivity -->
+    <string name="photo">Photo</string>
+    <string name="title_activity_detail_and_comment">DetailAndCommentActivity</string>
+    <string name="title_activity_main_activity1">MainActivity1</string>
+    <!-- FoudListActivity -->
+    <string name="foud_list_title">Foud List</string>
+    <string name="open_foud">Open Foud</string>
+    <string name="closed_foud">Closed Foud</string>
+    <string name="stock_foud">Stock Foud</string>
+    <string name="bond_foud">Bond Foud</string>
+    <string name="blend_foud">Blend Foud</string>
+    <string name="money_foud">Money Foud</string>
+    <string name="other_foud">Other Foud</string>
+    <string name="title_activity_fund_list">FundListActivity</string>
+    <string name="foud_code">Foud Code</string>
+    <string name="foud_accrual">Accrual</string>
+    <string name="foud_annual_rate">Annual Rate</string>
+    <string name="title_activity_query_fund">QueryFundActivity</string>
+    <string name="foud_release_date">Release Date</string>
+    <string name="foud_newest_nav">Newest Nav</string>
+    <string name="foud_day_rise">Day Rise</string>
+    <string name="foud_week_rise">Week Rise</string>
+    <string name="foud_month_rise">Month Rise</string>
+    <string name="foud_year_rise">Year Rise</string>
+    <string name="foud_accrual_time">Accrual Time</string>
+
+    <!-- FoudSearchActivity -->
+    <string name="foud_search_title">Search Foud</string>
+    <string name="foud_search_text">Input code/name/short name</string>
+    <!-- FundDetailsActivity -->
+    <string name="fund_details_title">Fund Details</string>
+    <string name="fund_details_concern">Concern</string>
+    <string name="fund_details_already_concern">Already Concern</string>
+    <string name="fund_details_open_purchase">Open Purchase</string>
+    <string name="fund_details_open_redemption">Open Redemption</string>
+    <string name="fund_details_pause_redemption">Pause Redemption</string>
+    <string name="fund_details_net_worth">Net Worth</string>
+    <string name="fund_details_notice">Notice</string>
+    <string name="fund_details_position">Position</string>
+    <string name="fund_details_dividend">Dividend</string>
+    <string name="fund_details_discuss">Discuss</string>
+    <string name="fund_details_rise">Rise</string>
+    <string name="fund_details_accumulated_net_worth">Accumulated Net Worth</string>
+    <string name="fund_details_ranking">Ranking</string>
+    <string name="fund_details_rate">Rate</string>
+    <string name="fund_details_manager">Manager</string>
+    <string name="fund_details_history">Daily Net Worth History and Details</string>
+    <string name="fund_details_date">Date</string>
+    <string name="fund_details_net_asset_value">Net Asset Value</string>
+    <string name="fund_details_daily_growth_rate">Daily growth rate</string>
+    <string name="fund_details_details"><u>Details</u></string>
+    <!-- FundDetailsWatchDetailsActivity -->
+    <string name="fund_details_fund_information">Fund Information</string>
+    <string name="fund_details_fund_name">Fund Name</string>
+    <string name="fund_details_fund_code">Fund Code</string>
+    <string name="fund_details_fund_type">Fund Type</string>
+    <string name="fund_details_risk_level">Risk Level</string>
+    <string name="fund_details_register_date">Register Date</string>
+    <string name="fund_details_asset_size">Asset Size</string>
+    <string name="fund_details_share_size">Share Size</string>
+    <string name="fund_details_fund_keeper">Fund Keeper</string>
+    <string name="fund_details_fund_custodian">Fund　Custodian</string>
+    <string name="fund_details_fund_manager">Fund Manager</string>
+    <string name="fund_details_fund_manager_intro">Manager Introdution</string>
+    <string name="fund_details_accrual">Accrual</string>
+    <string name="fund_details_accrual_month">Accrual(Month)</string>
+    <string name="fund_details_annual_rate">Annual Rate</string>
+    <string name="fund_details_accrual_date">Accrual Rate</string>
+    <string name="fund_details_accumulate_accrual">Accumulate Accrual</string>
+    <!-- OptionalFundActivity -->
+    <string name="optional_fund_my_concerned_fund">My Concerned Fund</string>
+    <string name="optional_fund_manage">Manage</string>
+    <string name="optional_fund_add_tip">No concern Fund , Click to Add</string>
+    <string name="optional_fund_name">Fund Name</string>
+    <string name="optional_fund_newest_net_worth">Newest Net Worth</string>
+    <string name="optional_fund_daily_rise">Daily Rise</string>
+
+    <!-- FundHomeActivity -->
+    <string name="fund">Fund</string>
+    <string name="fund_zixuan">Managed Funds</string>
+    <string name="fund_sousuo">Fund Search</string>
+    <string name="fund_chaxun">Fund inquiry</string>
+    <string name="fund_tuijian">Recommended Funds</string>
+    <string name="fund_xinfa">New Development Fund</string>
+    <string name="fund_zhixun">Fund Information</string>
+    <string name="lastest_204">can not find the data</string>
+    <string name="lastest_400">params can not be null</string>
+    <string name="cancel_500">Not enough authority</string>
+    <string name="other_error">NetWork error</string>
+    <string name="cancel_success">Success!</string>
+
+    <!-- QueryFundActivity -->
+    <string name="query_fund_title">Inquery Fund</string>
+    <string name="earning_interval">Earning Interval</string>
+    <string name="query_fund_start_date">Start</string>
+    <string name="query_fund_end_date">End</string>
+    <string name="query_btn">Query</string>
+    <string name="select_again"><u>Select Again</u></string>
+    <string name="title_activity_fund_search">FundSearchActivity</string>
+    <string name="title_activity_fund_details">FundDetailsActivity</string>
+    <string name="unfollow">follow</string>
+    <string name="followed">followed</string>
+    <string name="follow_success">follow success</string>
+    <string name="unfollow_success">unfollow success</string>
+    <string name="unknown_error">unknown error</string>
+    <string name="edit_Activity">Edit</string>
+    <string name="notice">Notice</string>
+    <string name="funddetails">Fund details</string>
+    <string name="heat_cities">Heat Cities</string>
+    <string name="whole_cities">All Cities</string>
+    <string name="title_activity_fund_details_watch_details">FundDetailsWatchDetailsActivity</string>
+    <string name="location">Location</string>
+    <string name="default_city">(Default City)</string>
+    <!-- PositionFragment -->
+    <string name="configuration_detail">Configuration Detail of Capital</string>
+    <string name="stock_detail">Investment Detail of Stock</string>
+    <string name="bond_detail">Investment Detail of Bond</string>
+    <string name="report_journal">Report Journal</string>
+    <string name="position_name">Name</string>
+    <string name="stock_rate">Stock Rate</string>
+    <string name="rate_of_all">Rate of All</string>
+    <string name="debenture_rate">Debenture Rate</string>
+    <string name="cash_rate">Cash Rate</string>
+    <string name="stock_number">Stock Number</string>
+    <string name="net_asset">Net Asset(hundred million)</string>
+    <string name="position_value">Position Value</string>
+    <string name="title_activity_optional_fund">OptionalFundActivity</string>
+
+    <!-- Fragment_FundDividend -->
+    <string name="dividend_distribution">Detail of Dividend Distribution</string>
+    <string name="dividend_split">Detail of Dividend Split</string>
+    <string name="dividend_year">Year</string>
+    <string name="equality_register_day">Equality Register Day</string>
+    <string name="ex_dividend_day">EX_Dividend Day</string>
+    <string name="per_dividend">Per Dividend</string>
+    <string name="dividend_grant_day">Dividend Grant Day</string>
+    <string name="split_category">Split Category</string>
+    <string name="split_convert_rate">Split Convert Rate</string>
+    <string name="grant_cash">Grant Cash</string>
+    <string name="temporarily_no_data">Temporarily No Data</string>
+
+    <!-- Fragment_FundDicuss -->
+    <string name="sort_in_time_order">Sort in Time Order</string>
+    <string name="sort_in_heat_order">Sort in Heat Order</string>
+    <string name="title_activity_discuss_detail">DiscussDetailActivity</string>
+    <!-- Fragment_Fund_Announcement -->
+    <string name="fund_an_title">Announcement</string>
+    <!-- FundNoticeDetailsActivity -->
+    <string name="title_activity_fund_notice_details">FundNoticeDetailsActivity</string>
+    <string name="fund_an_title_details">Announcement details</string>
+    <string name="title_activity_cursor_dslv">CursorDSLV</string>
+    <string name="volley_error1">No data</string>
+    <string name="title_activity_fund_information_list">FundInformationListActivity</string>
+    <string name="title_activity_fund_information_details">FundInformationDetailsActivity</string>
+    <string name="title_activity_new_fund">NewFundActivity</string>
+
+    <!-- TranspondActivity -->
+    <string name="transpond_title">Transpond</string>
+    <string name="transpond_publish">Pubilsh</string>
+    <string name="title_activity_publish_topic">PublishTopicActivity</string>
+    <string name="title_activity_log_and_regi">LogAndRegiActivity</string>
+
+    <!-- LogAndRegiActivity -->
+    <string name="login">Login</string>
+    <string name="register_main">Register</string>
+    <string name="have_a_look">Have a look</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="select_area">Select Area</string>
+    <string name="find_password">Find Password</string>
+
+    <!-- LoginActivity -->
+    <string name="account_hint">Please enter your phone number, nick name or email</string>
+    <string name="enter_phone_get_veri">Enter your telephone number to get verification code</string>
+    <string name="passward_hint">Passward is 6 to 128 bit</string>
+    <string name="verifyCode_hint">VerifyCode</string>
+    <string name="title_activity_publish_discuss">PublishDiscussActivity</string>
+    <string name="title_activity_fund_discuss_details">FundDiscussDetailsActivity</string>
+    <string name="enter_verification_code">Please enter verification code</string>
+    <string name="choose_area_number">Choose Area Number</string>
+    <string name="forget_password">Forget password</string>
+    <string name="get_verification_code">Get Verification Code</string>
+    <string name="login_ways">Login in other ways</string>
+    <string name="title_activity_area_code">AreaCodeActivity</string>
+    <string name="login_failed">Login Failed!</string>
+    <string name="wrong_passward">Wrong password, please enter again</string>
+    <string name="title_activity_tou_hqlogin">TouHQLoginActivity</string>
+
+    <!-- TouHQActivity -->
+    <string name="enter_touhq_account">Please Enter THQ Account</string>
+    <string name="title_activity_find_password">FindPasswordActivity</string>
+    <string name="title_activity_new_password">NewPasswordActivity</string>
+
+    <!-- FindPasswordActivity -->
+    <string name="enter_new_password">Please enter your new password</string>
+    <string name="enter_new_password_again">Please enter your new password again</string>
+    <string name="new_password_hint">Within 6~16 words，should be numbers</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_register">Register</string>
+    <string name="title_activity_tencent_login">TencentLoginActivity</string>
+    <string name="tv_get_vervification_code">VerifyCode</string>
+    <string name="tv_login_directly">using inverst circle to log</string>
+    <string name="tips">Tips：You can login directly with the invest cirle account</string>
+    <string name="title_activity_add_information">AddInformationActivity</string>
+    <!-- AddInformationActivity -->
+    <string name="nickname">Nick Name</string>
+    <string name="password">PassWord</string>
+    <string name="password_hint">PassWord must contains number and 6 to 16</string>
+    <string name="password_confirm">PassWord Confirm</string>
+    <string name="title_activity_shop_home">ShopHomeActivity</string>
+    <string name="title_activity_goods_details">GoodsDetailsActivity</string>
+    <string name="title_activity_company_detail">CompanyDetailActivity</string>
+
+    <!-- CompanyDetailActivity -->
+    <string name="company_good">Goods</string>
+    <string name="company_new_good">New Goods</string>
+    <string name="company_all_goods">All Goods</string>
+    <string name="company_price_down">Price Down</string>
+    <string name="company_newest_zixun">Newest Message</string>
+    <string name="company_introduce">company introduce</string>
+    <string name="company_gupiaoxiangqing">gupiao xiangqing</string>
+    <string name="company_newest_push">Newest Push……</string>
+    <string name="kefu">Service</string>
+    <string name="share">Share</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="guanzhu">GuanZhu</string>
+    <string name="my_collect_goods">My Collect Goods</string>
+    <string name="my_concern_enterprises">My Concern Enterprises</string>
+    <string name="my_orders">My Orders</string>
+    <string name="shop_cart">Shop Cart</string>
+    <string name="title_activity_image_and_text_details">ImageAndTextDetailsActivity</string>
+    <string name="title_activity_company_goods_list">CompanyGoodsListActivity</string>
+    <string name="title_activity_goods_comment">GoodsCommentActivity</string>
+    <string name="my_point">My Point</string>
+    <string name="information_center">Information Center</string>
+    <string name="friend_list">Friend List</string>
+    <string name="friend_moment">Friend Moment</string>
+    <string name="my_all_survey">My Survey</string>
+    <string name="collected_comments">Collected Comments</string>
+    <string name="collected_consults">Collected Consults</string>
+    <string name="orders">Orders</string>
+    <string name="voice_record">My Voice Record</string>
+    <string name="title_activity_set_up">SetUpActivity</string>
+    <string name="setup">Set Up</string>
+    <string name="apply_for_quoted">Apply for quoted Company</string>
+    <string name="change_password">Change PassWord</string>
+    <string name="change_binding">Change Binding</string>
+    <string name="check_update">Check Update</string>
+    <string name="callBack">Call Back</string>
+    <string name="about">About</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="logout">Log Out</string>
+    <string name="title_activity_other_peolpe_information">OtherPeolpeInformationActivity</string>
+    <string name="title_activity_my_information">MyInformationActivity</string>
+    <string name="title_activity_my_friend">MyFriend</string>
+    <string name="see_more">See More</string>
+    <string name="title_activity_punish_comment">PunishCommentActivity</string>
+
+    <!-- CompanyGoodsListActivity -->
+    <string name="can_find_nothing">Sorry,noting can find for you</string>
+    <string name="shopping_again">Shopping again</string>
+    <string name="monthly_sell">Monthly Sell</string>
+    <string name="good_reputation">Good Reputation</string>
+
+    <!-- GoodsDetailsActivty -->
+    <string name="gd_title">Details</string>
+    <string name="gd_promotion">Promotion</string>
+    <string name="gd_choose_type_and_count">Choose type</string>
+    <string name="gd_send_to">Send to</string>
+    <string name="gd_details">Details</string>
+    <string name="gd_other">Other</string>
+    <string name="gd_comment">Comment</string>
+    <string name="gd_param">Params</string>
+    <string name="my_information_title">My Information</string>
+    <string name="change_figure">Change Figure</string>
+    <string name="user_name">User Name</string>
+    <string name="introduce">Introduce</string>
+    <string name="industry">Industry</string>
+    <string name="city_under">City Under</string>
+    <string name="title_activity_change_nick_name">ChangeNickNameActivity</string>
+    <string name="change_nick_name_title">Change Nick Name</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="change_nick_name_confirm">Confirm</string>
+    <string name="change_nick_name_limit">10 words at most</string>
+    <string name="introduce_myselft_title">Introduce Myself</string>
+    <string name="introduce_myselft_hint">Introduce yourself within 20 words</string>
+    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+
+    <!-- GoodsCommentActivity -->
+    <string name="gc_title">Comment</string>
+
+    <!-- ShoppingCartActivity -->
+
+    <string name="sc_title">Shopping Cart</string>
+    <string name="sc_edit"><u>Edit</u></string>
+    <string name="sc_complete"><u>Complete</u></string>
+    <string name="sc_empty_tips">Shopping cart is empty</string>
+    <string name="sc_again">Search Again</string>
+    <string name="sc_select_all">All</string>
+    <string name="sc_total">Total: </string>
+    <string name="title_activity_my_data">MyDataActivity</string>
+
+    <!-- SearchGoodsActivity -->
+
+    <string name="heat_search">Heat search</string>
+    <string name="input_goods_name">Please input the goods or company you are interested in</string>
+    <string name="goods_launched">Goods Launched: </string>
+    <string name="has_new">New Production</string>
+    <string name="promotion">Promotion</string>
+    <string name="title_activity_fill_order">FillOrderActivity</string>
+
+    <!-- FillOrderActivity -->
+    <string name="fo_title">Fill Order</string>
+    <string name="fo_receiver">Receiver:</string>
+    <string name="fo_deliver_district">Deliver District:</string>
+    <string name="fo_deliver_address">Deliver Address:</string>
+    <string name="fo_deliver_type">Deliver Type:</string>
+    <string name="fo_pay_type">Pay Type:</string>
+    <string name="fo_leave_a_message">Leave a message to merchant</string>
+    <string name="fo_deliver_cost">Deliver Cost:</string>
+    <string name="fo_total_cost">Total Cost:</string>
+    <string name="title_activity_my_collected_goods">MyCollectedGoodsActivity</string>
+    <string name="title_activity_my_concern_company">MyConcernCompanyActivity</string>
+    <string name="title_activity_refund">RefundActivity</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+
+    <!-- OrderListActivity -->
+    <string name="order_list_title">Order List</string>
+    <string name="order_list_return"><u>Refund/Return</u></string>
+    <string name="order_list_all"><u>All</u></string>
+    <string name="order_list_obligations"><u>Obligations</u></string>
+    <string name="order_list_to_deliver"><u>To deliver</u></string>
+    <string name="order_list_to_receive"><u>To receive</u></string>
+    <string name="order_list_to_comment"><u>To comment</u></string>
+    <string name="order_list_to_pay">To Pay</string>
+    <string name="order_list_pay"><u>Pay</u></string>
+    <string name="title_activity_order_details">OrderDetailsActivity</string>
+
+    <!-- OrderDetailsActivity -->
+    <string name="order_details_title">Order Details</string>
+    <string name="order_details_trade_success">Trade success</string>
+    <string name="order_details_delivered">Delivered</string>
+    <string name="order_details_received">Received</string>
+    <string name="order_details_to_pay">To Pay</string>
+    <string name="order_details_order_has_canceled">Order has canceled</string>
+    <string name="order_details_logistics">Logistics</string>
+    <string name="order_details_order_num">Order num:</string>
+    <string name="order_details_order_time">Order time:</string>
+    <string name="order_details_telephone">Telephone:</string>
+    <string name="order_details_customer_service">Customer Service</string>
+    <string name="order_details_delete_order"><u>Delete Order</u></string>
+    <string name="order_details_modify_order"><u>Modify Order</u></string>
+    <string name="order_details_for_refund"><u>For Refund</u></string>
+    <string name="order_details_for_return"><u>For Return</u></string>
+
+    <!-- MyProfileActivity -->
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+
+    <!-- RefundActivity -->
+    <string name="for_refund">Apply for Refunds</string>
+    <string name="refund_tips">The seller has shipped!Please state the reason for the refund.System will contact with the seller, if the seller did not respond within 72 hours, system will automatically refund</string>
+    <string name="sales_return_tips">Please state the reason for the return and contact with the seller, if the seller did not respond within 72 hours, system will automatically refund</string>
+    <string name="refund_amount">Refund Amount</string>
+    <string name="upload_proof">Upload Proof</string>
+    <string name="commit">commit</string>
+    <string name="commit_success">Commit Successfully</string>
+    <string name="title_activity_sales_return">SalesReturnActivity</string>
+
+    <!-- SalesReturnActivity -->
+    <string name="for_return">Return Application</string>
+    <string name="has_gotton_goods">Received sales</string>
+    <string name="not_got_goods">Not Received sales</string>
+    <string name="select_sales_state">Select the state of your sales</string>
+    <string name="ensure_get_goods">Please confirm whether you take the goods</string>
+    <string name="title_activity_refund_return">RefundReturnActivity</string>
+    <string name="title_activity_refund_detail">RefundDetailActivity</string>
+
+    <!-- RefundReturnActivity -->
+    <string name="refund_return">Refund/Return</string>
+    <string name="refund_negotiate">Negotiate of refund</string>
+    <string name="refund_number">Refund number</string>
+    <string name="company_name">Company name</string>
+    <string name="refund_reason">Refund Reason</string>
+    <string name="cancel_apply">Cancel Application</string>
+    <string name="application_date">Application Date</string>
+    <string name="refund_failed">Refund Failed</string>
+    <string name="apply_again">Apply again</string>
+    <string name="complaint_company">Complaint company</string>
+    <string name="if_agree">If the seller agree, apply a and return success</string>
+    <string name="if_refuse">If the seller refused, will require you to modify a refund application</string>
+    <string name="if_not_resolve">If the seller is not processing, after 72 hours will automatically to achieve application and returns success</string>
+    <string name="title_activity_complaint">ComplaintActivity</string>
+    <string name="explain_your_problem">Please briefly describe the problem you encountered</string>
+    <string name="title_activity_return_detail">ReturnDetailActivity</string>
+    <string name="title_activity_stock_friends">StockFriendsActivity</string>
+    <string name="title_activity_stock_friends_search_friends">StockFriendsSearchFriendsActivity</string>
+    <string name="title_activity_phone_friends">StockFriendsPhoneFriendsActivity</string>
+
+    <!-- RefundDetailActivity -->
+    <string name="refund_details_title">Refund Details</string>
+
+    <!-- MyConcernCompanyActivity -->
+    <string name="my_concern_company_title">Concerned Company</string>
+
+    <!-- StockFriendsActivity -->
+    <string name="stock_friends_title">Stock friends</string>
+    <string name="title_activity_apply_for_statement">ApplyForStatement</string>
+    <string name="enterprise">Enterprise</string>
+    <string name="enterprise_name_tip">Enter Enterprise Name</string>
+    <string name="your_position">Your Position</string>
+    <string name="your_position_tip">state your position</string>
+    <string name="contact_way">Contact Way</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_consults_collect">ConsultsCollectActivity</string>
+    <string name="consults_collect">Consults Collect</string>
+    <string name="title_activity_my_friend_moment">MyFriendMomentActivity</string>
+    <string name="myFriendMoment">Friend Moment</string>
+    <string name="comment_collection">Comment Collection</string>
+    <string name="title_activity_personal_survey_list">PersonalSurveyListActivity</string>
+    <string name="title_activity_ask_for_survey">AskForSurveyActivity</string>
+    <string name="ask_for_survey">Ask For Survey</string>
+
+    <!-- StockFiendsLocalFriends -->
+    <string name="stock_friends_local_contacts_title">local contacts</string>
+    <string name="stock_friends_local_contacts_invite">invite</string>
+
+    <!-- CashierDeskActivity -->
+    <string name="cashier_desk_title">Cashier Desk</string>
+    <string name="request_company">Company Request for Survey</string>
+    <string name="title_activity_my_survey_list">MySurveyListActivity</string>
+    <string name="manage_sign">Manage Sign</string>
+    <string name="manage_record">Manage Record</string>
+    <string name="signed_activity">Signed Activity</string>
+    <string name="collected_activity">Collected Activity</string>
+    <string name="organized_activity">Organized Activity</string>
+    <string name="title_activity_cashier_desk">CashierDeskActivity</string>
+    <string name="pay_way">please choose the way to pay</string>
+    <string name="pay_success">Pay Success</string>
+    <string name="pay_fail">Pay Fail</string>
+    <string name="view_order">View Order</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="try_again">Try Again</string>
+
+    <!-- LogisticsActivity -->
+    <string name="logistics_title">Logistics</string>
+    <string name="title_activity_logistics">LogisticsActivity</string>
+    <string name="title_activity_comment_collection">CommentCollectionActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="verified">Verified</string>
+    <string name="unverify">Unverify</string>
+    <string name="verify_failed">Verify failed</string>
+    <string name="admitted">Admitted</string>
+    <string name="unadmit">Unadmitted</string>
+    <string name="banned">Banned</string>
+    <string name="title_activity_record_manage">RecordManageActivity</string>
+    <string name="title_activity_my_record_manage">My RecordManage</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="record">Record</string>
+    <string name="activity_manage_sign">ManageSignActivity</string>
+    <!-- ResetPasswordActivity -->
+    <string name="reset_password">Reset Password</string>
+    <string name="input_old_password">Please enter your old password first</string>
+    <string name="input_new_password">Please enter a new password</string>
+    <string name="input_new_password_again">Please enter your password again</string>
+    <string name="wrong_passaord">Wrong Password!</string>
+    <string name="password_different">Enter a new password twice!</string>
+    <string name="reset_password_success">Change the password success!</string>
+    <string name="reset_new_old_same">The old and the new password cannot be the same</string>
+    <string name="title_activity_modify_bind">ModifyBindActivity</string>
+    <string name="toast_success_password">Success to change the new password!</string>
+
+    <!-- ModifyBindActivity -->
+    <string name="modify_bind">Modify Binding</string>
+    <string name="telephone">Tele</string>
+    <string name="email">Email</string>
+    <string name="bounded">Bounded</string>
+    <string name="unbounded">Unbounded</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">WeChat</string>
+    <string name="weibo">Weibo</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+
+    <!-- BindPhoneActivity -->
+    <string name="bind_phone">Bind Phone</string>
+    <string name="input_new_tele">Please enter a new mobile phone number</string>
+    <string name="new_phone_will_be_login">The new phone will be used to login next time</string>
+    <string name="title_activity_bind_email">BindEmailActivity</string>
+
+    <!-- BindEmailActivity -->
+    <string name="bind_email">Email Binding</string>
+    <string name="input_email">Please enter the email address</string>
+    <string name="get_email_verification">Get email verification code</string>
+    <string name="new_email_can_be_login">New email address will be used to login next time</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="problem_and_advice">Questions and comments</string>
+    <string name="name_for_record">Name for record</string>
+    <string name="save">Save</string>
+    <string name="title_activity_manage_sign">ManageSignActivity</string>
+    <string name="title_activity_sssss">SSSSS</string>
+
+    <!-- ManageSignActivity -->
+    <string name="manage_sign_title">ManageSign</string>
+    <string name="network_anomaly">Network Anomaly</string>
+    <string name="title_activity_wxentry">WXEntryActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <!-- MessageCenterActivity -->
+    <string name="message_center_my_survey">My Survey</string>
+    <string name="message_center_my_survey_detail">[Notice] the message of Weidou survey had updated</string>
+    <string name="message_center_stock_remind">Stock price remind</string>
+    <string name="message_center_store_message">StoreMessage</string>
+    <string name="message_center_comment">Comment message</string>
+    <string name="message_center_system_message">System Message</string>
+    <string name="message_center_titile_remind">Remind</string>
+    <string name="message_center_title_shejiao">Friend</string>
+    <string name="friend_circle">Friend Circle</string>
+    <!-- comment_set_activity -->
+    <string name="comment_set_title">Set</string>
+    <string name="comment_set_mysurvey">My survey</string>
+    <string name="comment_set_remind1">Close remind</string>
+    <string name="comment_set_remind2">Set Message</string>
+    <string name="comment_set_remind3">Clear Message</string>
+    <string name="brief_introduction">Brief Introduction</string>
+    <string name="title_activity_detail_survey">DetailSurveyActivity</string>
+    <string name="enrolling">Enrolling</string>
+    <string name="enrollend">Ban Enrolling</string>
+    <string name="surveying">Surveying</string>
+    <string name="surveyend">End</string>
+    <string name="title_activity_survey_comment">SurveyCommentActivity</string>
+    <string name="title_activity_interact">InteractActivity</string>
+    <string name="title_activity_personal_comment">PersonalCommentActivity</string>
+    <string name="friend">Friend</string>
+    <string name="qq_zone">QQZone</string>
+    <string name="title_activity_my_stock_details">MyStockDetailsActivity</string>
+    <string name="title_activity_other_people_stock">OtherPeopleStockActivity</string>
+    <string name="title_activity_other_people_survey">OtherPeopleSurveyActivity</string>
+    <string name="title_activity_my_stock_details_param">MyStockDetailsParamActivity</string>
+    <string name="title_activity_personal_message_setting_param">MyStockDetailsParamActivity</string>
+    <string name="title_activity_set_avg_line">SetAvgLineActivity</string>
+
+</resources>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchGoodsActivity" >
+
+    <!-- 头部栏 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title"
+        android:paddingRight="@dimen/search_item_paddingtop" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_padding_left" 
+            android:paddingRight="@dimen/title_padding_left" 
+            >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ac_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_search_style"
+            android:text="@string/search_SelectActivity"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_content_height_selectactivity"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/search_item_paddingtop"
+            android:layout_toLeftOf="@id/tv_ac_search"
+            android:layout_toRightOf="@id/rl_return"
+            android:background="@drawable/bg_rl_search_content_style" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/search_activity_text_left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ico_fangdajing" />
+
+                <EditText
+                    android:id="@+id/et_search_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/search_activity_image_left"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/input_goods_name"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 头部栏 结束 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_head"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:id="@+id/ll_search_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_goods_item_height"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/search_goods_padding_left"
+                android:text="@string/heat_search"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <!-- 热搜列表 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heat_search_height" >
+
+                <com.example.shareholders.common.MyGridView
+                    android:id="@+id/gv_heat_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:verticalSpacing="4dp"
+                    android:paddingLeft="@dimen/grid_view_padding_left"
+                    android:paddingRight="@dimen/grid_view_padding_left" >
+                </com.example.shareholders.common.MyGridView>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_small"
+                android:background="#999999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_goods_item_height"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/search_goods_padding_left"
+                android:text="@string/search_activity_history"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <com.example.shareholders.common.MyListView
+                android:id="@+id/lv_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" >
+            </com.example.shareholders.common.MyListView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_small"
+                android:background="#afafaf" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head" >
+    </ListView>
+
+</RelativeLayout>

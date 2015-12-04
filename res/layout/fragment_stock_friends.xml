@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ll_no_friend"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="还没有相关好友"
+            android:textColor="#6000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/refresh1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/sb_fs_sidebar"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_friend"
+            android:src="#eaeaea" />
+    </com.example.shareholders.common.PullToRefreshView>
+
+    <com.example.shareholders.common.SideBar
+        android:id="@+id/sb_sidebar"
+        android:layout_width="@dimen/activity_search_survey_side_bar_size"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_fs_dialog1"
+        android:layout_width="@dimen/activity_search_survey_dialog_size"
+        android:layout_height="@dimen/activity_search_survey_dialog_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/activity_search_survey_dialog_text_size"
+        android:visibility="invisible" />
+
+</RelativeLayout>

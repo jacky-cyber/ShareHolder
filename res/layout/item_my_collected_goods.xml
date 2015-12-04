@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pc_good_height"
+    android:layout_margin="@dimen/pc_good_margin"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="@dimen/pc_iv_size"
+        android:layout_height="@dimen/pc_iv_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/pc_good_margin"
+        android:src="@drawable/demo" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_goods"
+        android:layout_marginRight="@dimen/pc_name_margin_right"
+        android:layout_toRightOf="@+id/iv_goods"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="唇膏口红全新雅诗兰红色诱惑夏日情怀海洋气息清新夏日情怀海洋气息清新夏日情怀海洋气息清新"
+        android:textColor="#c64268"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_toRightOf="@+id/iv_goods"
+        android:text="￥ 222,000"
+        android:textColor="#ff0000"
+        android:textSize="18sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_goods"
+        android:layout_toRightOf="@+id/iv_goods" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月銷"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_month_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="好评率"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_good_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1200"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/btn_delete" />
+
+</RelativeLayout>

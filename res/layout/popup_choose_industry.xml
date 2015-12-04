@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bg_choose_industry" >
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/change_nick_name_padding"
+            android:layout_marginRight="@dimen/change_nick_name_padding"
+            android:layout_marginTop="15dp"
+            android:background="#0071bb"
+            android:gravity="center"
+            android:text="@string/change_nick_name_confirm"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/tv_confirm"
+            android:src="#999999" />
+
+        <GridView
+            android:id="@+id/gv_industry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:scrollbarThumbVertical="@drawable/btn_huatiao"
+            android:verticalSpacing="@dimen/gridview_vertical_spacing" >
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

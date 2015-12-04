@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/survey_item_paddingtop"
+    android:paddingLeft="@dimen/survey_item_paddingleft"
+    android:paddingRight="@dimen/survey_item_paddingright"
+    android:paddingTop="@dimen/survey_item_paddingtop" >
+
+    <TextView
+        android:id="@+id/tv_survey_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text=""
+       android:textColor="#5d5d5d"
+        android:textSize="@dimen/survey_title_textSize" />
+
+    <TextView
+        android:id="@+id/tv_survey_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textColor="#dd8822"
+        android:textSize="@dimen/survey_item_textsize" />
+
+</RelativeLayout>

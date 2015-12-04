@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff" >
+	    <TextView
+	        android:id="@+id/item_message_big"
+	        android:layout_width="wrap_content"
+	        android:layout_height="42.5dp"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="18.5dp"
+			android:gravity="center_vertical"
+			android:textColor="#999999"
+	        android:text="微豆正文" />
+
+	    <TextView
+	        android:id="@+id/item_message_small"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="24dp"
+	        android:layout_marginBottom="8dp"
+	        android:textColor="#999999"
+	        android:text="微豆时间"
+	        android:textSize="10sp" />
+	    
+	</RelativeLayout>
+</LinearLayout>

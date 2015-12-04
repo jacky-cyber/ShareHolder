@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bind_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+    <!-- 头部 结束 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/input_new_phone_margin_bottom"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginTop="@dimen/input_new_phone_margin_top"
+        android:text="@string/input_new_tele"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginRight="@dimen/tv_login_account_margin_left" >
+
+        <com.example.shareholders.common.ClearEditText
+            android:id="@+id/et_tele"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_login_account"
+            android:gravity="center"
+            android:hint="@string/new_phone_will_be_login"
+            android:paddingRight="5dp"
+            android:phoneNumber="true"
+            android:textColor="#666666"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_area_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_tv_area_code_margin_left"
+            android:text="+86"
+            android:textColor="#333333"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/tv_login_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/et_passward_margin_top"
+        android:layout_marginBottom="@dimen/area_code_margin_bottom"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_choose_area_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/choose_area_number"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/tv_get_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/tv_get_vervification_code"
+            android:textColor="#7cc2e8" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_small"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginRight="@dimen/tv_login_account_margin_left"
+        android:background="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/et_passward_margin_top"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginTop="@dimen/area_code_margin_bottom"
+        android:text="@string/enter_verification_code"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <com.example.shareholders.common.ClearEditText
+        android:id="@+id/et_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginRight="@dimen/tv_login_account_margin_left"
+        android:background="@drawable/btn_login_account"
+        android:gravity="center"
+        android:hint="@string/verifyCode_hint"
+        android:paddingRight="5dp"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/tv_login_account_margin_left"
+        android:layout_marginRight="@dimen/tv_login_account_margin_left"
+        android:layout_marginTop="@dimen/et_passward_margin_top"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

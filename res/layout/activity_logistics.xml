@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_gd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_note_left"
+                android:padding="5dp"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_gd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看物流"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#5d8adb" >
+
+        <TextView
+            android:id="@+id/tv_trade_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:gravity="center"
+            android:text="顺丰快递"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:gravity="center_vertical" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号："
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_waybill_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="adfdfdsfsjfsdfjs12435"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签收状态："
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_sign_for_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已签收"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#efeff4"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/title_note_left"
+        android:text="商品信息"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pc_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pc_good_height"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/iv_pc_goods"
+            android:layout_width="@dimen/pc_iv_size"
+            android:layout_height="@dimen/pc_iv_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/pc_good_margin"
+            android:src="@drawable/demo" />
+
+        <TextView
+            android:id="@+id/tv_pc_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_pc_goods"
+            android:layout_marginRight="@dimen/pc_name_margin_right"
+            android:layout_toRightOf="@+id/iv_pc_goods"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="唇膏口红全新雅诗兰红色诱惑夏日情怀海洋气息清新夏日情怀海洋气息清新夏日情怀海洋气息清新"
+            android:textColor="#c64268"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pc_goods_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pc_goods_name"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/iv_pc_goods"
+            android:text="蓝色"
+            android:textColor="#e84d76"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pc_goods_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pc_goods_name"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv_pc_goods_type1"
+            android:text="玫瑰味"
+            android:textColor="#e84d76"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pc_goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pc_goods_name"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv_pc_goods_type2"
+            android:text="x2"
+            android:textColor="#e84d76"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pc_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_pc_goods"
+            android:layout_toRightOf="@+id/iv_pc_goods"
+            android:text="￥ 222,000"
+            android:textColor="#ff0000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#efeff4"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/title_note_left"
+        android:text="物流信息"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lv_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="#00000000" >
+    </ListView>
+
+</LinearLayout>

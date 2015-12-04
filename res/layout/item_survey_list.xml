@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_friend_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_friend_height" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_friend_face_margin_left"
+            android:src="@drawable/btn_tiaozhuan" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_comment_content_margin_left" >
+
+            <TextView
+                android:id="@+id/tv_enterprise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="造纸厂企业"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_enterprise_name"
+                android:layout_marginTop="@dimen/item_comment_symbol_margin_top" >
+
+                <TextView
+                    android:id="@+id/tv_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015.12.12-2015.12.25"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+                 <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_listview_person"
+                    android:layout_toRightOf="@+id/tv_schedule"
+                    android:layout_marginLeft="@dimen/item_survey_label_margin_left"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+                 <TextView
+                    android:id="@+id/tv_follow_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:layout_toRightOf="@+id/tv_label"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+                 <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进行中"
+                    android:layout_toRightOf="@+id/tv_follow_number"
+                    android:layout_marginLeft="@dimen/item_survey_label_margin_left"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/item_friend_line_padding"
+            android:paddingRight="@dimen/item_friend_line_padding"
+            android:src="#eaeaea" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 头部栏 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/title"
+        android:paddingRight="@dimen/search_item_paddingtop" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_padding_left" 
+            android:paddingRight="@dimen/title_padding_left">
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_sousuo" 
+            android:paddingLeft="@dimen/title_padding_left" 
+            android:paddingRight="@dimen/title_padding_left"/>
+        <TextView 
+            android:visibility="gone"
+            android:id="@+id/tv_guanli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="管理"
+            android:textSize="13sp"
+            android:textColor="@color/white1"
+            android:paddingLeft="@dimen/title_padding_left" 
+            android:paddingRight="@dimen/title_padding_left"/>
+        <LinearLayout
+            android:id="@+id/ll_choose_btn"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/title"
+            android:gravity="center" >
+
+            <RadioGroup
+                android:id="@+id/choose_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_choose_situation"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="27dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_newthird_choose_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/choose_situation"
+                    android:textColor="@color/connactchange"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_choose_myself"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="27dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_newthird_choose_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/choose_myself"
+                    android:textColor="@color/connactchange"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+    <!-- 头部栏 结束 -->
+	 <LinearLayout
+        android:id="@+id/ll_touhangquan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/total_gray" >
+
+        <TextView
+            android:id="@+id/tv_xinzen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/newthirdadd"
+            android:textColor="@color/tab_nor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_jiguo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/touzijigou"
+            android:textColor="@color/tab_nor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_huodong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/touhangquanhuodong"
+            android:textColor="@color/tab_nor"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <com.example.shareholders.common.MyViewPager
+        android:layout_above="@id/ll_touhangquan"
+        android:id="@+id/id_newthrid_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_head" />
+
+</RelativeLayout>

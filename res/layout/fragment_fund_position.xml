@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 资产配置明细 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configuration_detail_title_height"
+            android:layout_marginTop="@dimen/gap_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/configuration_detail_title_padding_left"
+            android:text="@string/configuration_detail"
+            android:textColor="#d58527"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/position_row_padding_top"
+            android:paddingTop="@dimen/position_row_padding_top" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/report_journal"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/stock_rate"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/debenture_rate"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cash_rate"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/net_asset"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 资产配置明细  结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 资产配置明细列表 -->
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/lv_configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.example.shareholders.common.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 股票投资明细 -->
+
+
+        <!-- 股票投资明细 标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configuration_detail_title_height"
+            android:layout_marginTop="@dimen/gap_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/configuration_detail_title_padding_left" >
+
+            <TextView
+                android:id="@+id/tv_time_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015年第2季度"
+                android:textColor="#d58527"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stock_detail"
+                android:textColor="#d58527"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 股票投资明细 标题 结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/position_row_padding_top"
+            android:paddingTop="@dimen/position_row_padding_top" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/position_name"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rate_of_all"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/stock_number"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/position_value"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 股票投资明细  结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 股票配置明细列表 -->
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/lv_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.example.shareholders.common.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 债券投资明细 -->
+
+
+        <!-- 债券投资明细 标题 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/configuration_detail_title_height"
+            android:layout_marginTop="@dimen/gap_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/configuration_detail_title_padding_left" >
+
+            <TextView
+                android:id="@+id/tv_time_bond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015年第2季度"
+                android:textColor="#d58527"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bond_detail"
+                android:textColor="#d58527"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 债券投资明细 标题 结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/position_row_padding_top"
+            android:paddingTop="@dimen/position_row_padding_top" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/position_name"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rate_of_all"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/position_value"
+                android:textColor="#858585"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 债券配置明细  结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+
+        <!-- 债券配置明细列表 -->
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/lv_bond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.example.shareholders.common.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_small"
+            android:background="#eaeaea" />
+    </LinearLayout>
+
+</ScrollView>

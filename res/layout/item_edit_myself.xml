@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    >
+	    
+		<ImageView 
+		    android:id="@+id/iv_edit_move"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="24dp"
+		    android:src="@drawable/btn_tuozhuai"
+		    />
+		
+		<ImageView 
+		    android:id="@+id/iv_edit_setTop"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/iv_edit_move"
+		    android:layout_marginRight="50dp"
+		    android:src="@drawable/btn_zhiding"
+		    />
+		
+		<ImageView 
+		    android:id="@+id/iv_edit_remind"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/iv_edit_setTop"
+		    android:layout_marginRight="60dp"
+		    android:padding="10dp"
+		    android:src="@drawable/btn_tixing"
+		    />
+		
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_toLeftOf="@+id/iv_edit_remind"
+		    >
+		    
+		    <RelativeLayout 
+		        android:id="@+id/rl_edit_name_num"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="60dp"
+		    	android:gravity="center"
+		    	android:layout_centerInParent="true"
+		        >
+		        <TextView 
+		            android:id="@+id/tv_edit_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="浦发银行"
+		            android:textSize="17sp"
+		            android:textColor="#103382"
+		            />
+		        <TextView 
+		            android:id="@+id/tv_lv_num"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@+id/tv_edit_name"
+		            android:layout_alignLeft="@+id/tv_edit_name"
+		            android:layout_alignRight="@+id/tv_edit_name"
+		            android:gravity="center"
+		            android:layout_marginTop="5.5dp"
+		            android:text="600000"
+		            android:textSize="14sp"
+		            android:textColor="#777777"
+		            />
+		    </RelativeLayout>
+
+		    <ImageView
+		        android:id="@+id/iv_edit_selected"
+		        android:clickable="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="20dp"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/btn_unselected" />
+		    
+		</RelativeLayout>
+		
+	</RelativeLayout>
+	
+</RelativeLayout>

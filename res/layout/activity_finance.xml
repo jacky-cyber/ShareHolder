@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 头部栏 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/title"
+        android:paddingRight="@dimen/search_item_paddingtop" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_padding_left" >
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_sousuo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_finance_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_finance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+
+        <ImageView
+            android:id="@+id/title_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/tv_finance_titile"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_shuaxin" />
+    </RelativeLayout>
+    <!-- 头部栏 结束 -->
+
+    <LinearLayout
+        android:id="@+id/ll_head2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_head"
+        android:background="@color/blue1" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_finance_name"
+            android:textColor="@color/white1" />
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_finance_new"
+            android:textColor="@color/white1" />
+
+        <TextView
+            android:id="@+id/tv_zhangdie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_finance_zhangdie"
+            android:textColor="@color/white1" />
+
+        <TextView
+            android:id="@+id/tv_zhangfu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_finance_zhangfu"
+            android:textColor="@color/white1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_head3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/ll_head2"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_finance_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="金融业"
+                android:textColor="#4660ce"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_finance_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3790"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_finance_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15.2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iv_finance_zhangdie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0.02"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_finance_zhangfu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_share_zhang" />
+
+            <TextView
+                android:id="@+id/tv_finance_zhangfu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.33%"
+                android:textColor="@color/share_f73131"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tv_fg1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_head3"
+        android:background="@color/text_999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_tv_fg1" >
+
+        <com.example.shareholders.common.PullToRefreshView
+            android:id="@+id/refresh_finance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_finance_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/space_color"
+                android:dividerHeight="0.5dp" >
+            </ListView>
+        </com.example.shareholders.common.PullToRefreshView>
+    </LinearLayout>
+
+</RelativeLayout>

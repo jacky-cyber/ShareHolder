@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ComplaintActivity" >
+
+    <!-- 头部栏 开始 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/title_note_left"
+            android:paddingRight="@dimen/title_note_left" >
+
+            <ImageView
+                android:id="@+id/title_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/return_padding"
+                android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_main_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/complaint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+    <!-- 头部栏 结束 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/total_padding_smallx"
+        android:background="#efeff4" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_length"
+        android:layout_marginLeft="@dimen/complaint_et_margin_left"
+        android:gravity="center_vertical"
+        android:text="@string/problem_and_advice"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/complaint_et_height"
+        android:layout_marginLeft="@dimen/complaint_et_margin_left"
+        android:layout_marginRight="@dimen/complaint_et_margin_left"
+        android:background="@drawable/bg_complaint"
+        android:gravity="top"
+        android:hint="@string/explain_your_problem"
+        android:padding="@dimen/text_margin_text"
+        android:textColor="#333333"
+        android:textColorHint="#939393"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/complaint_et_margin_left"
+        android:layout_marginRight="@dimen/complaint_et_margin_left"
+        android:layout_marginTop="@dimen/complaint_commit_margin_top"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

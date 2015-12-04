@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/total_padding_small"
+        android:layout_marginTop="@dimen/refund_failed_margin_top"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico_biaoti" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/refund_failed_margin_left"
+            android:text="@string/wait_for_return"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/refund_failed_margin_top"
+        android:layout_marginTop="@dimen/refund_failed_margin_top"
+        android:text="@string/if_agree_return"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/refund_failed_margin_top"
+        android:layout_marginTop="@dimen/refund_failed_margin_top"
+        android:text="@string/if_refuse_return"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/refund_failed_margin_top"
+        android:layout_marginTop="@dimen/refund_failed_margin_top"
+        android:layout_marginRight="@dimen/refund_failed_margin_top"
+        android:text="@string/if_not_resolve_return"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/refund_failed_margin_top"
+        android:layout_marginLeft="@dimen/wait_refund_btn_margin_left"
+        android:layout_marginRight="@dimen/wait_refund_btn_margin_left"
+        android:layout_marginBottom="@dimen/refund_failed_margin_top"
+        >
+        
+        <TextView
+            android:id="@+id/tv_apply_again"
+            android:layout_width="@dimen/refund_failed_btn_width"
+            android:layout_height="@dimen/refund_failed_btn_height"
+            android:background="@drawable/btn_refund_detail"
+            android:gravity="center"
+            android:text="@string/apply_again"
+            android:textColor="#666666"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/tv_cancel_apply"
+            android:layout_width="@dimen/refund_failed_btn_width"
+            android:layout_height="@dimen/refund_failed_btn_height"
+            android:background="@drawable/btn_refund_detail"
+            android:gravity="center"
+            android:text="@string/cancel_apply"
+            android:textColor="#666666"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

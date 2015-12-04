@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_share_list_head1"
+    android:layout_width="match_parent"
+    android:layout_height="29.5dp"
+    android:background="@color/total_gray"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_item_share_name"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/share_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/share_name"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.example.shareholders.common.InterceptScrollContainerHead
+        android:id="@+id/share_scroollContainter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_item_share_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ll_item_share_name"
+        android:layout_toRightOf="@id/ll_item_share_name"
+        android:focusable="false" >
+
+        <com.example.shareholders.common.MyHScrollView
+            android:id="@+id/share_horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/share_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/share_new"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_new"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_updown"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_updown"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_amountofincrease"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_amountofincrease"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_tradingvolume"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_tradingvolume"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_volumeoftransaction"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_volumeoftransaction"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_max"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_max"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_min"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_min"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_swing"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_swing"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_turnoverrate"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_turnoverrate"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_PEratio"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_PEratio"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/share_totalvalue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/share_totalvalue"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/index_btn_shartsort"
+                    android:textSize="13sp" />
+            </RadioGroup>
+        </com.example.shareholders.common.MyHScrollView>
+    </com.example.shareholders.common.InterceptScrollContainerHead>
+
+</RelativeLayout>

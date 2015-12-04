@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="13.5dp"
+        android:background="#efeff4" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea" />
+
+    <RelativeLayout
+        android:id="@+id/message_center_survey_line"
+        android:layout_width="fill_parent"
+        android:layout_height="57.5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/message_center_wodediaoyan"
+            android:layout_width="@dimen/message_center_image_width"
+            android:layout_height="@dimen/message_center_image_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/message_center_image_left"
+            android:scaleType="center"
+            android:src="@drawable/ico_wodediaoyan" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/message_center_mes_shape_left"
+            android:layout_marginRight="@dimen/message_center_mes_shape_right"
+            android:layout_toLeftOf="@+id/message_center_time_shape1"
+            android:layout_toRightOf="@+id/message_center_wodediaoyan"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/message_center_my_survey"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_remind_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_mes_detail_top"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/message_center_my_survey_detail"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_center_time_shape1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/message_center_time_shape_right"
+            android:layout_marginTop="@dimen/message_center_time_shape_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message_center_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_center_survey_count"
+                android:layout_width="@dimen/message_center_time_height"
+                android:layout_height="@dimen/message_center_time_width"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/message_center_time_count_top"
+                android:background="@drawable/message_center_time_background"
+                android:gravity="center"
+                android:text="3"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea" />
+    
+    <RelativeLayout
+        android:id="@+id/message_center_shareprice_line"
+        android:layout_width="fill_parent"
+        android:layout_height="57.5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/message_center_gujiatixing"
+            android:layout_width="@dimen/message_center_image_width"
+            android:layout_height="@dimen/message_center_image_height"
+            android:layout_marginLeft="@dimen/message_center_image_left"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/ico_gujiatixing" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/message_center_mes_shape_left"
+            android:layout_marginRight="@dimen/message_center_mes_shape_right"
+            android:layout_toLeftOf="@+id/message_center_time_shape2"
+            android:layout_toRightOf="@+id/message_center_gujiatixing"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/message_center_stock_remind"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_stock_remind_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_mes_detail_top"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/message_center_stock_remind_detail"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_center_time_shape2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/message_center_time_shape_right"
+            android:layout_marginTop="@dimen/message_center_time_shape_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message_center_time_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_center_gujiatixing_count"
+                android:layout_gravity="center|right"
+                android:layout_width="@dimen/message_center_time_height"
+                android:layout_height="@dimen/message_center_time_width"
+                android:layout_marginTop="@dimen/message_center_time_count_top"
+                android:background="@drawable/message_center_time_background"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea" />
+
+    <RelativeLayout
+        android:id="@+id/message_center_comment_line"
+        android:layout_width="fill_parent"
+        android:layout_height="57.5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/message_center_pinglundongtai"
+            android:layout_width="@dimen/message_center_image_width"
+            android:layout_height="@dimen/message_center_image_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/message_center_image_left"
+            android:scaleType="center"
+            android:src="@drawable/ico_pinglundongtai" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/message_center_mes_shape_left"
+            android:layout_marginRight="@dimen/message_center_mes_shape_right"
+            android:layout_toLeftOf="@+id/message_center_time_shape4"
+            android:layout_toRightOf="@+id/message_center_pinglundongtai"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/message_center_comment"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_mes_detail_top"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/message_center_comment_detail"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_center_time_shape4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/message_center_time_shape_right"
+            android:layout_marginTop="@dimen/message_center_time_shape_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message_center_time_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_center_comment_count"
+                android:layout_width="@dimen/message_center_time_height"
+                android:layout_height="@dimen/message_center_time_width"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/message_center_time_count_top"
+                android:background="@drawable/message_center_time_background"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea" />
+
+    <RelativeLayout
+        android:id="@+id/message_center_system_line"
+        android:layout_width="fill_parent"
+        android:layout_height="57.5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/message_center_xitongtongzhi"
+            android:layout_width="@dimen/message_center_image_width"
+            android:layout_height="@dimen/message_center_image_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/message_center_image_left"
+            android:scaleType="center"
+            android:src="@drawable/ico_xitongtongzhi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/message_center_mes_shape_left"
+            android:layout_marginRight="@dimen/message_center_mes_shape_right"
+            android:layout_toLeftOf="@+id/message_center_time_shape5"
+            android:layout_toRightOf="@+id/message_center_xitongtongzhi"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/message_center_system_message"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_system_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/message_center_mes_detail_top"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/message_center_system_message_detail"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/message_center_time_shape5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/message_center_time_shape_right"
+            android:layout_marginTop="@dimen/message_center_time_shape_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message_center_time_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_center_system_count"
+                android:layout_width="@dimen/message_center_time_height"
+                android:layout_height="@dimen/message_center_time_width"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/message_center_time_count_top"
+                android:background="@drawable/message_center_time_background"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#eaeaea" />
+
+</LinearLayout>

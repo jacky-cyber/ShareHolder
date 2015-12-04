@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/fragment_share_list_head"
+        layout="@layout/item_fragment_share_list" />
+
+    <TextView
+        android:id="@+id/fragment_share_list_img"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fragment_share_list_head"
+        android:background="#999999" />
+
+    <ImageView
+        android:id="@+id/iv_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/im_notlogin"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/fsl_share_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fragment_share_list_img"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#eaeaea"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</RelativeLayout>

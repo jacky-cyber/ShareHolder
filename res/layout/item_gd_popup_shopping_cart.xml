@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="288dp"
+    android:layout_height="397dp"
+    android:background="@drawable/bg_dialog_style2"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <ImageView 
+            android:id="@+id/iv_gd_popup_goods"
+            android:layout_width="85dp"
+    		android:layout_height="85dp"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="12dp"
+    		android:src="@drawable/demo"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_price"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@+id/iv_gd_popup_goods"
+    		android:layout_marginLeft="14dp"
+    		android:layout_marginTop="44dp"
+    		android:text="￥18,000"
+    		android:textColor="#f91026"
+    		android:textSize="15sp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_choosen"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@+id/iv_gd_popup_goods"
+    		android:layout_below="@+id/tv_gd_popup_price"
+    		android:layout_marginLeft="14dp"
+    		android:layout_marginTop="10dp"
+    		android:text="已选"
+    		android:textColor="#7a7a7a"
+    		android:textSize="13sp"
+            />
+        
+        <!-- <TextView 
+            android:id="@+id/tv_gd_popup_choosen_count"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@+id/tv_gd_popup_choosen"
+    		android:layout_below="@+id/tv_gd_popup_price"
+    		android:layout_marginTop="10dp"
+    		android:text="2个"
+    		android:textColor="#333333"
+    		android:textSize="13sp"
+            /> -->
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_choosen_kind"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@+id/tv_gd_popup_choosen"
+    		android:layout_below="@+id/tv_gd_popup_price"
+    		android:layout_marginTop="10dp"
+    		android:text="镶银"
+    		android:textColor="#333333"
+    		android:textSize="13sp"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_gd_popup_cancel"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:padding="5dp"
+    		android:layout_alignParentRight="true"
+    		android:layout_marginRight="6.5dp"
+    		android:layout_marginTop="6.5dp"
+    		android:src="@drawable/btn_quxiaogouwuche"
+            />
+        
+        <ImageView 
+	        android:layout_width="match_parent"
+	   		android:layout_height="1dp"
+	   		android:layout_below="@+id/iv_gd_popup_goods"
+	   		android:layout_marginTop="7dp"
+	   		android:layout_marginRight="10dp"
+	   		android:layout_marginLeft="10dp"
+	   		android:src="#dadada"
+	           />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_gd_popup_sort1"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+         >
+    
+        <TextView 
+            android:id="@+id/tv_gd_popup_sort1"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="10dp"
+    		android:text="分类一"
+    		android:textColor="#7a7a7a"
+    		android:textSize="13sp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_sort1_item1"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:layout_below="@+id/tv_gd_popup_sort1"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="10dp"
+    		android:text="镶银"
+    		android:textColor="#ffffff"
+    		android:textSize="13sp"
+    		android:background="@drawable/bg_goods_details_sort_selected"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_sort1_item2"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:layout_below="@+id/tv_gd_popup_sort1"
+    		android:layout_toRightOf="@+id/tv_gd_popup_sort1_item1"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="10dp"
+    		android:text="镶金"
+    		android:textColor="#f91026"
+    		android:textSize="13sp"
+    		android:background="@drawable/bg_goods_details_sort_unselected"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_sort1_item3"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:layout_below="@+id/tv_gd_popup_sort1"
+    		android:layout_toRightOf="@+id/tv_gd_popup_sort1_item2"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="10dp"
+    		android:text="镶钴"
+    		android:textColor="#f91026"
+    		android:textSize="13sp"
+    		android:background="@drawable/bg_goods_details_sort_unselected"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_gd_popup_sort1_item4"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:layout_below="@+id/tv_gd_popup_sort1"
+    		android:layout_toRightOf="@+id/tv_gd_popup_sort1_item3"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="10dp"
+    		android:text="镶水晶"
+    		android:textColor="#f91026"
+    		android:textSize="13sp"
+    		android:background="@drawable/bg_goods_details_sort_unselected"
+            />
+            
+        
+	    <ImageView 
+	        android:layout_width="match_parent"
+	   		android:layout_height="1dp"
+	   		android:layout_below="@+id/tv_gd_popup_sort1_item1"
+	   		android:layout_marginTop="10dp"
+	   		android:layout_marginRight="10dp"
+	   		android:layout_marginLeft="10dp"
+	   		android:src="#dadada"
+            />
+    </RelativeLayout>
+    
+    
+    <!-- <RelativeLayout
+        android:id="@+id/rl_gd_popup_good_count"
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+         >
+	    
+        <TextView 
+            android:id="@+id/tv_gd_popup_good_count"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="13dp"
+    		android:text="数量"
+    		android:textColor="#7a7a7a"
+    		android:textSize="13sp"
+            />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:layout_alignParentRight="true"
+	   		android:layout_marginRight="11dp"
+	   		android:layout_centerVertical="true"
+	   		android:orientation="horizontal"
+	   		android:gravity="center"
+	   		android:background="@drawable/bg_goods_details_popup_add_and_sub"
+		   		 >
+	        <ImageView
+	            android:id="@+id/iv_gd_popup_add"
+	            android:layout_width="21dp"
+		   		android:layout_height="21dp"
+		   		android:padding="5dp"
+		   		android:src="@drawable/btn_goods_details_add"
+	            />
+	        
+	        <ImageView
+	            android:layout_width="1dp"
+		   		android:layout_height="match_parent"
+		   		android:src="#7a7a7a"
+	            />
+	        
+	        <TextView 
+	            android:id="@+id/tv_gd_popup_good_num"
+	            android:layout_width="31dp"
+		   		android:layout_height="match_parent"
+		   		android:gravity="center"
+		   		android:text="2"
+		   		android:textColor="#666666"
+		   		android:textSize="15sp"
+	            />
+	        
+	        <ImageView
+	            android:layout_width="1dp"
+		   		android:layout_height="match_parent"
+		   		android:src="#7a7a7a"
+	            />
+	        
+	        <ImageView
+	            android:id="@+id/iv_gd_popup_sub"
+	            android:layout_width="21dp"
+		   		android:layout_height="21dp"
+		   		android:padding="5dp"
+		   		android:src="@drawable/btn_sub"
+	            />
+	        
+        </LinearLayout>
+	    <ImageView 
+	        android:layout_width="match_parent"
+	   		android:layout_height="1dp"
+	   		android:layout_below="@+id/tv_gd_popup_good_count"
+	   		android:layout_marginTop="13dp"
+	   		android:layout_marginRight="10dp"
+	   		android:layout_marginLeft="10dp"
+	   		android:src="#dadada"
+	           />
+    </RelativeLayout> -->
+    
+   <!--  <ImageView 
+        android:layout_width="match_parent"
+   		android:layout_height="100dp"
+   		android:src="#ffffff"
+           /> -->
+    
+    <TextView 
+        android:id="@+id/tv_gd_popup_ok"
+        android:layout_width="match_parent"
+   		android:layout_height="26dp"
+   		android:layout_marginBottom="15dp"
+   		android:layout_marginRight="6dp"
+   		android:layout_marginLeft="6dp"
+   		android:layout_marginTop="90dp"
+   		android:gravity="center"
+   		android:text="确定"
+   		android:textColor="#ffffff"
+   		android:textSize="15sp"
+   		android:background="#0071bc"
+           />
+
+</LinearLayout>

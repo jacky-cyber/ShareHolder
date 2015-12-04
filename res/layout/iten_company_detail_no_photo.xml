@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#333333"
+        android:layout_marginLeft="@dimen/total_left_padding"
+        android:layout_marginRight="@dimen/total_left_padding"
+        android:layout_marginTop="@dimen/total_left_padding"
+        android:layout_marginBottom="@dimen/item_no_photo_message_margin_bottom"
+        android:text="本公司提供app需求设计开发推广运营全流程服务，具体情况请咨询mika,电话23131445"
+        />
+
+     <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/item_photo_date_margin_bottom"
+        android:layout_marginRight="@dimen/item_photo_date_margin_right"
+        android:text="2016.12.13"
+        android:textColor="#999999"
+        android:textSize="11sp" />
+    
+</LinearLayout>

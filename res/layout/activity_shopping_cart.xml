@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_gd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+<RelativeLayout
+            android:id="@+id/rl_return"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+        <ImageView
+            android:id="@+id/title_fs_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="5dp"
+            android:src="@drawable/ico_fanhui" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sc_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+        
+        <TextView
+            android:id="@+id/tv_sc_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="@string/sc_edit"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_empty_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sc_margin_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:visibility="gone"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/ico_gouwucheweikong"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sc_margin_top"
+            android:text="@string/sc_empty_tips"
+            android:textColor="#999999"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+        
+        <TextView
+		     android:id="@+id/tv_again"
+		     android:layout_width="match_parent"
+		     android:layout_height="@dimen/pc_submit_height"
+		     android:layout_marginLeft="@dimen/pc_submit_margin_left"
+		     android:layout_marginRight="@dimen/pc_submit_margin_left"
+		     android:layout_marginTop="@dimen/pc_gap_margin_bottom"
+		     android:gravity="center"
+		     android:text="@string/sc_again"
+		     android:textColor="#ffffff"
+		     android:textSize="16sp"
+		     android:background="@drawable/btn_survey_list_style"
+		     android:visibility="gone" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+	    <ListView 
+	        android:id="@+id/lv_sc"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="@dimen/sc_margin_top"
+	        android:divider="#f2f2f2"
+	        android:dividerHeight="@dimen/sc_margin_top"
+	        android:background="#ffffff"
+	        />
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_sc_bottom"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/gd_bottom_bar_height"
+	        android:layout_alignBottom="@+id/lv_sc"
+	        android:background="@drawable/bg_goods_details_bottom"
+	        android:orientation="horizontal"
+	        android:alpha="0.9"
+	        >
+	        
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal"
+	            >
+	            
+	            <ImageView
+		    	    android:id="@+id/iv_select_all"
+		    	    android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_marginLeft="@dimen/item_iv_select_margin_left"
+			    	android:layout_marginRight="@dimen/item_iv_select_margin_right"
+			    	android:src="@drawable/btn_fs_unselected"
+		    	    />
+	            
+	            <TextView
+		            android:layout_width="wrap_content"
+		           	android:layout_height="match_parent"
+		           	android:layout_marginRight="14dp"
+		           	android:gravity="center"
+		           	android:text="@string/sc_select_all"
+		           	android:textColor="#ffffff"
+		           	android:textSize="12sp"
+		               />
+	            
+	            <RelativeLayout 
+	                android:id="@+id/rl_sc_total"
+	                android:layout_width="wrap_content"
+		           	android:layout_height="match_parent"
+	                >
+	            
+		            <TextView
+		                android:id="@+id/tv_total"
+			            android:layout_width="wrap_content"
+			           	android:layout_height="wrap_content"
+			           	android:layout_marginRight="5dp"
+			           	android:layout_centerVertical="true"
+			           	android:text="@string/sc_total"
+			           	android:textColor="#ffffff"
+			           	android:textSize="14sp"
+			               />
+		            
+		            <TextView
+		                android:id="@+id/tv_sc_price"
+			            android:layout_width="wrap_content"
+			           	android:layout_height="wrap_content"
+			           	android:layout_toRightOf="@+id/tv_total"
+			           	android:layout_alignBaseline="@+id/tv_total"
+			           	android:text="0.00"
+			           	android:textColor="#ffffff"
+			           	android:textSize="18sp"
+			               />
+	            </RelativeLayout>
+	            
+	        </LinearLayout>
+	            
+            <RelativeLayout 
+                android:id="@+id/rl_sc_collect_and_delete"
+                android:layout_width="wrap_content"
+	           	android:layout_height="match_parent"
+	           	android:layout_marginRight="@dimen/sc_margin_top"
+	           	android:visibility="gone"
+                >
+            
+	            <TextView
+	                android:id="@+id/tv_sc_collect"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="match_parent"
+	            	android:layout_gravity="center"
+	            	android:drawableLeft="@drawable/btn_sc_collect"
+	            	android:drawablePadding="@dimen/gd_drawable_padding"
+	            	android:gravity="center"
+	            	android:text="移入商品收藏"
+	            	android:textColor="#ffffff"
+	            	android:textSize="14sp"
+                />
+	            
+	            <TextView
+	                android:id="@+id/tv_sc_delete"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="match_parent"
+	            	android:layout_gravity="center"
+	            	android:layout_toRightOf="@+id/tv_sc_collect"
+	            	android:layout_marginLeft="@dimen/sc_bottom_delete_margin_left"
+	            	android:drawableLeft="@drawable/btn_sc_delete"
+	            	android:drawablePadding="@dimen/gd_drawable_padding"
+	            	android:gravity="center"
+	            	android:text="删除"
+	            	android:textColor="#ffffff"
+	            	android:textSize="14sp"
+                />
+	            
+            </RelativeLayout>
+	        
+	        <TextView
+	            android:id="@+id/tv_gd_bottom_buy_now"
+	            android:layout_width="@dimen/gd_bottom_buy_now_weight"
+	           	android:layout_height="match_parent"
+	           	android:gravity="center"
+	           	android:layout_gravity="center"
+	           	android:text="去结算"
+	           	android:textColor="#ffffff"
+	           	android:textSize="15sp"
+	           	android:background="#76ffffff"
+	               />
+	        
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+
+</LinearLayout>

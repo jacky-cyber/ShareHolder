@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_discuss"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/total_left_padding"
+        android:layout_marginRight="@dimen/total_left_padding"
+        android:layout_marginTop="@dimen/dicuss_head_margin_top" >
+
+        <com.example.shareholders.common.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/head_width"
+            android:layout_height="@dimen/head_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/empty_photo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dicuss_word_information_margin_left"
+            android:layout_toRightOf="@id/iv_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="60PHOME"
+                android:textColor="#dd8822"
+                android:textSize="11sp" />
+
+	         <TextView
+	             android:id="@+id/tv_time"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="07-24 14:52"
+	             android:textColor="#939393"
+	             android:textSize="11sp" />
+	         
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_dianzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dianzan_padding"
+                android:paddingLeft="@dimen/dianzan_padding"
+                android:paddingTop="@dimen/dianzan_padding"
+                android:src="@drawable/btn_dianzanqian_sc" />
+
+            <TextView
+                android:id="@+id/tv_dianzan_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dianzan_number"
+                android:text="0"
+                android:textColor="#dd8822"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 评论内容 -->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dicuss_content_margin_bottom"
+        android:layout_marginLeft="@dimen/total_left_padding_half"
+        android:layout_marginTop="@dimen/total_left_padding_half"
+        android:text="经理叫刘大毛？！哈哈哈哈哈哈哈！"
+        android:textSize="14sp" />
+
+</LinearLayout>

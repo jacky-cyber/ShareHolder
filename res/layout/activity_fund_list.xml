@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_fl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/title_fl_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="5dp"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/foud_list_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+        
+        <ImageView
+                android:id="@+id/title_fl_research"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/title_note_left"
+                android:padding="@dimen/return_padding"
+                android:src="@drawable/btn_sousuo_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_fl_title"
+        android:id="@+id/rl_fl_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 评论标题栏 -->
+
+        <ImageView
+            android:id="@+id/fl_space_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#262626" />
+
+        <HorizontalScrollView
+            android:id="@+id/rl_fl_foud_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_below="@+id/fl_space_line"
+            >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="14dp"
+	            android:background="@color/foud_title_background_color"
+	            android:orientation="horizontal">
+	
+	            <TextView
+	                android:id="@+id/tv_fl_stock_foud"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="@color/white"
+	                android:gravity="center"
+	                android:text="@string/stock_foud"
+	                android:textColor="@color/foud_text_base_color"
+	                android:textSize="13sp" />
+	            
+	            <View
+	                android:layout_width="0.5dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="#999999"/>
+	
+	            <TextView
+	                android:id="@+id/tv_fl_bond_foud"
+	                android:background="@color/white"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:textColor="@color/foud_text_base_color"
+	                android:gravity="center"
+	                android:text="@string/bond_foud"                
+	                android:textSize="13sp" />
+	            
+	            <View
+	                android:layout_width="0.5dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="#999999"/>
+	
+	            <TextView
+	                android:id="@+id/tv_fl_blend_foud"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="@color/white"
+	                android:gravity="center"
+	                android:text="@string/blend_foud"
+	                android:textColor="@color/foud_text_base_color"
+	                android:textSize="13sp" />
+	            
+	            <View
+	                android:layout_width="0.5dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="#999999"/>
+	
+	            <TextView
+	                android:id="@+id/tv_fl_money_foud"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="@color/white"
+	                android:gravity="center"
+	                android:text="@string/money_foud"
+	                android:textColor="@color/foud_text_base_color"
+	                android:textSize="13sp" />
+	            
+	            <View
+	                android:layout_width="0.5dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="#999999"/>
+	
+	            <TextView
+	                android:id="@+id/tv_fl_closed_foud"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="@color/white"
+	                android:gravity="center"
+	                android:text="@string/closed_foud"
+	                android:textColor="@color/foud_text_base_color"
+	                android:textSize="13sp" />
+	            
+	            <View
+	                android:layout_width="0.5dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="#999999"/>
+	
+	            <TextView
+	                android:id="@+id/tv_fl_other_foud"
+	                android:layout_width="87dp"
+	                android:layout_height="@dimen/foud_title_height"
+	                android:background="@color/white"
+	                android:gravity="center"
+	                android:text="@string/other_foud"
+	                android:textColor="@color/foud_text_base_color"
+	                android:textSize="13sp" />
+	
+	        </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:id="@+id/rl_fl_foud_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_fl_foud_title"
+            android:background="@color/foud_title_background_color"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/rl_fl_stock_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+            <View
+                android:id="@+id/rl_fl_bond_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+            <View
+                android:id="@+id/rl_fl_blend_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+            <View
+                android:id="@+id/rl_fl_money_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+            <View
+                android:id="@+id/rl_fl_closed_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+            <View
+                android:id="@+id/rl_fl_other_foud_buttom"
+                android:layout_width="87dp"
+                android:layout_height="0.5dp"
+                android:background="#999999"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_below="@+id/rl_fl_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <include 
+            android:id="@+id/head"
+	        android:layout_width="wrap_content"
+	        android:layout_height="46.5dp"
+	        layout="@layout/item_activity_foud_list" />
+	
+        <ListView
+            android:id="@+id/mv_foud_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#00000000"
+            android:background="#efeff4" >
+        </ListView>
+
+     </LinearLayout>		  
+
+</RelativeLayout>

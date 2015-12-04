@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.example.shareholders.common.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null" >
+
+            <com.example.shareholders.common.MyListView
+                android:id="@+id/lv_survey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#eaeaea"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="@null" >
+            </com.example.shareholders.common.MyListView>
+        </ScrollView>
+    </com.example.shareholders.common.PullToRefreshView>
+
+    <LinearLayout
+        android:id="@+id/ll_wuhuodong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wupinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="暂无调研活动"
+            android:textColor="#787878"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+</RelativeLayout>

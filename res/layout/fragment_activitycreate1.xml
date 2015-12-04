@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 最下面的下一步和三个小圆点 -->
+
+    <LinearLayout
+        android:id="@+id/ll_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/btn_next_margin_bottom" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_create_top"
+            android:background="#efeff4" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_next_height"
+            android:layout_marginLeft="@dimen/btn_next_margin_left"
+            android:layout_marginRight="@dimen/btn_next_margin_left"
+            android:layout_marginTop="@dimen/btn_next_margin_top"
+            android:background="@drawable/btn_next_style"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/btn_dots_margin_top"
+            android:src="@drawable/ico_1" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_next"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+            <!-- 活动名称 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/frag1_activity_text_top"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/frag1_activity_text_left"
+                    android:layout_marginRight="@dimen/frag1_activity_text_right"
+                    android:src="@drawable/ico_huodongmingcheng2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/frag1_activity_name_text"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/frag1_activity_name_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_name_margin"
+                android:layout_marginTop="@dimen/activity_name_margin"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/frag1_activity_text_left"
+                    android:layout_marginRight="@dimen/frag1_activity_text_right"
+                    android:src="@drawable/ico_huodongmingcheng2"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_set_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <EditText
+                        android:id="@+id/et_set_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/activity_name_padding_top"
+                        android:paddingLeft="@dimen/activity_name_padding_left"
+                        android:paddingRight="@dimen/activity_name_padding_left"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_survey_acitivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/et_set_name"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/activity_name_padding_top"
+                        android:paddingRight="@dimen/activity_name_padding_left"
+                        android:text="@string/survey_activity"
+                        android:textColor="#999999"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_below="@id/et_set_name"
+                        android:background="#eaeaea" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/xinghao_margin_left"
+                    android:src="@drawable/ico_xinghao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/set_name_tip_margin_bottom"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="@dimen/set_name_tip_margin_top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_amaze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ico_gantan"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/set_name_tip"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 活动名称  结束 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+
+            <!-- 活动宣传图片 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/promote_photo_padding_bottom"
+                android:paddingTop="@dimen/promote_photo_padding_top" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/promote_photo_padding_left" >
+
+                    <ImageView
+                        android:id="@+id/iv_promote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ico_huodongxuanchuantupian2" />
+
+                    <TextView
+                        android:id="@+id/tv_promote_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/frag1_activity_text_right"
+                        android:gravity="top"
+                        android:text="@string/promote_photo"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/frag1_activity_name_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/promote_photo_padding_top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/promote_photo_padding_left" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ico_huodongxuanchuantupian2"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/ll_add_photo"
+                        android:layout_width="@dimen/add_photo_height"
+                        android:layout_height="@dimen/add_photo_height"
+                         android:layout_marginLeft="@dimen/frag1_activity_text_right"
+                        android:background="@drawable/logo_background" >
+
+                        <ImageView
+                            android:id="@+id/iv_add_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+							android:layout_centerInParent="true"                            
+                            android:src="@drawable/btn_addition" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 活动宣传图片结束 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_create_top"
+                android:background="#efeff4" />
+
+            <!-- 活动简介 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_introduction_padding_bottom"
+                android:paddingTop="@dimen/promote_photo_padding_top" >
+
+                <LinearLayout
+                    android:id="@+id/ll_introduction1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/promote_photo_padding_left" >
+
+                    <ImageView
+                        android:id="@+id/iv_introduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ico_huodongjianjie2" />
+
+                    <TextView
+                        android:id="@+id/tv_introduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/frag1_activity_text_right"
+                        android:gravity="top"
+                        android:text="@string/activity_introduction"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/frag1_activity_name_textsize" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_name_margin"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_introduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_introduction_height"
+                        android:layout_marginLeft="@dimen/introduction_et_margin_left"
+                        android:layout_marginRight="@dimen/introduction_et_margin_left"
+                        android:background="@drawable/bg_set_activity_name_style"
+                        android:gravity="top"
+                        android:hint="@string/two_tundred_limit"
+                        android:maxLength="200"
+                        android:paddingBottom="@dimen/activity_introduction_padding_top"
+                        android:paddingTop="@dimen/activity_introduction_padding_top"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/xinghao_margin_right"
+                        android:src="@drawable/ico_xinghao" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/activity_introduction_tip_margin_top"
+                    android:text="@string/activity_introduction_tip"
+                    android:textColor="#dbba9c"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="#000000" >
+    </RelativeLayout>
+
+</RelativeLayout>

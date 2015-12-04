@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_fd_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/title_fd_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="5dp"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fund_details_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+                
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/fund_details_margin_top"
+	        android:orientation="vertical"
+	        >
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/fund_details_fund_name"
+	        	android:paddingLeft="@dimen/fund_details_margin_left"
+	            android:gravity="center_vertical"
+	            android:background="@color/white"
+	            android:text="@string/fund_details_fund_information"
+	            android:textColor="@color/fund_Details_selected_color"
+	            android:textSize="14dp"
+	            
+	            />
+	        
+	        <ImageView 
+		        android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/fund_Details_unselected_color"/>
+	        
+	        <com.example.shareholders.common.MyListView 
+	            android:id="@+id/lv_fd_information_list"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:divider="@android:color/transparent"
+	            android:background="@color/white">	            
+	        </com.example.shareholders.common.MyListView>
+	        <ImageView 
+		        android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/fund_Details_unselected_color"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/fund_details_fund_name"
+	            android:layout_marginTop="@dimen/fund_details_margin_top"
+	        	android:paddingLeft="@dimen/fund_details_margin_left"
+	            android:gravity="center_vertical"
+	        	android:background="@color/white"
+	            android:text="@string/fund_details_fund_manager_intro"
+	            android:textColor="@color/fund_Details_selected_color"
+	            android:textSize="14dp"
+	            
+	            />
+	        
+	        <ImageView 
+		        android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/fund_Details_unselected_color"/>
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/white"
+		        android:orientation="horizontal"
+	            >
+	            
+	            <TextView 
+	                android:id="@+id/tv_fd_information_manager"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/fund_details_fund_name"
+		        	android:paddingLeft="@dimen/fund_details_margin_left"
+		            android:gravity="center_vertical"
+		            android:textColor="#333333"
+		            android:textSize="14dp"
+		            
+		            />
+	            
+	            <TextView 
+	                android:id="@+id/tv_fd_information_date"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/fund_details_fund_name"
+		            android:gravity="center_vertical"
+		            android:textColor="@color/fund_Details_unselected_color"
+		            android:textSize="14dp"
+		            />
+	            
+	            
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:id="@+id/tv_fd_information_intro"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="@dimen/fund_details_margin_left"
+	            android:paddingBottom="@dimen/fund_details_margin_left"
+	        	android:background="@color/white"
+	            android:textColor="@color/fund_Details_unselected_color"
+	            android:textSize="14dp"
+	            android:singleLine="false"
+	            />
+	        <ImageView 
+		        android:layout_width="match_parent"
+		        android:layout_height="0.5dp"
+		        android:background="@color/fund_Details_unselected_color"/>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

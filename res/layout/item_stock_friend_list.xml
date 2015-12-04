@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_friend_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_friend_height" >
+
+        <com.example.shareholders.common.CircleImageView
+            android:id="@+id/ci_friend_figure"
+            android:layout_width="@dimen/item_friend_face_size"
+            android:layout_height="@dimen/item_friend_face_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_friend_face_margin_left"
+            android:src="@drawable/demo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_friend_rl_margin_left"
+            android:layout_toRightOf="@+id/ci_friend_figure" >
+
+            <RelativeLayout
+                android:id="@+id/rl_name_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="A何广浩"
+                    android:textColor="#3d52be"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_userAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_userName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/item_friend_age_margin_left"
+                    android:layout_toRightOf="@+id/tv_userName"
+                    android:text="16"
+                    android:textColor="#ec8e25"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_industry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_name_age"
+                android:layout_marginTop="@dimen/item_friend_industry_margin_top"
+                android:text="互联网"
+                android:textColor="#cbcbcb"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_industry"
+                android:layout_below="@+id/rl_name_age"
+                android:layout_marginLeft="@dimen/myInformation_locate_image_margin_left"
+                android:layout_marginTop="@dimen/item_friend_industry_margin_top"
+                android:layout_toRightOf="@+id/tv_industry"
+                android:src="@drawable/ico_dingwei2" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_name_age"
+                android:layout_marginTop="@dimen/item_friend_industry_margin_top"
+                android:layout_toRightOf="@+id/iv_location"
+                android:text="广州"
+                android:textColor="#c3c3c3"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_friend_face_margin_left"
+            android:src="@drawable/btn_friends_mutual" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

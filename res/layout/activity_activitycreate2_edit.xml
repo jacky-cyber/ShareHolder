@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_announcement"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+
+        <ImageView
+            android:id="@+id/iv_ac_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/ico_fanhui" />
+
+        <TextView
+            android:id="@+id/tv_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_edit_paddingtop"
+            android:paddingLeft="@dimen/activity_edit_paddingleft"
+            android:paddingRight="@dimen/activity_edit_paddingleft"
+            android:paddingTop="@dimen/activity_edit_paddingtop" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:src="@drawable/ico_qiye2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_name"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_edit_et_height"
+                android:layout_marginTop="@dimen/activity_edit_linear_top" >
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_edit_et_left"
+                    android:layout_marginRight="@dimen/activity_edit_et_left"
+                    android:background="@drawable/bg_activity_edit"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_text"
+                    android:textColorHint="#dbba9c"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ico_xinghao" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:src="@drawable/ico_didian4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_city"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_edit_et_height"
+                android:layout_marginTop="@dimen/activity_edit_linear_top" >
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_edit_et_left"
+                    android:layout_marginRight="@dimen/activity_edit_et_left"
+                    android:background="@drawable/bg_activity_edit"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_text1"
+                    android:textColorHint="#dbba9c"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ico_xinghao" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:src="@drawable/ico_zhiwu2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_post"
+                    android:textColor="#848484"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_post"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_edit_et_height"
+                android:layout_marginLeft="@dimen/activity_edit_et_left"
+                android:layout_marginRight="@dimen/activity_edit_et_left"
+                android:layout_marginTop="@dimen/activity_edit_et_top"
+                android:background="@drawable/bg_activity_edit"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_text2"
+                android:maxLength="4"
+                android:textColorHint="#dbba9c"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_small"
+                android:layout_marginBottom="@dimen/activity_edit_linear_top"
+                android:layout_marginLeft="@dimen/activity_edit_et_left"
+                android:layout_marginRight="@dimen/activity_edit_et_left"
+                android:background="#efeff4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#eaeaea" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_edit_time_height" >
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:src="@drawable/ico_shijian4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_time"
+                    android:text="@string/edit_time"
+                    android:textColor="#848484"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        android:text="开始"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="2015.7.8"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                    
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#333333"
+                        android:textSize="13sp"
+                        android:text="结束"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingRight="5dp"
+                        android:text="2015.7.12"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#eaeaea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_edit_linear_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:src="@drawable/ico_tigang2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_outline"
+                    android:textColor="#848484"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_outline"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_edit_height1"
+                android:layout_marginBottom="@dimen/activity_edit_linear_top"
+                android:layout_marginLeft="@dimen/activity_edit_et_left"
+                android:layout_marginRight="@dimen/activity_edit_et_left"
+                android:layout_marginTop="@dimen/activity_edit_et_top"
+                android:background="@drawable/bg_set_activity_name_style"
+                android:drawableRight="@drawable/ico_xinghao"
+                android:gravity="top"
+                android:hint="@string/hint_text3"
+                android:maxLength="200"
+                android:textColorHint="#dbba9c"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#eaeaea" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_edit_height"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_edit_img_padding"
+                    android:background="@drawable/bg_activity_edit_button"
+                    android:text="@string/edit_true"
+                    android:textColor="#6383ea" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_activity_edit_button"
+                    android:text="@string/edit_delete"
+                    android:textColor="#6383ea" />
+
+                <TextView
+                    android:id="@+id/finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_edit_img_padding"
+                    android:background="@drawable/bg_activity_edit_button"
+                    android:text="@string/edit_false"
+                    android:textColor="#6383ea" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/position_item_height"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="万林股份"
+        android:textColor="#333333"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_of_all_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="8.88%"
+        android:textColor="#333333"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_position_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0.94"
+        android:textColor="#333333"
+        android:textSize="11sp" />
+
+</LinearLayout>

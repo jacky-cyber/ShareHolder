@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_index_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+    <TextView 
+        android:id="@+id/btn_index"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/ll_dot"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_index_click"
+        android:text="开启新旅程"
+        android:gravity="center"
+        android:textColor="@color/index_btn"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pagerdot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcomepoint1" />
+
+        <ImageView
+            android:id="@+id/pagerdot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcomepoint2" />
+
+        <ImageView
+            android:id="@+id/pagerdot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcomepoint2" />
+
+        <ImageView
+            android:id="@+id/pagerdot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcomepoint2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_return"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/about_index_retrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/about_index_return" />
+    </RelativeLayout>
+
+</RelativeLayout>

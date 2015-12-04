@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myFriend_text_height"
+            android:layout_marginLeft="@dimen/myFriend_margin_left"
+            android:gravity="center_vertical"
+            android:text="SolaSisyphe关注的股友："
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_message"
+            android:paddingLeft="@dimen/myFriend_line_margin_left"
+            android:paddingRight="@dimen/myFriend_line_margin_left"
+            android:src="#eaeaea" />
+
+        <TextView
+            android:id="@+id/tv_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tips_no_content_margin_top"
+            android:text="@string/no_survey_friend"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <com.example.shareholders.common.MyListView
+            android:id="@+id/mv_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_line"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+        <TextView
+            android:id="@+id/tv_watch_more2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/see_more_height"
+            android:layout_below="@id/mv_friend"
+            android:layout_margin="@dimen/myFriend_line_margin_left"
+            android:background="@drawable/bg_see_more"
+            android:gravity="center"
+            android:text="@string/see_more"
+            android:textColor="#0071bb"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

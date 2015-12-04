@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/itme_search_item_height"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/itme_search_item_padding_left" >
+
+    <com.example.shareholders.common.RoundRectImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/itme_search_item_icon_height"
+        android:layout_height="@dimen/itme_search_item_icon_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+ />
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_head" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/itme_search_item_title_margin_left"
+            android:text="造纸厂"
+            android:textColor="#262626"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/itme_search_item_title_margin_left"
+            android:layout_marginTop="@dimen/itme_search_item_time_margin_top"
+            android:text="2012.11.11-2012.12.21"
+            android:textColor="#939393"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/itme_search_item_location_margin_left"
+            android:layout_marginTop="@dimen/itme_search_item_time_margin_top"
+            android:layout_toRightOf="@id/tv_time"
+            android:text="上海"
+            android:textColor="#dd8822"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/itme_search_item_follow_margin"
+        >
+
+        <TextView
+            android:id="@+id/tv_follow_member_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_toRightOf="@id/textView1"
+            android:textColor="#dd8822"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follow_members"
+            android:layout_alignParentTop="true"
+            android:textColor="#dd8822"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_follow_member_number"
+            android:text="已报名"
+            android:layout_centerHorizontal="true"
+            android:textColor="#dd8822"
+            android:layout_marginTop="@dimen/itme_search_item_state_margin_top"
+            android:textSize="11sp" />
+    </RelativeLayout>
+  
+
+</RelativeLayout>

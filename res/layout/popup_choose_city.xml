@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_choose_industry" >
+        <TextView 
+            android:id="@+id/tv_choose_city"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#0071bb"
+            android:text="选择城市"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/tv_city_confirm"
+            android:src="#999999" />
+        <ListView 
+            android:id="@+id/list_city"
+            android:layout_below="@+id/tv_choose_city" 
+            android:layout_above="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"/>
+        <TextView
+            android:id="@+id/tv_city_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/change_nick_name_padding"
+            android:layout_marginRight="@dimen/change_nick_name_padding"
+            android:layout_marginTop="15dp"
+            android:background="#0071bb"
+            android:gravity="center"
+            android:text="@string/change_nick_name_confirm"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

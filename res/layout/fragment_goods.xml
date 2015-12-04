@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="222dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="@null" >
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="关联单位。“用户”是指使用腾讯相关服务的使用人，在本协议中更多地称为“您”。
+　　1.2本协议项下的服务是指腾讯向用户提供的包括但不限于即时通讯、网络媒体、互联网增值、互动娱乐、电子商务和广告等产品及服务（以下简称“本服务”）。
+　　1.3本协议内容同时包括《QQ号码规则》（链接地址：
+http://zc.qq.com/chs/agreement1_chs.html）和《隐私政策》（链接地址：
+http://www.qq.com/privacy.htm）,且您在使用腾讯某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，即为本协议不可分割的组成部分，您同样应当遵守。您对前述任何业务规则、单独协议的接受，即视为您对本协议全部的接受。
+
+　　二、【帐号与密码安全】
+　　2.1您在使用腾讯的服务时可能需要注册一个帐号。关于您使用帐号的具体规则，请遵守《QQ号码规则》和单独协议。
+　　2.2腾讯特别提醒您应妥善保管您的帐号和密码。当您使用完毕后，应安全退出。因您保管不善可能导致遭受盗号或密码失窃，责任由您自行承担。
+
+　　三、【用户个人信息保护】
+　　3.1保护用户个人信息是腾讯的一项基本原则。腾讯将按照本协议及《隐私政策》（链接地址：http://www.qq.com/privacy.htm）的规定收集、使用、储存和分享您的个人信息。本协议对个人信息保护规定的内容与上述《隐私政策》有相冲突的，"
+                />
+            </LinearLayout>
+            
+            
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title" >
+		<TextView 
+		    android:id="@+id/tv_guanli"
+		    android:text="管理"
+		    android:textSize="13sp"
+		    android:textColor="@color/white1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_fabu"
+            android:visibility="gone" />
+	
+        <TextView
+			
+            android:id="@+id/tv_main_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/frag3_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvs_survey" />
+        <ImageView
+            android:id="@+id/title_research"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_note_left"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_sousuo_normal"
+            android:visibility="gone" />
+        
+        <RadioGroup 
+            android:visibility="gone"
+            android:id="@+id/rg_stock"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton 
+                android:gravity="center"
+                android:id="@+id/rb_zixuan"
+                android:background="@drawable/btn_price_left"
+                android:textColor="@color/connactchange"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/zixuan"
+                android:checked="true"/>
+            <RadioButton 
+                android:gravity="center"
+                android:id="@+id/rb_bankuai"
+                android:background="@drawable/btn_price_right"
+                android:textColor="@color/connactchange"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/hangqing"/>
+            
+        </RadioGroup>
+         <ImageView
+            android:id="@+id/title_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/rg_stock"
+            android:padding="@dimen/return_padding"
+            android:src="@drawable/btn_shuaxin"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.example.shareholders.common.MyViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rgp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_gravity="bottom"
+        android:background="@color/tab_nor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab1_top_drawable_selector"
+            android:text="@string/frag_home" 
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            
+            android:drawableTop="@drawable/btn_tab2_top_drawable_selector"
+            android:text="@string/frag_survey" />
+
+        <RadioButton
+            android:id="@+id/rbtn3"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab3_top_drawable_selector"
+            android:text="@string/frag_price" />
+
+        <RadioButton
+            android:id="@+id/rbtn4"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab4_top_drawable_selector"
+            android:text="@string/frag_goods" />
+
+        <RadioButton
+            android:id="@+id/rbtn5"
+            style="@style/main_rbtn"
+            android:background="@drawable/btn_tab_selector"
+            android:drawableTop="@drawable/btn_tab5_top_drawable_selector"
+            android:text="@string/frag_me" />
+    </RadioGroup>
+
+</LinearLayout>

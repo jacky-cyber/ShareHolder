@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_photo_height"
+        android:layout_marginLeft="@dimen/item_myphoto_margin_left"
+        android:layout_marginRight="@dimen/item_myphoto_margin_left"
+        android:background="#f4f4f4" >
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/bank_img_height"
+            android:layout_height="@dimen/bank_img_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_photo_margin_left"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_myphoto_margin_left"
+            android:layout_marginRight="@dimen/item_myphoto_margin_left"
+            android:layout_marginTop="@dimen/item_myphoto_margin_left"
+            android:layout_toRightOf="@id/iv_goods"
+            android:maxLines="2"
+            android:text="唇膏口红全新雅诗兰黛红色诱惑夏日情怀海洋气息清新……"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/item_myphoto_margin_left"
+            android:layout_marginLeft="@dimen/item_myphoto_margin_left"
+            android:layout_toRightOf="@id/iv_goods"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="￥"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="222,000"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/item_photo_date_margin_bottom"
+        android:layout_marginRight="@dimen/item_photo_date_margin_right"
+        android:layout_marginTop="@dimen/item_photo_date_margin_top"
+        android:text="2016.12.13"
+        android:textColor="#999999"
+        android:textSize="11sp" />
+
+</LinearLayout>

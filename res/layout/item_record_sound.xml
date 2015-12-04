@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_record_sound_above_height"
+        android:paddingLeft="@dimen/item_record_sound_padding_left"
+        android:paddingRight="@dimen/item_record_sound_padding_left" >
+
+        <!-- 录音名称， 时间， 长度 -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录音1"
+                android:textColor="#262626"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="@dimen/item_record_sound_date_name_margin"
+                android:text="2015.12.19"
+                android:textColor="#262626"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="@dimen/item_record_sound_length_date_margin"
+                android:layout_marginTop="@dimen/item_record_sound_date_name_margin"
+                android:layout_toRightOf="@id/tv_date"
+                android:text="00:29"
+                android:textColor="#262626"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_bofang_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_record_sound_bottom_height" >
+        
+         <!-- 播放进度 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d3d3d3"
+        android:paddingLeft="@dimen/item_record_sound_bottom_padding"
+        android:paddingRight="@dimen/item_record_sound_bottom_padding" >
+
+        <SeekBar
+            android:id="@+id/sb_play"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_record_sound_progress_height"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_progress_style"
+            android:max="100"
+            android:progress="50"
+            android:thumb="@drawable/vertical_l" />
+    </RelativeLayout>
+        
+    <!-- 编辑 -->
+    <RelativeLayout 
+        android:id="@+id/rl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/item_record_sound_bottom_padding"
+        android:paddingRight="@dimen/item_record_sound_bottom_padding"
+        >
+        
+        <TextView
+            android:id="@+id/tv_edit_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_record_sound"
+            android:textSize="13sp"
+            android:textColor="#6699ff"
+            android:layout_centerInParent="true"
+             />
+        
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_record_sound"
+            android:textSize="13sp"
+            android:textColor="#cc0000"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             />
+        
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+   
+
+</LinearLayout>
